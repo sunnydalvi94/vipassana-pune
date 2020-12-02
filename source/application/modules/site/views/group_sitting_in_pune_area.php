@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<head>
+	    <meta charset="utf-8"/>
+	    <title>Group Sitting in Pune Area | Vipassana</title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	    <meta content="" name="description" />
+	    <meta content="" name="author" />
+	    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/revo-slider/css/layers.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/revo-slider/css/navigation.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/owl-carousel/assets/site/owl.carousel.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/plugins/ilightbox/css/ilightbox.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/demos/index/css/plugins.css" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/demos/index/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/demos/index/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css" />
+	    <link href="<?php echo base_url(); ?>assets/site/css/custom.css" rel="stylesheet" type="text/css"/>
+	    <link rel="shortcut icon" href="favicon.html" />
+	    <link rel="shortcut icon " type="image/gif" href="assets/site/img/logo/wheel.gif">
+	    <!-- ..........................group sitting and one day style link................................. -->
+	    <link href="<?php echo base_url(); ?>assets/site/css/group-stting-and-one-day.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body class="c-layout-header-fixed c-layout-header-mobile-fixed" >
+	    <?php $this->load->view('site/header');?>
+	    <div class="c-layout-page">
+		    <div class=" c-size-md">
+				<div class="container-fluid"style="padding: 0px 30px 0px 30px;">
+					<div class="c-body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="c-content-title-2">
+									<h3 class="c-center" style=";margin-bottom: 15px;">Group Sitting in Pune Area</h3>
+									<h4  class="c-center" style="font-size: 18px;margin-bottom: 15px;">For Old Vipassana Student</h4>
+									<div class="c-line c-center c-dot c-bg-blue-2 c-bg-after-blue-2" style=""></div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
+						function onTabAll(par){window.location=window.location.pathname + '#' +par;}
+					</script>
+					<div class="col-md-12 col-sm-12">
+						<div class="table2" style=" overflow: auto;">
+						
+							<div class="c-content-tab-4 c-opt-3 tab_content" role="tabpanel" class=" ">
+								<ul class="nav nav-justified" role="tablist">
+									<li role="presentation" id="group_id" >
+							            <a style="font-size:2.2vh;" href="#tab-15" onclick="onTabAll('all')"  role="tab" data-toggle="tab">All</a>
+							        </li>
+							        <?php if(isset($group_sitting_table_data) && !empty($group_sitting_table_data)) 
+									{
+									 ?>
+									   <?php $k=0;
+							            foreach($group_sitting_table_data as $key ) 
+				                     	{ 
+				                     	$row =explode(" ", $key[$k]->area_name);
+				                     	$row =implode("_", $row);	
+							           	 ?>
+								          <li role="presentation" class=""  >
+								            <a style="font-size:2.2vh;" href="#tab-<?php echo (isset($row) && !empty($row))?$row:''; ?>"  onclick="onGrpTabChange(<?php echo (isset($key[$k]->group_sitting_id) && !empty($key[$k]->group_sitting_id))?$key[$k]->group_sitting_id:''; ?>)" role="tab" data-toggle="tab"><?php echo (isset($row) && !empty($key[$k]->area_name))?$key[$k]->area_name:''; ?></a>
+								          </li>
+							              <?php 	
+							            } ?>
+
+							        <?php 
+							        } ?>
+								</ul>
+								<div class="tab-content">
+									<?php if(isset($group_sitting_table_data) && !empty($group_sitting_table_data)) 
+									{ $j = -0;
+				                        foreach($group_sitting_table_data as $key => $location_details) 
+				                     	{ 
+				                     	// $i =1;	
+				                     	$row =explode(" ",$location_details[$j]->area_name);
+				                     	$row =implode("_", $row);	
+				                     	// = ;
+				                     	?>
+										<div role="tabpanel" class="tab-pane fade in active" id="tab-<?php echo (isset($row) && !empty($row))?$row:''; ?>">
+											<!-- <div role="tabpanel" class="tab-pane fade in active" id="tab-<?php echo (isset($key[$j]->area_name) && !empty($key[$j]->area_name))?$key[$j]->area_name:''; ?>"> -->
+
+											<ul class="c-tab-items" style="padding:30px 40px 30px 40px;">
+												<li class="row"data-auto-height="true">
+													<div class="col-md-12">  
+														<div class="c-content-media-1" data-height="height ">
+															<div class="row">
+																<div class="col-md-12">
+																	<table  class="table table-bordered" style="width:100%;">
+																		<thead>
+																			<tr>
+																				<th><h3><i class="fa fa-map-marker  c-theme-font">&nbsp;</i> Area</h3></th>
+																				<th> 
+																				<h3><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</h3></th>
+																				<th><h3><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</h3></th>
+																				<th style="width:25%;"><h3><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3></th>
+																				<th><h3><i class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3></th>
+																				<th><h3><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3></th>														<th><h3><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</h3></th>
+																		    </tr>
+																		</thead>
+																		<tbody >
+																		<?php foreach($location_details as $key ) 
+													                    { 
+													                    $i =0;	?>
+																			<tr>
+																				<th scope="row" ><?php echo (isset($key->area_name) && !empty($key->area_name))?$key->area_name:''; ?></th>
+																				<td><?php echo (isset($key->day) && !empty($key->day))?$key->day:''; ?></td>
+																				<td><?php echo (isset($key->time) && !empty($key->time))?$key->time:''; ?></td>
+																				<td style="text-align:left;">
+																				   <?php echo (isset($key->group_sitting_address) && !empty($key->group_sitting_address))?$key->group_sitting_address:''; ?>
+																			    </td>
+																				<td>
+																				<?php echo (isset($key->contact) && !empty($key->contact))?$key->contact:''; ?>
+																				</td>
+																				<td>
+																					<div class="zoom-in">
+																						<div  class="text c-theme-on-hover" style="cursor: pointer;"><b style="text-align: center;">View</b></div>
+																						  <div class="overlay">
+																						  <img style="height: 134px;width: 240px;cursor: pointer;" src="<?php echo base_url(); ?>uploads/group_sitting_images/<?php echo (isset($key->image) && !empty($key->image))?$key->image:'';?>"  alt="Avatar" class="image">
+																						</div>
+																					</div>
+																				<td>
+																					<a class="vertical-align" target="_blank" href="<?php echo (isset($key->google_map) && !empty($key->google_map))?$key->google_map:''; ?>"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map1.jpg"> </span></a>
+																				</td>
+																			</tr>
+																		  <?php $i++; 
+																        } ?> 	
+																		</tbody>
+															    	</table>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									     <?php $i++; 
+							           }
+							        } ?>                    
+							      
+
+
+
+						            <div role="tabpanel" class="tab-pane fade in active" id="tab-15">
+							            <ul class="c-tab-items" style="padding:30px 40px 30px 40px;">
+								            <li class="row"data-auto-height="true">
+								                <div class="col-md-12">
+								                    <div class="c-content-media-1 " data-height="height ">
+									                    <div class="row">
+									                        <div class="col-md-12">
+										                        <div class="table2">
+										                           <table  class="table table-bordered  " style="width:100%;">
+										                                <thead>
+											                                <tr>
+											                                  <th class="font-blue bold"  style="text-align: center;"> Sr.No.</th>
+											                                  <th><h3><i class="fa fa-map-marker  c-theme-font">&nbsp;</i> Area</h3></th>
+											                                  <th style="width:11%;"> 
+											                                  <h3><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day / 
+											                                  	  <i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time
+											                                  </h3>
+											                                  </th>
+											                                  <th style="width:25%;"><h3><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3></th>
+											                                  <th><h3><i class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3></th>
+											                                  <th style="width:9%;"><h3><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3></th>
+											                                  <th style="width:9%;"><h3><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</h3></th>
+											                                </tr>
+										                                </thead>
+											                            <tbody >
+											                                <?php if(isset($group_sitting_all_tab) && !empty($group_sitting_all_tab)) {
+											                                  $i=1;
+											                                 foreach($group_sitting_all_tab as $key) { ?>
+											                                    <tr>
+											                                        <td style="text-align: center;vertical-align: middle;"> <?php echo $i++;?></td>
+											                                        <th style="text-align:initial;" >
+											                                        	<?php echo (isset($key->area_name) && !empty($key->area_name))?$key->area_name:''; ?>
+											                                        </th>
+											                                        <td>
+											                                        	<span class="c-font-bold"><?php echo (isset($key->day) && !empty($key->day))?$key->day:''; ?></span> <br>
+											                                        	<?php echo (isset($key->time) && !empty($key->time))?$key->time:''; ?>
+											                                        </td>
+											                                        <td style="text-align:left;">
+											                                        	<?php echo (isset($key->group_sitting_address) && !empty($key->group_sitting_address))?$key->group_sitting_address:''; ?>
+											                                        </td>
+											                                        <td>
+											                                        	<?php echo (isset($key->contact) && !empty($key->contact))?$key->contact:''; ?>
+											                                        </td>
+											                                        <td>
+											                                            <div class="zoom-in">
+												                                            <div  class="text c-theme-on-hover" style="cursor: pointer;"><b style="text-align: center;">View</b></div>
+												                                            <div class="overlay">
+												                                              <img style="height: 134px;width: 240px;cursor: pointer;" src="<?php echo base_url(); ?>uploads/group_sitting_images/<?php echo (isset($key->image) && !empty($key->image))?$key->image:'';?>"  alt="Avatar" class="image">
+												                                            </div>
+											                                            </div>
+											                                        <td>
+											                                        	<a class="vertical-align" target="_blank" href=" <?php echo (isset($key->google_map) && !empty($key->google_map))?$key->google_map:''; ?>"><span>&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map1.jpg"> </span></a>  
+											                                        </td>
+											                                    </tr>
+											                               <?php 
+											                                    }
+											                                  } ?>
+											                            </tbody>
+										                          </table>
+										                        </div>
+									                        </div>
+									                    </div>
+								                    </div>
+								                </div>
+								            </li>
+							            </ul>
+						            </div>
+								</div>
+							</div>
+								
+						</div>
+
+					 	<div class="table1 row" style="">
+					 		<?php if(isset($group_sitting_all_tab) && !empty($group_sitting_all_tab)){
+				           		foreach($group_sitting_all_tab as $key) 
+				           		{ ?>
+					           		<div style="border:20px solid  #f6f9fb;padding:10px;">
+										<div class="col-md-2">
+											<!-- <p class="c-font-bold"><i class="fa fa-map-marker   c-theme-font ">&nbsp;</i> Area</p> -->
+											<h2 class="c-theme-font c-center c-font-uppercase c-font-bold"><?php echo (isset($key->area_name) && !empty($key->area_name))?$key->area_name:''; ?></h2>
+										</div>
+										<div class="col-md-2">
+											<p class="c-font-bold"><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</p></th>
+											<p><?php echo (isset($key->day) && !empty($key->day))?$key->day:''; ?></p>
+										</div>
+										<div class="col-md-2">
+											<p class="c-font-bold"><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</p>
+											<p><?php echo (isset($key->time) && !empty($key->time))?$key->time:''; ?></p>
+										</div>
+										<div class="col-md-2">
+											<p class="c-font-bold"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</p>
+											<p><?php echo (isset($key->group_sitting_address) && !empty($key->group_sitting_address))?$key->group_sitting_address:''; ?>
+										</div>
+										<div class="col-md-2">
+											<p class="c-font-bold"><i class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</p>
+											<p>
+											<?php echo (isset($key->contact) && !empty($key->contact))?$key->contact:''; ?></p>
+											</p>
+										</div>
+										<div class="col-md-1">
+											<p class="c-font-bold"><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></p>
+											<div class="zoom-in" style="z-index: 1">
+												 <div ><p class="text c-theme-on-hover" style="cursor: pointer;" ><u><span style="text-align: center;">View</span></u></p></div>
+												  <div class="overlay">
+												  <img style="height: 134px;width: 240px;cursor: pointer;" src="<?php echo base_url(); ?>uploads/group_sitting_images/<?php echo (isset($key->image) && !empty($key->image))?$key->image:'';?>"  alt="Avatar" class="image">
+												  </div>
+											</div>
+										</div>
+										<div class="col-md-1">
+											<p class="c-font-bold"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</p>
+											<p>	<a class="vertical-align" target="_blank" href="<?php echo (isset($key->google_map) && !empty($key->google_map))?$key->google_map:''; ?>"><span><img style="height:50px;" src="assets/site/img/logo/google_map1.jpg"> </span></a></p>
+										</div>
+									</div>
+							    <?php 
+				                }
+				       		} ?> 	
+						</div>	
+					</div>
+				</div>
+		    </div><br>
+	    </div>
+		<?php $this->load->view('site/footer'); ?>
+	    <div class="c-layout-go2top">
+            <i class="icon-arrow-up"></i>
+        </div>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/jquery.easing.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/reveal-animate/wow.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/demos/index/js/scripts/reveal-animate/reveal-animate.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.video.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/smooth-scroll/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/typed/typed.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/js-cookie/js.cookie.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/base/js/components.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/base/js/components-shop.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/base/js/app.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function()
+            {
+                App.init(); // init core    
+            });
+        </script>
+        <script src="<?php echo base_url(); ?>assets/site/demos/default/js/scripts/revo-slider/slider-4.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/isotope/isotope.pkgd.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/isotope/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/isotope/packery-mode.pkgd.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/ilightbox/js/jquery.requestAnimationFrame.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/ilightbox/js/jquery.mousewheel.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/ilightbox/js/ilightbox.packed.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/demos/default/js/scripts/pages/isotope-gallery.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url();?>assets/js/common.js" type="text/javascript"></script>
+        <script src="<?php echo base_url();?>assets/js/custom.js" type="text/javascript"></script>
+	</body>
+</html>

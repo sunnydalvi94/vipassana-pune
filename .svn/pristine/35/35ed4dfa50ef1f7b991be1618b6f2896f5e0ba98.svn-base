@@ -1,0 +1,33 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+
+$route['add-user']='user/user_web/add_user';
+$route['add-user/(:any)']='user/user_web/add_user/$1';
+$route['user-list']='user/user_web/user_list';
+
+   
+$route['(?i)user']="user/user_rest/user_registration";
+$route['(?i)hide-user']="user/user_rest/hide_user_registration";
+$route['(?i)restore-user']="user/user_rest/restore_user_registration";
+$route['(?i)delete-user/(:any)']="user/user_rest/permanent_delete_user_registration/$1";
+
+$route['(?i)change-password']="user/user_rest/change_password";
+
+$route['add-change_password']='user/user_web/add_change_password';
+
+
+$route['donation_login'] ='user/user_web/donation_login';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

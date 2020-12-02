@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://www.punna.dhamma.org/childrencourses.php -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Punna Dhamma</title>
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="www.tricosys.com">
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="content-language" content="english">
+<link rel="shortcut icon" href="http://www.punna.dhamma.org/favicon.ico">
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./child_fed7_files/w3.css">
+<link href="./child_fed7_files/css" rel="stylesheet" type="text/css">
+
+<link href="./child_fed7_files/html5reset.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/col.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/2cols.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/3cols.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/4cols.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/5cols.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/9cols.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/10cols.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/12cols.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/site.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/slideout.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/layout.css" rel="stylesheet" type="text/css">
+<link href="./child_fed7_files/myslider.css" rel="stylesheet" type="text/css">
+
+<script src="./child_fed7_files/jquery-1.11.2.min.js.download" type="text/javascript"></script>
+<script src="./child_fed7_files/hammer.min.js.download" type="text/javascript"></script>
+<script src="./child_fed7_files/hmenu.js.download" type="text/javascript"></script>
+<script src="./child_fed7_files/myslider.js.download" type="text/javascript"></script>
+<script src="./child_fed7_files/jquery.scrollbox.min.js.download" type="text/javascript"></script>
+<script src="./child_fed7_files/jquery.validate.min.js.download" type="text/javascript"></script>
+<script src="./child_fed7_files/modernizr-2.6.2.js.download" type="text/javascript"></script>
+<script src="./child_fed7_files/bootstrap.min.js.download" type="text/javascript"></script>
+
+</head>
+<body cz-shortcut-listen="true">
+<!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<div id="menubutton" style="color:black;font-size:20px;">
+<span class="fa fa-reorder open"></span>
+<span class="fa fa-remove close"></span>
+</div>
+
+<div id="menu" class="slideout-menu">
+
+<div id="cssmenu">
+<ul>
+<li><a href="http://www.punna.dhamma.org/index.php">Home</a></li>
+<li class="has-sub"><a href="http://www.punna.dhamma.org/childrencourses.php#">About Center</a>
+<ul>
+<li><a href="http://www.punna.dhamma.org/AboutDhammaPunna.php">About Dhamma Punna</a></li>
+<li><a href="http://www.punna.dhamma.org/AboutDhammaAnanda.php">About Dhamma Ananda</a></li>
+</ul>
+</li>
+<li class="has-sub"><a href="http://www.punna.dhamma.org/childrencourses.php#">Apply for Course</a>
+<ul>
+<li><a href="http://www.punna.dhamma.org/CodeOfDiscipline.php">Code of Discipline-Timetable</a></li>
+<li><a href="http://www.punna.dhamma.org/FAQ.php">Frequently Asked Questions</a></li>
+<li><a href="http://www.punna.dhamma.org/WhatToBring.php">What To Bring To Center</a></li>
+<li><a href="http://www.punna.dhamma.org/ApplyForCourse.php">Apply for 10 day course</a></li>
+</ul>
+</li>
+<li><a href="http://www.punna.dhamma.org/Donation.php">Online Donation</a></li>
+<li class="has-sub"><a href="http://www.punna.dhamma.org/childrencourses.php#">Gallery</a>
+<ul>
+<li><a href="http://www.vridhamma.org/Audio" target="_blank">Audio Gallery</a></li>
+<li><a href="http://www.vridhamma.org/StreamingVideos" target="_blank">Video Gallery</a></li>
+echo '<p align="right"> </p><li><a href="http://www.punna.dhamma.org/AboutDhammaPunna.php">Dhammapunna (Pune City)</a></li>
+<li><a href="http://www.punna.dhamma.org/AboutDhammaAnanda.php">Dhammānanda(Markal)</a></li> <p></p>
+</ul>
+</li>
+<li class="has-sub"><a href="http://www.punna.dhamma.org/childrencourses.php#">Children &amp; Teenager</a>
+<ul>
+
+<li><a href="http://www.punna.dhamma.org/ChildrenCourses.php">Children Courses</a></li>
+<li><a href="http://www.punna.dhamma.org/teenagercourses.php">Teenager Courses</a></li>
+<li><a href="http://www.punna.dhamma.org/ImpairedChildrenCourse.php">Hearing Speech Impaired &amp; Blind Children Courses</a></li>
+</ul>
+</li>
+<li class="has-sub"><a href="http://www.punna.dhamma.org/childrencourses.php#">MITRA Upakram</a>
+<ul>
+<li><a href="http://www.punna.dhamma.org/Mitra.php">About MITRA Upakram</a></li>
+<li><a href="http://www.punna.dhamma.org/MitraSchoolSevaRegistration.php">MITRA School Seva Registration</a></li>
+<li><a href="http://www.punna.dhamma.org/mitrapuneactivities.php">Mitra Pune Activities</a></li>
+<li><a href="http://www.globalpagoda.org/grlist" target="_blank">GR</a></li>
+</ul>
+</li>
+<li><a href="http://www.punna.dhamma.org/Seva.php">Seva</a>
+
+</li>
+<li><a>20 Years</a></li>
+</ul>
+</div>
+</div>
+<div id="hdr">
+
+<div id="topmenu" class="section group bg-blue font-white">
+<div class="container">
+<div class="col span_2_of_3">
+<div class="section group">
+<div class="col span_1_of_5 tac logo">
+<img src="./child_fed7_files/wheel.gif" width="50px" alt="">
+</div>
+<div class="col span_4_of_5 font-white">
+<img src="./child_fed7_files/wheel.gif" width="20px" class="logo-1" alt="">
+<center><h1 class="inline-block">Dhammapunna<sub>(Pune City)</sub> and Dhammānanda<sub>(Markal)</sub></h1></center>
+<center><span style="color:white">Offering courses in Vipassana Meditation as taught by S.N. GOENKA in the tradition of Sayagyi U Ba Khin</span></center>
+</div>
+
+</div> 
+</div>
+<div class="col span_1_of_3 tar">
+<div>
+<span class="fa-stack fa-lg">
+<a href="https://www.facebook.com/Vipassanaorganisation" style="color: white;">
+<i class="fa fa-circle fa-stack-2x "></i>
+<i class="fa fa-facebook fa-stack-1x fa-inverse" style="color: #118bce;"></i>
+</a>
+</span>
+<span class="fa-stack fa-lg">
+<a href="https://twitter.com/VipassanaOrg" style="color: white;">
+<i class="fa fa-circle fa-stack-2x "></i>
+<i class="fa fa-twitter fa-stack-1x fa-inverse" style="color: #118bce;"></i>
+</a>
+</span>
+<span class="fa-stack fa-lg">
+<a href="https://www.pinterest.com/vipassanaorg/" style="color: white;">
+<i class="fa fa-circle fa-stack-2x "></i>
+<i class="fa fa-pinterest fa-stack-1x fa-inverse" style="color: #118bce;"></i>
+</a>
+</span>
+
+</div>
+<a href="http://www.punna.dhamma.org/Login_Page.php"><u>Office Use</u></a>
+
+<br>
+<a href="http://www.punna.dhamma.org/subscribesmsemail.php"><span style="color:white">Old Student ? Get SMS Email Notification</span></a>
+</div>
+</div>
+</div>
+<div id="nav">
+<ul>
+<li><a href="http://www.punna.dhamma.org/index.php">Home</a></li>
+<li><a href="http://www.punna.dhamma.org/childrencourses.php#">About Center</a>
+<ul>
+<li><a href="http://www.punna.dhamma.org/AboutDhammaPunna.php">About Dhamma Punna</a></li>
+<li><a href="http://www.punna.dhamma.org/AboutDhammaAnanda.php">About Dhamma Ananda</a></li>
+</ul>
+</li>
+<li><a href="http://www.punna.dhamma.org/childrencourses.php#">MITRA Upakram</a>
+<ul>
+<li><a href="http://www.mitraupakram.net/">about MITRA Upakram</a></li>
+<li><a href="http://www.punna.dhamma.org/MitraSchoolSevaRegistration.php">MITRA School Seva Registration</a></li>
+<li><a href="http://www.punna.dhamma.org/mitrapuneactivities.php">Mitra Pune Activities</a></li>
+</ul>
+ </li>
+<li><a href="http://www.punna.dhamma.org/childrencourses.php#">Apply for Course</a>
+<ul>
+<li><a href="http://www.punna.dhamma.org/CodeOfDiscipline.php">Code of Discipline-Timetable</a></li>
+<li><a href="http://www.punna.dhamma.org/FAQ.php">Frequently Asked Questions</a></li>
+<li><a href="http://www.punna.dhamma.org/WhatToBring.php">What To Bring To Center</a></li>
+<li><a href="http://www.punna.dhamma.org/ApplyForCourse.php">Apply for 10 day course</a></li>
+</ul>
+</li>
+<li><a href="http://www.punna.dhamma.org/Donation.php"><img src="./child_fed7_files/new3.gif" alt="" width="20%"> Donation</a></li>
+<li><a href="http://www.punna.dhamma.org/childrencourses.php#">Gallery</a>
+<ul>
+
+<li><a href="http://www.punna.dhamma.org/AboutDhammaPunna.php">Dhammapunna (Pune City)</a></li>
+<li><a href="http://www.punna.dhamma.org/AboutDhammaAnanda.php">Dhammaananda(Markal)</a></li>
+</ul>
+</li>
+<li><a href="http://www.punna.dhamma.org/childrencourses.php#">Children &amp; Teenager</a>
+<ul>
+
+<li><a href="http://www.punna.dhamma.org/ChildrenCourses.php">Children Courses</a></li>
+<li><a href="http://www.punna.dhamma.org/teenagercourses.php">Teenager Courses</a></li>
+<li><a href="http://www.punna.dhamma.org/ImpairedChildrenCourse.php">Hearing Speech Impaired &amp; Blind Children Courses</a></li>
+</ul>
+</li>
+<li><a href="http://www.punna.dhamma.org/Seva.php">Seva</a>
+
+</li>
+<li><a href="http://www.globalpagoda.org/grlist" target="_blank">GR</a></li>
+<li><a>20 Years</a></li>
+</ul>
+</div>
+<div style="border-top: 5px solid #5fc7ff;">
+</div>
+
+</div>
+
+<style>
+button.accordion {
+    background-color: #7fffd4;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    border:5px;
+    text-align: left;
+    outline: 5px;
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #6495ed;
+}
+
+button.accordion:after {
+    content: '\0002b';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+<div class="container" style="border-top: 5px solid #5fc7ff;">
+<div class="col span_2_of_2 tac"> <h2>Children Courses</h2> </div>
+<div class="section group">
+<div class="col span_2_of_4">
+<div class="section group">
+<div class="col span_3_of_3">
+<h3>Feedback from Children(2 Day Anapana Course)</h3>
+
+<div class="carousel MySlider-carousel">
+<div class="inner">
+<div class="slide" style="">
+<img src="./child_fed7_files/1.webp" alt="">
+</div>
+<div class="slide" style="">
+<img src="./child_fed7_files/2.webp" alt="">
+</div>
+<div class="slide" style="">
+<img src="./child_fed7_files/3.png" alt="">
+</div>
+<div class="slide active" style="">
+<img src="./child_fed7_files/4.webp" alt="">
+</div>
+<div class="slide" style="">
+<img src="./child_fed7_files/5.webp" alt="">
+</div>
+<div class="slide" style="">
+<img src="./child_fed7_files/6.JPG" alt="">
+</div>
+<div class="slide" style="">
+<img src="./child_fed7_files/7.JPG" alt="">
+</div>
+<div class="slide" style="">
+<img src="./child_fed7_files/8.JPG" alt="">
+</div>
+</div>
+<div class="arrow arrow-left"></div>
+<div class="arrow arrow-right"></div>
+<ul class="indicators"><li data-index="0" class=""></li><li data-index="1" class=""></li><li data-index="2" class=""></li><li data-index="3" class="active"></li><li data-index="4" class=""></li><li data-index="5" class=""></li><li data-index="6" class=""></li><li data-index="7" class=""></li></ul></div>
+
+</div>
+</div>
+<div class="section group">
+<div class="col span_2_of_2">
+<div>
+<h3> Anapana Courses for Children</h3>
+</div>
+<div>
+<p>
+Over the past 28 years,hundreds of Anapana courses have been conducted exclusively for children around
+the world. These courses have yielded substantial benefits for the thousands of children who have attended them.
+Many of them have experienced a positive change in their outlook, behaviour and attitude. Many have found their
+ability to concentrate has improved and that their memory has strengthened. And above all,these children have
+acquired a tool that is of immense value to them for the rest of their lives.
+</p>
+<p>
+Children are, by nature, active and enthusiastic, with an eagerness to leam and explore. For this reason, it is
+appropriate to offer them an opportunity to explore themselves and their mind with all its hidden faculties,
+latent abilities and subtle complexities. Learning Ananpana plants a wholesome interest in
+introspection and meditation, which may open an entirely new dimension of life for them later on.
+</p>
+<p>
+Anapana courses for children have been conducted since 1986. These courses have been offered to children of
+various ages and socio-economic and cultural groups. They have been conducted in Vipassana meditation centres as
+well as at schools and other institutions, and have been both residential and nonresidential
+</p>
+<p>
+Whether a children's Anapana course is held at a school or at a Vipassana meditation centre, it is essential
+that the student be given an opportunity to continue to practice Anapana for a short period each day after the
+course to yield the true benefit of the practice.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col span_2_of_4 ">
+<div class="section group">
+<div class="col span_2_of_2">
+<h3>Children Course Schedule Dhammapunna</h3>
+<div class="section group">
+<div class="col span_2_of_2">
+
+<ul style="list-style-type: none;">
+<li>
+<label> Childern One Day Anapana Course</label><br>
+<b>Date :</b>
+Every 1st and 3rd Sunday <br>
+<b>Timing :</b>
+8 AM to 2.30 PM<br>
+<b> Age Limit :</b>
+9 to 18 yrs<br>
+<b>Registration :</b>
+8 to 8.15 AM, No admissions after 8.30AM
+</li><br><br>
+<li>
+<label>Children Two Day Course(Residential)</label><br>
+<b>Date :</b>
+Please access <span style="color:grey; text-decoration: underline;"><a href="http://www.dhamma.org/en/schedules/schpunna">
+Course Schedule </a></span>for Dhammapunna, Pune City Vipassana Center, Swargate.
+<br>
+<b>Duration :</b>
+2 Days<br>
+<b> Age Limit :</b>
+12 yrs complete till 18 yrs<br>
+<b> Note :</b>
+Prior booking is a must <br>
+</li>
+<br>
+
+<li><b>2 Day Anapana Course For Boys</b><br>
+<b>Date :</b> 17 May - 18 May 2019<br>
+</li>
+<li><br>
+<b>2 Day Anapana Course For Girls </b><br>
+<b>Date :</b> 14 May - 15 May<br>
+</li>
+</ul>
+<p>Download the application form on below link and print it out. You can send it by Speed post or hand-deliver it to our office</p>
+<a href="http://www.punna.dhamma.org/Content/Documents/Registration%20form%20for%20residential%20CC%20(March%202019).pdf" target="_blank"><span style="color:blue;">
+Download of children 2 Day course(Residential) English Application Form</span></a><br><br>
+<a href="http://www.punna.dhamma.org/Content/Documents/%E0%A4%A8%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%80%20%E0%A4%AC%E0%A4%BE%E0%A4%B2%20%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%BF%E0%A4%B0%20%E0%A4%86%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%A8%20%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%B0%20(%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%9A%20%20%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF).pdf" target="_blank"><span style="color:blue;">
+Download of children 2 Day course(Residential) Hindi Application Form</span></a><br><br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script async="" src="./child_fed7_files/pa-embed-player.min.js.download" type="text/javascript"></script>
+<h3> Children Feedback</h3>
+<div class="pa-embed-player" style="width: 100%; height: 480px; display: block;" data-link="https://photos.app.goo.gl/ZS5SxWvrU5ekMKyR9" data-title="Anapana 2 Day - Open House -Painting/Essay Writing" data-description="59 new photos · Album by Sachin Inamdar" data-slideshow-repeat="false"></div>
+<div class="section group">
+<div class="col span_2_of_2">
+<div class="section group">
+<div class="col span_2_of_2">
+<h3> Eligibility for Children Course &amp; Timetable</h3>
+<button class="accordion"> Eligibility</button>
+<div class="panel">
+Students from the age of eight to sixteen eighteen years are eligible to attend the courses.
+Separate courses should be organized for the two different age groups, one for younger children: ages eight
+to twelve; and one for the elder ones: ages thirteen to eighteen.These are ideal groupings but slightly
+different groupings are also sometime considered. Student less than eight years of age and more than eighteen
+years may not be admitted to a Children’s Anapana course.
+<br>
+<font size="4">T</font>he recommended number of children per course should not be exceed fifty. For courses larger
+than fifty children, additional children's course Teachers may be required to conduct the course.
+<br> </div>
+<button class="accordion"> Timetable</button>
+<div class="panel">
+<font size="4">V</font>arious schedules have been developed and successfully implemented in schools over the years.
+One-day or two-day non residential courses can easily be conducted during the school hours. In residential schools,
+three-day residential courses may be held. The timetable is determined by the length of the course and whether it is
+residential or not. The timetable should be modified to avoid the times when other students who are not participating
+in the course could interact with the children taking the course. Enough time should be scheduled for meditation
+periods, counselling (when the CCT meets with small groups/ for children to reinforce the practice), discourses and
+stories, lunch, rest, play, etc. the total duration of a one-day course is about six hours.<br>
+<font size="4">T</font>he timetable will be decided by the teacher conducting the course in consultation with the
+organisers and school administrator.
+<p></p>
+<br></div>
+<button class="accordion"> Pre-requisites for Institutions</button>
+<div class="panel">
+<p>
+<font size="4">T</font>o begin the process of having a children's Anapana course held in a school, administrator or
+the head of the school should send a formal request to either the Regional Co-ordinator of children's courses, a
+Children's Course.
+<br>
+<font size="4">T</font>eacher or a local Viapassana meditation centre. At least one person from the teaching staff
+or administration should have completed a ten days Vipassana course in this tradition. Apart from this, there should
+be a firm commitment by the school or institution to provide an opportunity for the children to continue their
+practice of meditation for a few minutes every day. The school management may decide the time to implement this
+programme within their daily routine, with the minimum of about ten minutes a day for practice.&nbsp;
+<br>
+<font size="4">T</font>he limit on the number of students participating in a course should be carefully determined. A very
+large group may be difficult to manage and a very small group may have difficulty in creating cohesive and inspirational
+atmosphere. Generally, courses with between twenty-five to fifty participants work well. However, depending on the
+infrastructure, facility and circumstances, the number may vary. Ideally, a course should be organised for all of the
+students from the participating classes. All the teachers of the participating classes should also participate in the course.
+The teachers of the participating classes may sit as observers.
+Besides organising courses during the regular school week, courses may also be organised to take place at the school
+on a weekend or during vacation periods.
+</p>
+<br></div>
+<button class="accordion"> Guidelines for
+Courses in Institutions </button>
+<div class="panel">
+1. For a residential Anapana course, separate and adequate sleeping accommodation, showers, and toilets should be
+available for boys and girls. A dining facility where boys and girls can sit separately is also required.&nbsp;
+<br><br>
+2. The course should be organised in a way that no other students or staff are present in the area where the course is
+being conducted or where the attending children will be residing.
+&nbsp;<br>
+Organising on weekends or during holidays can be helpful in ensuring this separation.
+<br><br>
+3. A large enough room or hall should be available for seating all the meditators on the floor on cushions or comfortable mats.
+<br><br>
+4. A suitable sound system and projection facilities should be available for playing instructions tapes
+and discourses.&nbsp;
+<br><br>
+5. The place for meditation and the accommodation should be at a sufficient distance from main roads and traffic in order to
+have a quiet, peaceful atmosphere required for meditation.&nbsp;
+<br><br>
+6. A few course servers, who are experienced Vipassana meditators, may be required to help in running and managing the
+course.&nbsp;
+<br><br>
+7. If there are children who are old students and have been doing courses regularly, they may serve on the course,
+having minor responsibilities. (They should never be put in a counsellor role.)&nbsp;
+<br><br>
+</div>
+<button class="accordion"> Requisition Form </button>
+<div class="panel">
+<br><br>
+( From school administrators and heads of institutions, for conducting Anapana courses in their institutions )&nbsp;
+<br><br>
+1. Name and address of the sponsoring authority&nbsp;
+<br><br>
+2. Name and address of the school / institution participating
+<br><br>
+3. Name/s of the person/s in the institution who has / have done a ten-day course previously and their position in the
+school (i.e. head/principle/trustee/teacher)
+<br><br>
+4. Dates of his/her first and last course
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<style>
+    
+#footer{
+   background:url("images/footer.gif")  repeat-x scroll top transparent; 
+    background-size:100% 240px;
+    height: 240px; 
+    width:100%; 
+    overflow:hidden;
+}
+</style>
+
+​
+<div id="footer">
+
+<div class="container">
+<div class="section group">
+<div class="col span_1_of_3" style="color:white">
+<h3 style="color:skyblue">Contact Us</h3>
+<p style="color:white">
+Pune Vipassana Samiti Pune<br>
+Dadawadi, opp. Nehru Stadium,<br>
+Near Anand Mangal Karyalaya<br>
+Pune 411 002, Maharashtra, India<br>
+Ph: (+91) 20-24468903<br>
+E-Mail:<a href="mailto:info@punna.dhamma.org%2520" style="color:white">info@punna.dhamma.org </a>
+</p>
+</div>
+<div class="col span_1_of_3">
+<h3 style="color:skyblue">Quick Links</h3>
+<ul style="color:white">
+<li><a href="http://www.dhamma.org/" target="_blank" style="color:white">www.dhamma.org</a></li>
+<li><a href="http://www.vri.dhamma.org/" target="_blank" style="color:white">www.vri.dhamma.org</a></li>
+<li><a href="http://www.globalpagoda.org/" target="_blank" style="color:white">www.globalpagoda.org</a></li>
+<li><a href="http://www.children.dhamma.org/" target="_blank" style="color:white">www.children.dhamma.org</a></li>
+<li><a href="http://www.vridhamma.org/Newsletter_home" target="_blank" style="color:white">Newsletters</a></li>
+</ul>
+</div>
+<div class="col span_1_of_3">
+<h3 style="color:skyblue">Follow Us</h3>
+<span>
+<a href="https://www.facebook.com/Vipassanaorganisation" style="color: Maroon;">
+<img src="./child_fed7_files/facebook.webp" alt="Vipassana Research Institute">
+</a>
+</span>
+<span>
+<a href="https://twitter.com/VipassanaOrg" style="color: Maroon;">
+<img src="./child_fed7_files/twitter.webp" alt="Vipassana Research Institute">
+</a>
+</span>
+<span>
+<a href="https://www.pinterest.com/vipassanaorg/" style="color: Maroon;">
+<img src="./child_fed7_files/pinterest.webp" alt="">
+</a>
+</span>
+</div>
+</div>
+</div>
+</div><script type="text/javascript">
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+<script type="text/javascript">
+            var args = {
+                arrowRight: '.arrow-right', //A jQuery reference to the right arrow
+                arrowLeft: '.arrow-left', //A jQuery reference to the left arrow
+                speed: 1000, //The speed of the animation (milliseconds)
+                slideDuration: 8000, //The amount of time between animations (milliseconds)
+                showIndicators: 'true',
+                name: '.carousel'
+            };
+            $('.carousel').MySlider(args);
+        </script>
+
+<div class="pa-fullpage:0"><div class="pa-image-gallery" style="width: 100%; height: 100%; position: fixed; background-color: black; z-index: 2147483647; left: 0px; top: 0px;"><div class="jx-carousel" style="position: relative; overflow: hidden; width: 1263px; height: 561px;"><div class="jx-carousel-content" style="position: relative;"><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img src="./child_fed7_files/DSC01339.JPG" style="position: absolute; user-select: none; pointer-events: none; opacity: 1; width: 406px; height: 561px; left: 429px; top: 0px; transition: opacity 0.2s ease-in 0s;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img src="./child_fed7_files/DSC01340.JPG" style="position: absolute; user-select: none; pointer-events: none; opacity: 1; width: 408px; height: 561px; left: 427px; top: 0px; transition: opacity 0.2s ease-in 0s;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img src="./child_fed7_files/DSC01341.JPG" style="position: absolute; user-select: none; pointer-events: none; opacity: 1; width: 391px; left: 436px; height: 561px; top: 0px; transition: opacity 0.2s ease-in 0s;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img src="./child_fed7_files/DSC01342.JPG" style="position: absolute; user-select: none; pointer-events: none; opacity: 1; width: 393px; left: 435px; height: 561px; top: 0px; transition: opacity 0.2s ease-in 0s;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img src="./child_fed7_files/DSC01343.JPG" style="position: absolute; user-select: none; pointer-events: none; opacity: 1; width: 391px; left: 436px; height: 561px; top: 0px; transition: opacity 0.2s ease-in 0s;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: all 0.4s ease-out 0s; left: -253px; opacity: 0; z-index: 0;"><img src="./child_fed7_files/DSC01344.JPG" style="position: absolute; user-select: none; pointer-events: none; opacity: 1; width: 503px; left: 380px; height: 561px; top: 0px; transition: opacity 0.2s ease-in 0s;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: all 0.2s ease-out 0s; left: 0px; opacity: 1; z-index: 1;"><img src="./child_fed7_files/DSC01345.JPG" style="position: absolute; user-select: none; pointer-events: none; opacity: 1; width: 381px; left: 441px; height: 561px; top: 0px; transition: opacity 0.2s ease-in 0s;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div><div class="jx-image" style="width: 1263px; height: 561px; overflow: hidden; position: absolute; transition: none 0s ease 0s; left: 0px; opacity: 0; z-index: 0;"><img style="position: absolute; user-select: none; pointer-events: none; opacity: 0;"></div></div></div><div class="jx-svg-button" style="position: absolute; transition: opacity 0.125s linear 0s; opacity: 0; width: 56px; height: auto; z-index: 101; top: 72px; bottom: 72px; left: 8px; padding-right: 8px;"><div class="jx-svg-icon" style="position: absolute; top: 50%;"><svg viewBox="-4 -4 32 32" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54); top: -28px;"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path></svg></div></div><div class="jx-svg-button" style="position: absolute; transition: opacity 0.125s linear 0s; opacity: 0; width: 56px; height: auto; z-index: 101; top: 72px; bottom: 72px; right: 8px; padding-left: 8px;"><div class="jx-svg-icon" style="position: absolute; top: 50%;"><svg viewBox="-4 -4 32 32" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54); top: -28px;"><path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path></svg></div></div><div class="jx-svg-control" style="position: absolute; transition: opacity 0.125s linear 0s; opacity: 0; width: 56px; height: 56px; z-index: 101; bottom: 8px; left: 8px;"><div class="jx-svg-icon"><svg viewBox="-4 -4 32 32" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; opacity: 1; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M8 5v14l11-7z"></path></svg></div><div class="jx-svg-icon"><svg viewBox="-4 -4 32 32" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; opacity: 0; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg></div></div><div class="jx-svg-control" style="position: absolute; transition: opacity 0.125s linear 0s; opacity: 0; width: 56px; height: 56px; z-index: 101; bottom: 8px; right: 8px;"><div class="jx-svg-icon"><svg viewBox="-3 -3 24 24" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; opacity: 1; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M4.5 11H3v4h4v-1.5H4.5V11zM3 7h1.5V4.5H7V3H3v4zm10.5 6.5H11V15h4v-4h-1.5v2.5zM11 3v1.5h2.5V7H15V3h-4z"></path></svg></div><div class="jx-svg-icon"><svg viewBox="-3 -3 24 24" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; opacity: 0; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M3 12.5h2.5V15H7v-4H3v1.5zm2.5-7H3V7h4V3H5.5v2.5zM11 15h1.5v-2.5H15V11h-4v4zm1.5-9.5V3H11v4h4V5.5h-2.5z"></path></svg></div></div><div class="jx-svg-button" style="position: absolute; transition: opacity 0.125s linear 0s; opacity: 0; width: 56px; height: 56px; z-index: 101; bottom: 8px; left: 72px;"><div class="jx-svg-icon"><svg viewBox="-8 -8 40 40" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; fill: rgb(0, 0, 0); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"></path></svg></div></div><div style="position: absolute; top: 0px; right: 0px; width: 256px; height: 64px; padding: 8px;"><div class="jx-svg-button" style="position: relative; transition: opacity 0.125s linear 0s; opacity: 0; width: 56px; height: 56px; z-index: 101; float: right; margin-left: 8px;"><div class="jx-svg-icon"><svg viewBox="-10 -12 48 48" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"></path></svg></div></div><div class="jx-svg-button" style="position: relative; transition: opacity 0.125s linear 0s; opacity: 0.6; width: 56px; height: 56px; z-index: 101; float: right; margin-left: 8px; display: none;"><div class="jx-svg-icon"><svg viewBox="-12 -12 48 48" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M12 8V4l8 8-8 8v-4H4V8z"></path></svg></div></div></div><div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 48px; padding-bottom: 50px; background-repeat: repeat-x; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==&quot;); transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1) 0s; pointer-events: none; z-index: 9; opacity: 0;"></div><a style="position: absolute; top: 24px; left: 72px; width: 100%; text-overflow: ellipsis; text-decoration: none; color: rgb(255, 255, 255); font-size: 18px; font-family: &quot;YouTube Noto&quot;, Roboto, Arial, Helvetica, sans-serif; transition: color 0.1s cubic-bezier(0, 0, 0.2, 1) 0s, opacity 0.25s linear 0s, left 0.125s ease-out 0s; box-shadow: none; z-index: 10; opacity: 0;">Anapana 2 Day - Open House -Painting/Essay Writing</a><div class="jx-svg-button" style="position: absolute; transition: opacity 0.125s linear 0s; opacity: 0; width: 128px; height: 128px; z-index: 101; left: 50%; top: 50%; margin-left: -64px; margin-top: -64px; display: none;"><div class="jx-svg-icon"><svg viewBox="-4 -4 32 32" style="position: absolute; width: 128px; height: 128px; transition: opacity 0.25s linear 0s; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.72);"><path d="M10 8v8l5-4-5-4zm9-5H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"></path></svg></div></div><div style="position: absolute; left: 142px; right: 142px; bottom: 24px; height: 20px; border-radius: 6px; background: rgba(66, 66, 66, 0.54); z-index: 101; display: none;"><div style="position: absolute; left: 8px; top: 5px; bottom: 5px; right: 8px; border: 1px solid rgba(255, 255, 255, 0.6);"><div style="position: absolute; left: 1px; top: 1px; bottom: 1px; width: 320px; background: rgba(255, 255, 255, 0.2);"></div><div style="position: absolute; left: 1px; top: 1px; bottom: 1px; width: 180px; background: rgb(255, 255, 255);"></div></div></div><div class="jx-svg-control" style="position: absolute; transition: opacity 0.125s linear 0s; opacity: 0; width: 56px; height: 56px; z-index: 101; bottom: 8px; right: 72px;"><div class="jx-svg-icon"><svg viewBox="-4 -4 32 32" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; opacity: 0; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M12.01 5.5L10 8h4l-1.99-2.5zM18 10v4l2.5-1.99L18 10zM6 10l-2.5 2.01L6 14v-4zm8 6h-4l2.01 2.5L14 16zm7-13H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"></path></svg></div><div class="jx-svg-icon"><svg viewBox="-4 -4 32 32" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; opacity: 1; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M19 7h-8v6h8V7zm2-4H3c-1.1 0-2 .9-2 2v14c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98V5c0-1.1-.9-2-2-2zm0 16.01H3V4.98h18v14.03z"></path></svg></div></div><div class="jx-svg-button" style="position: absolute; transition: opacity 0.125s linear 0s; opacity: 0; width: 56px; height: 56px; z-index: 101; left: 8px; top: 8px;"><div class="jx-svg-icon"><svg viewBox="-10 -12 48 48" style="position: absolute; width: 56px; height: 56px; transition: opacity 0.25s linear 0s; fill: rgb(255, 255, 255); border-radius: 28px; background: rgba(66, 66, 66, 0.54);"><path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"></path></svg></div></div></div></div></body></html>

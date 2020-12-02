@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "e7f30c62-60b0-49e5-975c-7df0369c9a8d",
+		"name": "faq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add faq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "question_name",
+							"value": "How sto registesrs stusdent for exam s?",
+							"type": "text"
+						},
+						{
+							"key": "answer",
+							"value": "1.s Login withs syosur losgin_",
+							"type": "text"
+						},
+						{
+							"key": "faq_id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}faq",
+					"host": [
+						"{{host}}faq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get faq",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}faq?faq_id=V1BDd",
+					"host": [
+						"{{host}}faq"
+					],
+					"query": [
+						{
+							"key": "faq_id",
+							"value": "V1BDd"
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide faq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "faq_id",
+							"value": "V1BDd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}hide-faq",
+					"host": [
+						"{{host}}hide-faq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore faq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "faq_id",
+							"value": "V1BDd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}restore-faq",
+					"host": [
+						"{{host}}restore-faq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete faq",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}delete-faq/V1BDd",
+					"host": [
+						"{{host}}delete-faq"
+					],
+					"path": [
+						"V1BDd"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "92f8c7e9-90a0-4adc-8225-306eab2dcb36",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c4ded5f9-010f-40d6-9ac2-92659cc8e8d9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

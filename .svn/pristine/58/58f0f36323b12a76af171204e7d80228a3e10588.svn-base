@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en"  >
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8"/>
+	<title>Mitra School Seva Registration</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta content="" name="description"/>
+	<meta content="" name="author"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
+	<link href="assets/site/plugins/socicon/socicon.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css"/>		
+	<link href="assets/site/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/animate/animate.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+			<!-- BEGIN: BASE PLUGINS  -->
+			<link href="assets/site/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+			<link href="assets/site/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css"/>
+			<link href="assets/site/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+			<link href="assets/site/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" type="text/css"/>
+				<!-- END: BASE PLUGINS -->
+	
+			<!-- BEGIN: PAGE STYLES -->
+			<link href="assets/site/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css"/>
+			<link href="assets/site/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css"/>
+			<link href="assets/site/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css"/>
+			<link href="assets/site/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+				<!-- END: PAGE STYLES -->
+	
+    <!-- BEGIN THEME STYLES -->
+	<link href="assets/site/demos/default/css/plugins.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/demos/default/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/demos/default/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css"/>
+	<link href="assets/site/demos/default/css/custom.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon " type="image/gif" href="assets/site/img/logo/wheel.gif">
+    <style>
+       .label{
+            font-size:11px!important;
+        }
+        .c-checkbox label > .box, .c-radio label >.box,.c-radio input[type=radio]:checked ~ label > .check{
+         margin-top: 7px!important;
+        }
+        @media (max-width:750px) {
+        .website_link{
+         font-size:13px;
+      }
+        }
+    </style>
+</head>
+<body class="c-layout-header-fixed c-layout-header-mobile-fixed">
+<div class="c-layout-page">
+ <?php $this->load->view('site/header'); ?>
+	<div class="c-content-box c-size-md" style="padding: 40px 0px 20px 0px;">
+		<div class="container">
+			<div class="c-content-tab-4 c-opt-5" role="tabpanel">
+				<div class="c-body">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="c-content-title-2">
+								<h3 class="c-center">Mitra School Seva Registration</h3>
+								<div class="c-line c-dot c-theme-bg c-theme-bg-after"></div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="c-content-title-3 c-title-md c-theme-border">
+                    <h3 class="c-theme-font c-font-uppercase">Get trained to assist school implementing MITRA orientation sessions</h3>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-justify">
+                <p>for old Vipassana Students only</p>
+                <p>MITRA Upakram (mind in training for right awarness) is a joint initiative of Government of Maharashtra and Vipassana Research Institute 
+                to facilitate wholesome mental growth of school children. MITRA Upakram aspires to cover 2.5 crore school children and 6 Lac school teachers
+                 from all schools in Mahrashtra..<br>Please register by filling up form below. <br>Please share to interested Vipassana Students</p>
+                <p>Metta, Pune Vipassana Samiti.</p>
+                <p style="color:red;">* Required</p>
+            </div>    
+         </div> 
+    </div>
+    <section>
+        <div class="container ">
+            <form style="line-height:35px;"class="form">
+                <div class="row"> 
+
+                    <div class=" col-md-4 form-group">
+                        <label for="inputEmail3" class="">First Name*</label>
+                        <input type="text" class="form-control c-square c-theme" name="outreach" placeholder="First Name" >
+                    </div>
+
+                    <div class=" col-md-4 form-group">
+                        <label for="inputEmail3" class="">Middle Name*</label>
+                        <input type="text" class="form-control c-square c-theme" name="outreach" placeholder="Middle Name" >
+                    </div>
+
+                    <div class=" col-md-4 form-group">
+                        <label for="inputEmail3" class="">Last Name*</label>
+                        <input type="text" class="form-control c-square c-theme" name="outreach" placeholder="Last Name" >
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class=" col-md-4 form-group">
+                        <label for="inputEmail3" class="">Mobile Number*</label>
+                        <input type="number" class="form-control c-square c-theme" name="outreach" placeholder="Mobile Number" >
+                    </div>
+                    <div class=" col-md-4 form-group">
+                    <label for="inputEmail3" class="">Email</label>
+                        <input type="email" class="form-control c-square c-theme" name="outreach" placeholder="Email" >
+                    </div>
+                    <div class=" col-md-4 form-group">
+                    <label for="inputEmail3" class="">Occupation</label>
+                        <input type="text" class="form-control c-square c-theme" name="outreach" placeholder="Occupation" >
+                    </div>
+                    
+                </div>
+                <div class="row"> 
+                    <div class=" col-md-4 form-group">
+                    <label for="inputEmail3" class="">City*</label>
+                        <input type="text" class="form-control c-square c-theme" name="outreach" placeholder="City" >
+                    </div>
+                    <div class=" col-md-4 form-group">
+                    <label for="inputEmail3" class="">Area of City</label>
+                        <input type="text" class="form-control c-square c-theme" name="outreach" placeholder="Area of City" >
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="">No. of 10 Day Courses*</label>
+                            <select class="form-control  c-square c-theme">
+                            <option value="">Choose</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10+</option>
+                            </select> 
+                        </div> 
+                    </div>    
+                </div>
+                <div class="row"> 
+                    <div class="col-md-6 ">
+                        <div class="form-group">
+                        <label for="inputEmail3" class="">Gender*</label>
+                            <select class="form-control  c-square c-theme">
+                            <option value="1">Select</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">Other</option>
+                            </select> 
+                        </div> 
+                    </div>
+                    <div class=" col-md-6 form-group">
+                    <label for="inputEmail3" class="">Age*</label>
+                        <input type="number" class="form-control c-square c-theme" name="outreach" placeholder="Age" >
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class=" col-md-12 form-group">
+                    <label for="inputEmail3" class="">No. of courses served/ any other seva given previously?</label>
+                        <input type="text" class="form-control c-square c-theme" name="outreach" placeholder="Your Answer" >
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class=" col-md-12 form-group">
+                        <label for="inputEmail3" class="">Comments</label>
+                        <input type="text" class="form-control c-square c-theme" name="outreach" placeholder="Comments" >
+                    </div>
+                </div>
+                 <div class="row"> 
+                    <div class=" col-md-10 ">
+                    </div>
+                    <div class=" col-md-2"style="text-align: end;">
+                        <input type="submit" class=" btn btn-primary" class="form-control" name="outreach" value="Submit">
+                    </div>
+                </div>
+                 <div class="row"> 
+                    <div class=" col-md-12 ">
+                    <span class="c-font-bold" > Pujya Guruji's Dhamma Service related messages:</span>
+                    </div>
+                </div>
+                <div class="row"style="line-height: 30px;">
+                    <div class="col-md-12">
+                        <a class="website_link" href="http://www.punna.dhamma.org/valueofdhamma.php">http://www.punna.dhamma.org/valueofdhamma.php</a> <br>
+                        <a class="website_link" href="http://www.punna.dhamma.org/purposeofdhammaservice.php">http://www.punna.dhamma.org/purposeofdhammaservice.php</a><br>
+                        <a class="website_link" href="http://www.punna.dhamma.org/significanceofdhammaseva.php">http://www.punna.dhamma.org/significanceofdhammaseva.php</a>
+                    </div>
+                </div>
+            </div>
+            </form><br><br>
+        </div>
+    </section> 
+
+ <?php $this->load->view('site/footer'); ?>
+</div>
+<script src="assets/site/plugins/jquery.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/jquery-migrate.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/jquery.easing.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/reveal-animate/wow.js" type="text/javascript" ></script>
+	<script src="assets/site/demos/default/js/scripts/reveal-animate/reveal-animate.js" type="text/javascript" ></script>
+
+	<!-- END: CORE PLUGINS -->
+
+			<!-- BEGIN: LAYOUT PLUGINS -->
+			<script src="assets/site/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+			<script src="assets/site/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+			<script src="assets/site/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+			<script src="assets/site/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+			<script src="assets/site/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+			<script src="assets/site/plugins/smooth-scroll/jquery.smooth-scroll.js" type="text/javascript"></script>
+			<script src="assets/site/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript"></script>
+			<script src="assets/site/plugins/js-cookie/js.cookie.js" type="text/javascript"></script>
+				<!-- END: LAYOUT PLUGINS -->
+	
+	<!-- BEGIN: THEME SCRIPTS -->
+	<script src="assets/site/base/js/components.js" type="text/javascript"></script>
+	<script src="assets/site/base/js/components-shop.js" type="text/javascript"></script>
+	<script src="assets/site/base/js/app.js" type="text/javascript"></script>
+	<script>
+	$(document).ready(function() {    
+		App.init(); // init core    
+	});
+	</script>
+	<!-- END: THEME SCRIPTS -->
+
+			<!-- BEGIN: PAGE SCRIPTS -->
+								<script src="assets/site/plugins/moment.min.js" type="text/javascript"></script>
+											<script src="assets/site/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+											<script src="assets/site/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+											<script src="assets/site/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+											<script src="assets/site/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+											<script src="assets/site/demos/default/js/scripts/pages/datepicker.js" type="text/javascript"></script>
+							<!-- END: PAGE SCRIPTS -->
+		<!-- END: LAYOUT/BASE/BOTTOM -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-64667612-1', 'themehats.com');
+        ga('send', 'pageview');
+    </script>
+    </body>
+</html>

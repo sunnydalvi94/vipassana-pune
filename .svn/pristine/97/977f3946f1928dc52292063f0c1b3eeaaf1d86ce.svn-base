@@ -1,0 +1,67 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Donation_web extends Base_Controller {
+ 
+  public function __construct()
+  {
+    parent::__construct();
+    $this->load->model('common_model');
+     $this->load->model('donation/donation_model');
+  }
+
+ public function donation_list()
+ {
+    if($_SERVER['REQUEST_METHOD']=="POST")
+    {
+      $form_date=date("Y-m-d H:i:s", strtotime($this->input->post('form_date')));         
+      $to_date=date("Y-m-d H:i:s", strtotime($this->input->post('to_date')));        
+      $status=$this->input->post('status');
+      $data['donation_data']=$this->donation_model->fetchDataAsc('tbl_donation','donation_id',$form_date,$to_date,$status);
+      $data['keydata'] = $this->common_model->selectDetailsWhr('tbl_rest_keys','id',1);
+      $this->load->view('donation-list',$data);
+
+
+
+    /*  echo $form_date,$to_date,$status; die();
+      $from_date = $this->input->post('from_date');
+      $from_date1 = strtr($from_date, '/', '-');
+      $fdate = date('Y-m-d',strtotime($from_date1));
+      $to_date = $this->input->post('to_date');
+      $to_date1 = strtr($to_date, '/', '-');
+      $tdate = date('Y-m-d',strtotime($to_date1));
+      $data['fdate'] = $fdate;
+      $data['tdate'] = $tdate;*/
+    }else
+    {
+      $data['donation_data']=$this->donation_model->fetchDataAsc('tbl_donation','donation_id','','','');
+       $data['keydata'] = $this->common_model->selectDetailsWhr('tbl_rest_keys','id',1);
+      $this->load->view('donation-list',$data);
+      
+    }
+ }
+
+ public function add_donation($id=NULL)
+ {
+  if($id)
+    {
+      $data['donation_data'] = $this->common_model->selectDetailsWhr('tbl_donation','donation_id',$id);
+    }
+  $data['keydata'] = $this->common_model->selectDetailsWhr('tbl_rest_keys','id',1);
+    $this->load->view('add-donation',$data);
+  }
+
+  public function donation_viewform($id=NULL)
+ {
+  if($id)
+    {
+      $data['donation_data'] = $this->common_model->selectDetailsWhr('tbl_donation','donation_id',$id);
+    }
+  $data['keydata'] = $this->common_model->selectDetailsWhr('tbl_rest_keys','id',1);
+    $this->load->view('donation-viewform',$data);
+  }
+
+ 
+
+
+}

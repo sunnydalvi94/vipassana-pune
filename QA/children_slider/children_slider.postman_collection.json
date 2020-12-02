@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "95290637-06bb-452d-bae5-421223067279",
+		"name": "children_slider",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add-slider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "childern_slider_id",
+							"value": "V1BDd",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "slider_name",
+							"value": "vip",
+							"type": "text"
+						},
+						{
+							"key": "slider_description",
+							"value": "this  is a vipassana slider",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "abede.jpg",
+							"type": "text"
+						},
+						{
+							"key": "slider_type_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}children_slider",
+					"host": [
+						"{{host}}children_slider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-slider",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}children_slider?all=true",
+					"host": [
+						"{{host}}children_slider"
+					],
+					"query": [
+						{
+							"key": "children_slider_id",
+							"value": "b19Wd",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide-slider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "children_slider_id",
+							"value": "2nWpd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}hide-children_slider",
+					"host": [
+						"{{host}}hide-children_slider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore-slider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "children_slider_id",
+							"value": "2nWpd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}restore-children_slider",
+					"host": [
+						"{{host}}restore-children_slider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-slider",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}delete-children_slider/2nWpd",
+					"host": [
+						"{{host}}delete-children_slider"
+					],
+					"path": [
+						"2nWpd"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e35e0d28-7647-4c4a-b037-d6ff6c45f143",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0f069a52-bc80-44d1-9317-4c8b884a8fe7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

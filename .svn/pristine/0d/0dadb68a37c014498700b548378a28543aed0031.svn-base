@@ -1,0 +1,402 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Ourcenters_api extends Base_Controller 
+{
+     public function __construct()
+  	 {
+		parent::__construct();
+		$this->load->model('standard/standard_model');
+	 }
+	 /*
+	=================================================================================
+    Author:Yogeshwari Yawalkar                      Date:12/5/2020
+	=================================================================================
+	Purpose: add ourcenters details
+	return array(
+			"state": true,
+            "msg": "ourcenters Added!",
+            "details": {
+            "ourcenters_id": "xdzJd",
+            "ourcenters_name": "yogeshwari yawalkar",
+            "image": "abc.jpg",
+            "modified_by": 1,
+            "modified_on": "2020-05-12 18:07:22",
+            "inserted_by": 1,
+            "inserted_on": "2020-05-12 18:07:22"
+		);
+	*/
+    public function _set_ourcenters($details=false)
+	{
+      $validation_error='';
+      $details=$this->decryptArray($details);
+      if(isset($details['our_center_id']) && !empty($details['our_center_id']))
+      {
+      	$flag=1;
+      }
+      else
+      {
+      	$flag=0;
+      }
+    if($this->validationOurcentersDetails($details,$flag))
+    {
+      	if($details)
+      	{
+      	 $ourcenters = array
+		      	 (   
+		      	 	'our_center_id'=>isset($details['our_center_id'])?$details['our_center_id']:NULL,
+		      	 	'our_center_name' =>$details['our_center_name'] ,
+		      	 	'image' =>$details['image'] , 
+		      	 	'modified_by'=>1,
+                    'modified_on'=>date('Y-m-d H:i:s'),
+                 );	
+		  if(!isset($details['our_center_id']) && empty($details['our_center_id']))
+                {
+                    $ourcenters['inserted_by']=1;
+                    $ourcenters['inserted_on']=date('Y-m-d H:i:s');
+                }
+      	     $our_center_id= $this->standard_model->single_insert('tbl_our_centers',$ourcenters);
+      	     $ourcenters['our_center_id']=$our_center_id;
+      	     $ourcenters= $this->encryptArray($ourcenters);
+      	    if($flag==0)
+            {
+                return array(
+                            'state'=>true,
+                            'msg'=>'Ourcenters Added!',
+                            'details'=>$ourcenters
+                            );
+            	}else
+            	{
+            	return array(
+                            'state'=>true,
+                            'msg'=>'Ourcenters updated!',
+                            'details'=>$ourcenters
+                            );
+            	}
+        }
+      	 else
+        {
+                return array(
+                'state'=>False,
+                'msg'=>'Ourcenters Failed to Saved!',
+                'details'=>false
+                );
+        }
+    }
+    else
+		{
+		    $validation_error = validation_errors();
+		    return array(
+				'state'=>False,
+				'msg'=>$validation_error,
+				'details'=>'Validation is failed'
+		    );
+		}
+	}
+	 /*
+	=================================================================================
+	Author:Yogeshwari Yawalkar                       Date:12/5/2020
+	=================================================================================
+	Purpose: validation for ourcenters
+	*/	
+     public function validationOurcentersDetails($details,$flag)
+     {
+		$this->form_validation->set_error_delimiters('','');
+		$this->form_validation->set_data(
+        array(
+        	'our_center_id'=>isset($details['our_center_id']) ? $details['our_center_id'] :'',
+        	'our_center_name'=>isset($details['our_center_name']) ? $details['our_center_name'] : '',
+        	'image'=>isset($details['image']) ? $details['image'] : '',
+              ));
+        $this->form_validation->set_rules('our_center_id','our_center_id', array('min_length[1]','max_length[5]',"regex_match[/^([0-9][0-9]{0,4})$/]"),
+        array(
+           'min_length'=>'our_center_id Min 1 Number Required.',
+		   'max_length'=>'our_center_id Max 5 Number allowed.',
+		   'regex_match'=>'our_center_id Should Have Only Numbers'
+             ));
+         if($flag==0)
+         {
+        $this->form_validation->set_rules('our_center_name','our_center_name',array('required','min_length[3]','max_length[100]',"regex_match[/^([A-Za-z][A-Za-z\,\(\)\-\'\"\:\;\&\|\s]{2,99})$/]",'is_unique[tbl_our_centers.our_center_name]'),
+		array(
+			'required'=>'Required the name',
+			'min_length'=>'Min 3 Character Required.',
+			'max_length'=>'Max 100 Character Allowed.',
+			'regex_match'=>'ourcenter Name should not have Numbers'
+			));
+        $this->form_validation->set_rules('image', 'image',array('required','regex_match[/^[^\?]+\.(jpg|jpeg|gif|png)(?:\?|$)/]','is_unique[tbl_our_centers.image]'),
+		array(
+		 	'required'=>'image is Required',
+            'regex_match'=>'Only jpg|png|gif are allowed.'
+		));
+        }
+        if($flag==1)
+        {
+        $this->form_validation->set_rules('our_center_name','our_center_name',array('required','min_length[3]','max_length[100]',"regex_match[/^([A-Za-z][A-Za-z\,\(\)\-\'\"\:\;\&\|\s]{2,99})$/]",'is_unique[tbl_our_centers.our_center_name]'),
+		array(
+			'required'=>'Required the name',
+			'min_length'=>'Min 3 Character Required.',
+			'max_length'=>'Max 100 Character Allowed.',
+			'regex_match'=>'ourcenter Name should not have Numbers'
+			));
+        $this->form_validation->set_rules('image', 'image',array('required','regex_match[/^[^\?]+\.(jpg|jpeg|gif|png)(?:\?|$)/]','is_unique[tbl_our_centers.image]'),
+		array(
+		 	'required'=>'image is Required',
+            'regex_match'=>'Only jpg|png|gif are allowed.'
+		));
+        }
+        if($this->form_validation->run()==true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+     /*
+	=================================================================================
+    Author:Yogeshwari Yawalkar                      Date:12/5/2020
+	=================================================================================
+	Purpose: get ourcenters details
+	return array(
+			 "msg": "Record Found!",
+             "state": true,
+             "details": [
+        {
+            "our_center_id": "2nWpd",
+            "our_center_name": "yogeshwari yawalkar",
+            "image": "abc.jpg",
+            "inserted_by": "1",
+            "inserted_on": "2020-05-12 14:14:12",
+            "modified_by": "1",
+            "modified_on": "2020-05-12 14:14:12",
+            "display": "Y",
+            "in_use": "Y",
+            "visibility": "show"
+		);
+	*/
+     public function _get_ourcenters($details=false)
+	 {
+
+		$details = $this->decryptArray($details);
+		if(isset($details['our_center_id']))
+        {
+        	$id=$details['our_center_id'];
+        $results = $this->standard_model->selectAllWhr('tbl_our_centers','our_center_id',$id);
+        }
+        else if(isset($details['all'])){
+        $results = $this->standard_model->selectAll('tbl_our_centers');
+        }
+        else {
+	    $results = $this->standard_model->selectAll('tbl_our_centers','in_use','Y');        	
+          
+		}
+		 if($results)
+        {
+        	$data=array();
+                foreach ($results as $result)
+                {
+                  $data[] = (array)$result;  
+                }
+                if(isset($data) && is_array($data)){
+                $result = $this->encryptArray($data);
+                 }
+
+            return array(
+                  'msg'=>'Record Found!',
+                  'state'=>true,
+                  'details'=>$result
+			);
+			$result= $this->encryptArray($details);
+        }
+        else
+        {
+             return array(
+                  'msg'=>'Record not Found!',
+                  'state'=>false,
+                  'details'=>$details['our_center_id']
+            );
+        }
+	}
+	 /*
+	=================================================================================
+    Author:Yogeshwari Yawalkar                      Date:12/5/2020
+	=================================================================================
+	Purpose: hide ourcenters details
+	return array(
+		{
+        "state": true,
+        "msg": "ourcenters Hidden!",
+        "details": [
+        {
+            "our_center_id": "71APy",
+            "our_center_name": "yogeshwari yawalkar",
+            "image": "abc.jpg",
+            "inserted_by": "1",
+            "inserted_on": "2020-05-12 16:31:36",
+            "modified_by": "1",
+            "modified_on": "2020-05-12 16:31:36",
+            "display": "Y",
+            "in_use": "N",
+            "visibility": "show"
+		);
+	*/
+     public function _hide_ourcenters($details=false)
+	 {
+		$details = $this->decryptArray($details);
+		if(isset($details['our_center_id']))
+		{
+			$id=$details['our_center_id'];
+			$ourcenters=array(
+				'in_use'=>'N',
+			);
+			$results = $this->standard_model->updateRecord('tbl_our_centers','our_center_id',$id,$ourcenters);
+            $resdata = $this->standard_model->selectAllWhr('tbl_our_centers','our_center_id',$details['our_center_id']);
+			if($resdata)
+				 {
+					$data=array();
+		              foreach ($resdata as $result)
+		                {
+		                  $data[] = (array)$result;  
+		                }
+		                if(isset($data) && is_array($data)){
+		                $result = $this->encryptArray($data);
+		                 }
+		            	return array(
+		                  'state'=>true,
+		                  'msg'=>'Ourcenters Hidden!',
+		                  'details'=>$result
+								);
+			     }
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Hide Ourcenters';
+				return array(
+					'state'=>false,
+					'msg'=>$message,
+					'details'=>false
+			    );
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'our_center_id Required!',
+			);
+		}
+	}
+	 /*
+	=================================================================================
+    Author:Yogeshwari Yawalkar                      Date:12/5/2020
+	=================================================================================
+	Purpose: restore ourcenters details
+	return array(
+			 "state": true,
+             "msg": "ourcenters Restore!",
+             "details": [
+            {
+            "our_center_id": "71APy",
+            "our_center_name": "yogeshwari yawalkar",
+            "image": "abc.jpg",
+            "inserted_by": "1",
+            "inserted_on": "2020-05-12 16:31:36",
+            "modified_by": "1",
+            "modified_on": "2020-05-12 16:31:36",
+            "display": "Y",
+            "in_use": "Y",
+            "visibility": "show"
+		    );
+	*/
+     public function _restore_ourcenters($details=false)
+	 {
+		$details = $this->decryptArray($details);
+		if(isset($details['our_center_id']))
+		{
+			$id=$details['our_center_id'];
+			$ourcenters=array(
+				'in_use'=>'Y',
+			);
+			$results = $this->standard_model->updateRecord('tbl_our_centers','our_center_id',$id,$ourcenters);
+
+			$resdata = $this->standard_model->selectAllWhr('tbl_our_centers','our_center_id',$details['our_center_id']);
+			if($resdata)
+		    {
+					$data=array();
+		              foreach ($resdata as $result)
+		                {
+		                  $data[] = (array)$result;  
+		                }
+		                if(isset($data) && is_array($data)){
+		                $result = $this->encryptArray($data);
+		                 }
+		            	return array(
+		                  'state'=>true,
+		                  'msg'=>'Ourcenters Restore!',
+		                  'details'=>$result
+								);
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Restore Ourcenters';
+				return array(
+					'state'=>false,
+					'msg'=>$message,
+					'details'=>false
+			    );
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'our_center_id Required!',
+			);
+		}
+	}
+	 /*
+	=================================================================================
+    Author:Yogeshwari Yawalkar                      Date:12/5/2020
+	=================================================================================
+	Purpose: delete ourcenters details
+	"state": true,
+    "msg": "ourcenters Delete!",
+    "details": {
+    "ourcenters_id": "71APy"
+	*/
+     public function _delete_ourcenters($details=null)
+	{  
+		$details = $this->decryptArray($details);
+		if(isset($details['our_center_id']))
+		{    
+			$id=$details['our_center_id'];
+		    $ourcenters=array(
+					'display'=>'N',
+				);
+			$results = $this->standard_model->updateRecord('tbl_our_centers','our_center_id',$id,$ourcenters);
+			if($results)
+			{
+				$results = $this->encryptArray($details);
+				return array(
+					'state'=>true,
+					'msg'=>'Ourcenters Delete!',
+					'details'=>$results
+				);
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Delete Ourcenters';
+				return array(
+						'state'=>false,
+						'msg'=>$message,
+						'details'=>false
+				);
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'our_center_id Required!',
+			);
+		}
+	}
+}

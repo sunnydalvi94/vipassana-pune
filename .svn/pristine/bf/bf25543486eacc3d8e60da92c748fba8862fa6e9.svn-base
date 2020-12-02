@@ -1,0 +1,169 @@
+.input-icon {
+    position: relative;
+}
+.input-icon.right > i {
+    right: 8px;
+    float: right;
+}
+
+.has-success .input-icon > i {
+    color: #007bff;
+}
+.has-error .input-icon > i {
+    color: #F3565D;
+}
+.input-icon > i {
+    color: #ccc;
+    display: block;
+    position: absolute;
+    margin: 11px 2px 4px 10px;
+    z-index: 3;
+    width: 16px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+ /*..........................................apply for ten day courses..................................................*/
+ @media (max-width:900px) {
+       .c-content-title-2{
+        margin-top:30px;
+       }
+
+    }
+ /*.............................................. children courses......................................*/
+   .owl-carousel .owl-controls {
+    margin-top: 3px;
+    position: relative;
+    bottom: 375px;
+    /* z-index: 0; */
+    }   
+    @media (max-width:900px) {
+       .c-content-title-2{
+        margin-top:30px;
+       }
+    }
+
+    .owl-carousel.c-theme .owl-controls .owl-dot.active {
+    background:#5893dd!important;
+    }
+    .c-theme-on-hover:hover {
+    color:#5893dd!important;
+    }
+    .c-content-tab-4.c-opt-5 > .tab-content .c-tab-items > li p {
+    color:#5c6873;
+     }
+    /*......Tabs color........... */
+      .c-content-tab-4.c-opt-5 > .nav > li > a:hover, .c-content-tab-4.c-opt-5 > .nav > li > a:focus {
+        background-color:#bfdbef!important;
+      }
+
+      .c-content-tab-4.c-opt-5 > .nav > li:nth-child(even).active > a, .c-content-tab-4.c-opt-5 > .nav > li:nth-child(even):active > a {
+       background:#72ADD8!important;
+    }
+
+    .c-content-tab-4.c-opt-5 > .nav > li > a {
+         background-color:#bfdbef!important;
+    }
+    .c-content-tab-4.c-opt-5 > .nav > li.active > a, .c-content-tab-4.c-opt-5 > .nav > li:active > a {
+        background:#72ADD8!important;
+    }
+ 
+
+    /*........................................code of discipline......................................*/
+
+   /* @media (max-width:900px) {
+   .c-content-title-2{
+    margin-top:30px;
+     }
+    }
+    .c-content-tab-4.c-opt-5 > .tab-content .c-tab-items > li p {
+    color:#5c6873;
+     }*/
+     
+
+    /*...............................................donation......................................*/
+
+   /* @media (max-width:900px) {
+       .c-content-title-2{
+        margin-top:30px;
+       }
+    }*/
+    .c-checkbox.has-info label > .box {
+    border-color:#5893dd!important;
+    }
+     .c-checkbox.has-info label > .check {
+    border-color:#5893dd!important;
+    }
+    .c-radio.has-info label > .check {
+    background: #5893dd!important;
+    } 
+    .c-radio.has-info label > .box {
+    border-color:#5893dd!important;
+    }
+    .f-size{
+        font-size:17px;
+    }
+    .c-content-list-1.c-separator-dot > li:before {
+    margin-top: 14px;
+    }
+    
+    .c-content-list-1.c-theme.c-separator-dot > li:before, .c-content-list-1.c-theme > li:before {
+    background:#5893dd!important;
+    }
+    .c-content-list-1.c-separator-dot > li:before {
+        margin-top: 8px!important;
+    }
+
+    /*.................................................Mitra activity...............................*/
+    .c-content-isotope-gallery .c-content-isotope-item > .c-content-isotope-image-container > .c-content-isotope-overlay{
+    opacity:0.8;
+    cursor: pointer;
+    }
+    /*......Tabs color........... */
+      .c-content-tab-4.c-opt-3 > .nav > li > a:hover, .c-content-tab-4.c-opt-3 > .nav > li > a:focus {
+        background-color:#bfdbef!important;
+      }
+
+      .c-content-tab-4.c-opt-3 > .nav > li:nth-child(even).active > a, .c-content-tab-4.c-opt-3 > .nav > li:nth-child(even):active > a {
+       background:#72ADD8!important;
+    }
+
+    .c-content-tab-4.c-opt-3 > .nav > li > a {
+         background-color:#bfdbef!important;
+    }
+    .c-content-tab-4.c-opt-3 > .nav > li.active > a, .c-content-tab-4.c-opt-3 > .nav > li:active > a {
+        background:#72ADD8!important;
+    }
+    /*@media (max-width:900px) {
+       .c-content-title-2{
+        margin-top:30px;
+       }
+    }*/
+
+/*................................index page...............................................................*/
+ /* .c-content-isotope-gallery .c-content-isotope-item > .c-content-isotope-image-container > .c-content-isotope-overlay{
+    opacity:0.8;
+    cursor: pointer;
+    }*/
+    @media (max-width: 991px){
+        .c-layout-revo-slider-4 {
+            min-height: 180px;
+        }
+    }
+
+    @media (max-width:500px){ 
+     .tparrows.circle {
+      width:20px;
+      height:20px;
+      background-size: cover;
+      transition: all 0.3s;
+      color: #red!important;
+      opacity: 0.5;
+      filter: alpha(opacity=30); }
+        }
+/*................hearing speech impaired  children courses......................................*/
+.c-theme-on-hover:hover {
+    color:#5893dd!important;
+}

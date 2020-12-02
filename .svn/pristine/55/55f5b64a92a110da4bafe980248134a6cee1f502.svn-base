@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en"  >
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="utf-8"/>
+	<title>Children Courses</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta content="" name="description"/>
+	<meta content="" name="author"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
+	<link href="assets/site/plugins/socicon/socicon.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css"/>		
+	<link href="assets/site/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/animate/animate.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/demos/default/css/plugins.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/demos/default/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/demos/default/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css"/>
+	<link href="assets/site/demos/default/css/custom.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon " type="image/gif" href="assets/site/img/logo/wheel.gif">
+	<style>
+  .owl-carousel .owl-controls {
+    margin-top: 3px;
+    position: relative;
+    bottom: 180px;
+    /* z-index: 0; */
+	} 
+	</style>
+</head>
+<body class="c-layout-header-fixed c-layout-header-mobile-fixed" >
+   <div class="c-layout-page">
+	<?php $this->load->view('site/header'); ?>
+   		<div class="c-content-box c-size-md c-bg-grey-1">
+   			<section>
+	   			<div class="container-fluid" style="">
+					<div class="c-body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="c-content-title-2">
+									<h3 class="c-center">Group Sitting In Pune Area</h3>
+									<div class="c-line c-center c-dot c-theme-bg c-theme-bg-after" style=""></div>
+								</div>	
+							</div>
+						</div>
+					</div> 
+					<div class="row">
+					    <div class="col-md-4" style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 c-content-services-6-item " data-height="height" >
+								<div class="c-content-box c-bg-parallax">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="4000" data-rtl="false"style="height:180px;"> 
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Baner</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Sunday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>	8 AM to 10 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>	Ram Van Casa SR.No.69/2/13,
+													Plot No.21, Dhankude Vasti,
+													Opp Tivoli Building & Grocery Store,
+													Mid of Pancard Pancard Club to Highway Road,
+													Baner, Pune - 411045</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8 ">
+											<span>
+												 9890490365&nbsp;(Mr.Rampal Chandak) <br>
+												 8237397433&nbsp;(Dr.Amit Chandak)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Bibwewadi</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Sunday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>8 AM to 9 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>Satyam Shivan Sundaram,
+												Balaji Co Op Grihrachna, Sant Eknath Nagar,
+												Bibwewadi, Pune - 411037</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>9822036101(Mr.Narayan Chandak)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+					    <div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Camp</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>	Saturday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>7:30 AM to 9 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>	La Environ, 2 Middle Road,
+											Behind Hutching School, Pune, 411001</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>020-26333026&nbsp;(Mr. Lalit Kumar Jain)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/WZfZCcBspkHv9EPZA"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/WZfZCcBspkHv9EPZA"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+						<div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Deccan</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Daily</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Any time</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>Any Time Meditation (ATM).
+												418 JM Road, Mittal Chambers,
+												Near Hotel Panchali,
+												Above Rado Showroom, Pune</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>9420731835&nbsp;(Mr. Paresh Gujarati)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://maps.google.com/?cid=2019122827738740523"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Google Map&nbsp;:</span> </a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://maps.google.com/?cid=2019122827738740523"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+
+
+
+
+						<div class="col-md-4" style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 c-content-services-6-item " data-height="height" >
+								<div class="c-content-box c-bg-parallax">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="4000" data-rtl="false"style="height:180px;"> 
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Kalyani Nagar</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Monday to Friday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>7 PM to 8 PM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>Yoga Hall of Jogger's Park, Kalyani Nagar, Pune</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>7709972036&nbsp;(Mr. Sanjana Gidwani) <br>9922012727&nbsp;(Mr. Neeru Goel)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Kothrud</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>	Sunday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>9 AM to 10 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>Amrai 667, Opp City Pride Cinema, Kothrud</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span> 9822039062&nbsp;(Mr. Ratan Rath)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+						<br>
+					    <div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;	Kothrud &nbsp; (ONLY FOR FEMALES)</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>	Wednesday & Sundayy</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Wed. : 5 PM to 6 PM <br>Sun. : 8 AM to 9 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>Thorat Udyan, Behind Veer Savarkar Library,Near Yashwantrao Chavan Hall, Kothrud, Pune</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span> 9423590243(Mrs.Shilpa Mineeyar)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/WZfZCcBspkHv9EPZA"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/WZfZCcBspkHv9EPZA"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+						<div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Magarpatta City</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Sunday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>6:30 AM to 7:30 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>	I-1102, Laburnum Park,Magarpatta City, Pune - 411028</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>9422525600,&nbsp;9049477955<br>(Mrs.Vaishali Somvanshi)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://maps.google.com/?cid=2019122827738740523"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Google Map&nbsp;:</span> </a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://maps.google.com/?cid=2019122827738740523"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+
+
+
+
+
+						<div class="col-md-4" style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 c-content-services-6-item " data-height="height" >
+								<div class="c-content-box c-bg-parallax">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="4000" data-rtl="false"style="height:180px;"> 
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Pimpri</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Sunday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>8 AM to 9 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>Hindustan Antibiotic ltd.(H A Ltd.) A-53,H.A Colony, Pimpri - 18</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>9371 835 824&nbsp;(Mr. Kailash Gangawane) <br>9822313125&nbsp;(Mr. G.K. Mandavkar)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i>&nbsp;Spine Rd Moshi Bhosari Pradhikaran</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Friday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Aanapan Sati From 6 PM To 7 PM. <br>Group Sitting from 7 PM to 8 PM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>A3/4, 20 Top Duplex Bungalows,
+													Plot no.9, Sector 6, PCNTDA,
+													Moshi Pradhikaran, Spine Road,
+													Near Spine City</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>9326010108(Mr.Avinash chaudhri)<br>9730176230&nbsp;(Mr. Sagar Kasar) <br>8600132477&nbsp;(Mrs. Pooja Kasar) <br>
+												
+											 </span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+						<br>
+					    <div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Swargate</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Daily</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>6:30 AM to 8 PM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>Dhammapunna, Pune Vipassana Samiti,
+												Dadawadi, Opp. Nehru Stadium,
+												Near Anand Mangal Karyalaya,
+												Swargate, Pune</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span> 020-24468903&nbsp; 020-24436250 ,&nbsp;7378 365 783</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/WZfZCcBspkHv9EPZA"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/WZfZCcBspkHv9EPZA"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+						<div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Wakad</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Sunday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>7 AM to 8 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>P.D. Ubale, Daulat Bungalow,
+													Opp. Parmar Mayank Building,
+													Vishalnagar, Wakad, Pune 411027</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>9850 810 118&nbsp;(Mr. M.D. Kulkarni)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://maps.google.com/?cid=2019122827738740523"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Google Map&nbsp;:</span> </a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://maps.google.com/?cid=2019122827738740523"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+
+
+
+
+						<div class="col-md-4" style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 c-content-services-6-item " data-height="height" >
+								<div class="c-content-box c-bg-parallax">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="4000" data-rtl="false"style="height:180px;"> 
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Wakad</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Thursday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>8 AM to 9 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>P-3, Dhanraj Park,
+												Kaspate Wasti, Wakad,
+												Pune 41110057</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>9850 068 654,&nbsp;(Mrs. Apurva Deshmukh)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-4"style="margin-bottom: 50px;">		
+							<div class="c-content-media-1 " data-height="height">
+								<div class="">
+									<div class="c-content-testimonials-1" data-slider="owl">
+										<div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false"style="height:180px;"> 
+											<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										 	<div class="item">
+										  	  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 180px;">
+												</div>
+										  	</div>
+										  	<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										  		
+										  		<div class="item">
+											  	<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 180px;">
+												</div>
+										  	</div>	
+										</div>
+								    </div>
+								</div><br>
+							    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+					                <h3 class="c-theme-on-hover c-font-bold c-font-uppercase "><i style="" class="fa fa-map-marker c-theme-font"> </i> &nbsp;Warje</h3>
+					            </div>
+								<div style="line-height:40px; min-height:450px;" >
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Day&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>Sunday</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>8 AM to 9 AM</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i> Address&nbsp;:</span>
+										</div>
+										<div class="col-md-8 text-justify">
+											<span>	Plot No.25, Siddhakala Society,Near Hotel Kaveri, Warje, Pune</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="width:20px;" class="glyphicon glyphicon-phone-alt  c-theme-font">&nbsp;</i>Contact&nbsp;:</span>
+										</div>
+										<div class="col-md-8">
+											<span>9423009415&nbsp;(Mr.B.D.Pakhare)</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"style="padding-right:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map&nbsp;:</span></a>
+										</div>
+										<div class="col-md-8"style="padding-left:0px;">
+											<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span>&nbsp;&nbsp; <img style="height:50px;" src="assets/site/img/logo/google_map.jpg"> </span></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+						<br>
+						
+					</div>
+				</div>
+   	        </section>
+	    </div>
+	<?php $this->load->view('site/footer'); ?>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/dist/pa-embed-player.min.js" async type="3d8cbcb27e45e880d7f56e3f-text/javascript"></script>
+	<script src="assets/site/plugins/jquery.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/jquery-migrate.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/jquery.easing.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/reveal-animate/wow.js" type="text/javascript" ></script>
+	<script src="assets/site/demos/default/js/scripts/reveal-animate/reveal-animate.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/smooth-scroll/jquery.smooth-scroll.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/js-cookie/js.cookie.js" type="text/javascript"></script>
+	<script src="assets/site/base/js/components.js" type="text/javascript"></script>
+	<script src="assets/site/base/js/components-shop.js" type="text/javascript"></script>
+	<script src="assets/site/base/js/app.js" type="text/javascript"></script>
+	<script>
+	$(document).ready(function() {    
+		App.init();
+	});
+	</script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-64667612-1', 'themehats.com');
+        ga('send', 'pageview');
+    </script>
+    </body>
+</html>

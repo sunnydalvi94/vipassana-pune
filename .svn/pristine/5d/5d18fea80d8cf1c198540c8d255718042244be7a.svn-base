@@ -1,0 +1,285 @@
+<html>
+    <head>
+          <meta charset="utf-8" />
+        <title>Pune Vipassana</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
+        <link href="<?php echo base_url(); ?>assets/site/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/revo-slider/css/layers.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/revo-slider/css/navigation.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/owl-carousel/assets/site/owl.carousel.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/ilightbox/css/ilightbox.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/demos/index/css/plugins.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/demos/index/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/demos/index/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css" />
+        <link rel="shortcut icon" href="favicon.html" />
+        <link rel="shortcut icon " type="image/gif" href="<?php echo base_url(); ?>assets/site/img/logo/wheel.gif">
+    <style>
+    .c-theme-nav li:focus > a:not(.btn), .c-theme-nav li:active > a:not(.btn), .c-theme-nav li:hover > a:not(.btn) {
+    color: #E7CEA5 !important;}
+    .font_size_menu{
+        font-size:1vw;
+        margin-top:100px;
+    }
+    .font_size_submenu{
+        font-size:13px!important;
+    }
+    nav{
+        max-height: 500px!important;
+    }
+    .wheel{
+        height:3vw;
+        margin-top:-3vw;
+        margin-bottom: -2vw;
+      }
+      @media (min-width: 992px){
+        .c-layout-header-fixed .c-layout-header {
+            height: 65px;
+        }
+        .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link {
+            padding: 21px 15px 39px 15px;
+        }
+        .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand .c-desktop-logo-inverse {
+        margin-top: -1vw;
+        }
+        .c-layout-revo-slider-4 {
+        margin-top: -33.5px;
+        }
+        .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link {
+            min-height: 0px;
+            padding: 21px 15px 26px 15px;
+        }
+      }
+    @media (max-width:750px) {
+        .wheel{
+        height:7vw;
+        margin-top: -14px;
+      }
+      .font_size_menu{
+    font-size:12px!important;
+      }
+      .font_size_submenu{
+        font-size:12px!important;
+      }
+    }
+    @media (max-width:400px) {
+    .font_size_menu{
+    font-size:12px!important;
+      }
+      .font_size_submenu{
+        font-size:12px!important;
+      }
+      .c-layout-header .c-navbar .c-mega-menu.c-fonts-bold > .nav.navbar-nav > li > .c-link{
+          height:31px!important;
+      }
+      .wheel{
+        height:10vw;
+      }
+    }
+    </style>
+    </head>
+    <body class="c-layout-header-fixed c-layout-header-mobile-fixed">
+    <header class="c-layout-header c-layout-header-2 c-layout-header-dark-mobile c-header-transparent-dark" data-minimize-offset="80" style="background: rgb(31, 133, 218,0.6);">
+        <div class="c-navbar">
+            <div class="container">
+                <div class="c-navbar-wrapper clearfix">
+                    <div class="c-brand c-pull-left">
+                        <a href="site" class="c-logo">
+                            <img  src="<?php echo base_url(); ?>assets/site/img/logo/wheel.gif" alt="JANGO" class="c-desktop-logo wheel">
+                            <img  src="<?php echo base_url(); ?>assets/site/img/logo/wheel.gif" alt="JANGO" class="c-desktop-logo-inverse wheel">
+                            <img  src="<?php echo base_url(); ?>assets/site/img/logo/wheel.gif" alt="JANGO" class="c-mobile-logo wheel">
+                        </a>
+                        <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
+                            <span class="c-line"></span>
+                            <span class="c-line"></span>
+                            <span class="c-line"></span>
+                        </button>
+                    </div>
+                    <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-theme c-fonts-uppercase c-fonts-bold">
+                        <ul class="nav navbar-nav c-theme-nav"> 
+                            <li class=" c-menu-type-classic">
+                                <a href="<?php echo base_url(); ?>site" class="c-link dropdown-toggle" > <span class="font_size_menu">HOME </span> <span class="c-arrow c-toggler"></span></a>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle "><span class="font_size_menu"> ABOUT CENTER </span> <span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu ">
+                                    <a href="<?php echo base_url(); ?>dhamma-punna" target="_blank" ><span class="font_size_submenu" >Dhamma Punna&nbsp;(Pune City) </span> <span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                        <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>dhamma-ananda" target="_blank"><span class="font_size_submenu"> Dhamma Ananda&nbsp;(Markal) </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                         
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"><span class="font_size_menu"> Apply for Course</span><span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>apply-for-ten-days-courses"><span class="font_size_submenu">Apply for 10 day course </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu ">
+                                    <a href="<?php echo base_url(); ?>code-of-discipline"><span class="font_size_submenu">Code of Discipline Timetable</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>what-brings-to-center"><span class="font_size_submenu">What Bring's To Center </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>questions-answers-vipassana"><span class="font_size_submenu"> Frequently Asked Questions</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="<?php echo base_url(); ?>donation" class="c-link dropdown-toggle"><span class="font_size_menu">Donation </span> <span class="c-arrow c-toggler"></span></a>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"><span class="font_size_menu">Children & Teenager </span><span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu ">
+                                    <a href="<?php echo base_url(); ?>children-courses"><span class="font_size_submenu">Children Courses </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                        <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>teenager-courses"><span class="font_size_submenu"> Teenager Courses</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>hearing-speech-impaired-children-courses"><span class="font_size_submenu">Hearing Speech Impaired Children Courses </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"> <span class="font_size_menu"> Mitra Upakram</span><span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu">
+                                    <a href="javascript:;"><span class="font_size_submenu">about MITRA Upakram </span> <span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>mitra-school-seva-registration"> <span class="font_size_submenu"> MITRA School Seva Registration</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>mitra-pune-activities"><span class="font_size_submenu"> Mitra Pune Activities</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"><span class="font_size_menu">Gallery </span><span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                     <?php if(isset($album_category_data) && !empty($album_category_data)) {
+                                        foreach($album_category_data as $key) 
+                                        { ?>
+                                         <li class="dropdown-submenu">
+                                        <a href="<?php echo base_url(); ?>album-images/<?php echo (isset($key->album_id) && !empty($key->album_id))?$key->album_id:''; ?>"><span class="font_size_submenu">  <?php echo(isset($key->album_name) && !empty($key->album_name))?$key->album_name:''; ?></span><span class="c-arrow c-toggler"></span></a>
+                                        </li>
+                                        <?php }
+                                    } ?>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"> <span class="font_size_menu">Old Students</span><span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu">
+                                    <a ><span  class="font_size_submenu" data-toggle="modal" data-target="#myModal">Login</span></a>
+                                    <!-- <a href="group-sitting-in-pune-area"><span type="button" class="btn btn-info btn-lg font_size_submenu" data-toggle="modal" data-target="#myModal">Login</span> <span class="c-arrow c-toggler"></span></a> -->
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>group-sitting-in-pune-area"><span class="font_size_submenu">Group Sitting </span> <span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="<?php echo base_url(); ?>one-day-vipassana-courses"> <span class="font_size_submenu">One Day</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class=" c-menu-type-classic">
+                                    <a href="<?php echo base_url(); ?>seva-registration" class="c-link dropdown-toggle" class="c-link dropdown-toggle"><span class="font_size_menu"> Seva</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>  
+            </div>
+        </div>    
+    </header> 
+    <div class="container">
+  <!-- Trigger the modal with a button -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <section>
+            <div class="container" style="padding-top:30px;">
+                <div class="c-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row" data-auto-height="true">
+                                <div class="col-md-6 c-margin-b-20">
+                                    <div class="c-content-media-1 " >
+                                        <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+                                            <h3 class="c-theme-font c-font-uppercase c-font-bold">Login</h3>
+                                        </div>
+                                        <hr>
+                                        <form name="login-form " class="validate-form clearfix">
+                                            <div class="row">
+                                                <div class="form-group col-md-12 validate-input" data-validate="Username is required">
+                                                <label for="form_username_email">Username</label>
+                                                <input id="form_username_email" name="form_username_email" placeholder="Username" class="form-control input100" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-12 validate-input" data-validate="Password is required">
+                                                <label for="form_password">Password</label>
+                                                <input id="form_password" name="form_password" placeholder="Password" class="form-control input100" type="password">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-12">
+                                                <label for="form_password">Confirm Password</label>
+                                                <input id="form_password" name="form_password" placeholder="Confirm Password" class="form-control" type="password">
+                                                </div>
+                                            </div>
+                                            <div class="checkbox pull-left"style="margin-top:0px;">
+                                            <a class="text-theme-colored font-weight-600 f-size" href="forgot-password">Forgot Your Password?</a>
+                                            </div>
+                                            <div class="row">
+
+                                                <div class="form-group col-md-9 pull-left mt-10">
+                                                    <button type="submit" class="btn btn-primary btn-xs"><a href="donation-registration"> Registration</a></button>
+                                                </div>
+                                                <div class="form-group  col-md-2 pull-right mt-10" style="margin-right:-4px;">
+                                                    <button type="submit" class="btn btn-primary btn-xs">Login</button>
+                                                </div>
+                                            </div>	
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+             
+    

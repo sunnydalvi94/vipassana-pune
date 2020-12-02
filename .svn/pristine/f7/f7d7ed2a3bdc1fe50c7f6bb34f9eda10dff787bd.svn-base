@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pune Vipassana Samiti</title>
+</head>
+<style type="text/css">
+body {
+ width: 68%;
+padding: 18px 20px;
+margin: 59px 250px;
+box-sizing: border-box;
+border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+outline: none;
+height: 980px;
+font-family: arial;
+}
+table, th, td {
+  border: 1px solid #ece6e6;;
+  border-collapse: collapse;
+}
+th,td
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+</style>
+<body>
+    <img src="wheel.png">
+	<center>
+		<h1 style="color: #32c5d2;margin-top: -111px;">Pune Vipassana Samiti</h1>
+		<h3 style="font-size: 10pt;">
+			Opp.Nehru Stadium,Near Anand Mangal Karyalay<br>
+			Swargate, Pune 411 002.Ph24468903<br>
+			(Bombay Pub.Trust Act.No.E-2290/96/Pune)
+		</h3>
+	</center><br>
+	<hr style="color:  #ece6e6;">
+	<h4 style="float: left;">Date: 22-07-2020</h4>
+	<h4 style="float: right;">Receipt No: E001</h4>
+	<br><br><br><br><br>
+	<h2>Sumit Ashok Darbeshwar</h2>
+    <h3 style="margin-top:-14px;">Flat. No 10, Patel Complex, Near Relice Retail,<br>
+    Kothrud, Bhavasar Road, Pune, Maharashtra-411003<br><br>
+    Donation Details,</h3>
+    <br><br>
+	<table style="width:100%;">
+	  <tr style="background-color:#ece6e6;">
+	    <th style="padding-left: 8px;padding-right: 8px;">#</th>
+	    <th style="text-align: left;padding-left: 8px;">Donation Details</th> 
+	    <th>Payment Mode</th>
+	    <th>Amount</th>
+	  </tr>
+	  <tr>
+	    <td style="text-align: center;padding-left: 8px;padding-right: 8px;">1</td>
+	    <td style="padding-left: 8px;">PAN: ATVPD123D</td>
+	    <td style="text-align: center;">Debit Card</td>
+	    <td style="text-align: center;">100.00</td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td style="padding-left: 8px;">Purpose: To Donate for One day</td>
+	    <td></td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	  	<td></td>
+	    <td style="padding-left: 8px;">In words: Hundred Rupees Zero Paise only</td>
+	  </tr>
+	</table><br>
+	<h4><strong>Note:</strong> Donation received is deductible Under I.T Exemption u/s 80G Cert. No. PN/CIT/II/Tech/80G/29/2008-
+    2009 Dtd.3/11/2008 Valid from 2/4/2008</h4><br>
+    <h3>Thank you for Donating !</h3><br>
+    <center>
+    	<h4>Be Happy!</h4>
+    </center><br>
+    <center>
+    	<h6>This is electronics receipt. No signature required</h6>
+    </center>
+</body>
+</html>

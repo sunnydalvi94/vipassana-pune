@@ -1,0 +1,180 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Site extends Base_Controller {
+
+	/*
+	-------------------------------------------------------------
+	Author 	: Sunny Dalvi				Date: 03/02/2020
+	-------------------------------------------------------------
+	*/
+	public function __construct()
+  	{
+		parent::__construct();
+		$this->load->model("site_model");
+		$this->load->model("common_model");
+
+    }
+	public function index()
+	
+	{
+		$data['about_data']=$this->common_model->fetchDataSiteASC('tbl_about','about_id');
+		$data['our_centers_data']=$this->common_model->fetchDataSiteASC('tbl_our_centers','our_center_id');
+		$data['how_to_learn']=$this->common_model->fetchDataSiteASC('tbl_how_to_learn','how_to_learn_id');
+		$data['home_slider_data']=$this->common_model->fetchDataHomeSlider('tbl_children_slider','slider_type_id');
+        $this->load->view('index',$data);
+	}
+	public function header()
+	{
+       $data['album_category_data']=$this->common_model->fetchDataSiteASC('tbl_album','album_id');
+		$this->load->view('site/header',$data);
+	}
+	// public function album_images($id)
+	// {
+ //        $data['album_image_data']=$this->common_model->alljoin2tbl_whr('tbl_album_image','tbl_album','album_id','album_id',$id);
+	// 	$this->load->view('site/album_images',$data);
+	// }
+
+	public function dhamma_punna_gallery()
+	{   
+		$data['Punna_gallery_data']=$this->common_model->fetchDataPunnaGalleryAsc();
+        $this->load->view('dhamma_punna_gallery',$data);
+	}
+	public function dhamma_ananda_gallery()
+	{   $data['ananda_gallery_data']=$this->common_model->fetchDataAnandaGalleryAsc();
+        $this->load->view('dhamma_ananda_gallery',$data);
+	}
+	public function menu_dhamma_ananda()
+	{
+        $this->load->view('menu_dhamma_ananda');
+	}
+	public function mitra_pune_activities()
+	{
+		$data['mitra_activities_data']=$this->common_model->fetchDataSiteASC('tbl_mitra_activity','mitra_activity_id');
+        $this->load->view('mitra_pune_activities',$data);
+	}
+	
+	public function code_of_discipline()
+	{
+        $this->load->view('code_of_discipline');
+	}
+	public function questions_answers_vipassana()
+	{
+		$data['faq_data']=$this->common_model->fetchDataSiteASC('tbl_faq','faq_id');
+        $this->load->view('questions_answers_vipassana',$data);
+	}
+	public function what_brings_to_center()
+	{
+        $this->load->view('what_brings_to_center');
+	}
+	public function apply_for_ten_days_courses()
+	{
+		$data['ten_day_course_data']=$this->common_model->fetchDataSiteASC('tbl_ten_day_course','ten_day_course_id');
+        $this->load->view('apply_for_ten_days_courses',$data);
+	}
+	public function children_courses()
+	{
+		$data['children_course_data']=$this->common_model->fetchDataSiteASC('tbl_children_course','children_course_id');
+		$data['children_feedback1_data']=$this->common_model->fetchDataFeedback1Asc('tbl_children_slider','slider_type_id');
+		$data['children_feedback2_data']=$this->common_model->fetchDataFeedback2Asc('tbl_children_slider','slider_type_id');
+        $this->load->view('children_courses',$data);
+	}
+	public function teenager_courses()
+	{
+		$data['teenager_course_data']=$this->common_model->fetchDataSiteASC('tbl_teenager_course','teenager_course_id');
+        $this->load->view('teenager_courses',$data);
+	}
+	public function hearing_speech_impaired_children_courses()
+	{
+		$data['hearing_speech_impaired_children_data']=$this->common_model->fetchDataSiteASC('tbl_hearing_speech_impaired_children','hearing_speech_impaired_children_id');
+        $this->load->view('hearing_speech_impaired_children_courses',$data);
+	}
+	public function dhamma_ananda()
+	{
+		$data['dhamma_ananda_data']=$this->common_model->fetchDataDhammaAnandaCenterAsc('tbl_children_slider','slider_type_id');
+        $this->load->view('dhamma_ananda',$data);
+	}
+	public function dhamma_punna()
+	{
+		$data['dhamma_punna_data']=$this->common_model->fetchDataDhammaPunnaCenterAsc('tbl_children_slider','slider_type_id');
+        $this->load->view('dhamma_punna',$data);
+	}
+	public function seva_registration()
+	{
+		$data['keydata']=$this->common_model->selectDetailsWhr('tbl_rest_keys','id',1);
+        $this->load->view('seva_registration',$data);
+	}
+	public function mitra_school_seva_registration()
+	{
+		$data['keydata']=$this->common_model->selectDetailsWhr('tbl_rest_keys','id',1);
+        $this->load->view('mitra_school_seva_registration',$data);
+	}
+	public function one_day_vipassana_courses()
+	{
+		$data['one_day_course_data']=$this->common_model->fetchDataSiteASC('tbl_one_day_course','one_day_course_id');
+        $this->load->view('one_day_vipassana_courses',$data);
+	}
+    public function group_sitting_in_pune_area()
+	{
+		$data['group_sitting_data']=$this->common_model->fetchDataSiteASC('tbl_group_sitting','group_sitting_id');
+        $this->load->view('group_sitting_in_pune_area',$data);
+	}
+	 public function children_anapana()
+	{
+        $this->load->view('children_anapana');
+	}
+	public function rough_work()
+	{
+		$data['album_category_data']=$this->common_model->fetchDataSiteASC('tbl_album','album_id');
+        $this->load->view('rough_work',$data);
+
+	}
+		public function forgot_password()
+	{
+        $this->load->view('forgot_password');
+	}
+		public function donation_registration()
+	{
+        $this->load->view('donation_registration');
+	}
+		public function payment_successful()
+	{
+        $this->load->view('payment_successful');
+	}
+		public function payment_failed()
+	{
+        $this->load->view('payment_failed');
+	}
+		public function redirecting_page()
+	{
+        $this->load->view('redirecting_page');
+	}
+	    public function donation()
+	{
+ 	    $data['keydata'] = $this->common_model->selectDetailsWhr('tbl_rest_keys','id',1);
+        $this->load->view('donation',$data);
+	}
+		public function login_fetch_user_details($id=NULL)
+	{
+		$role_id=$this->session->userdata('role_id');
+		$data['login_fetch_user_data'] = $this->common_model->selectDetailsWhr('tbl_user','user_id',$role_id);
+		$data['keydata'] = $this->common_model->selectDetailsWhr('tbl_rest_keys','id',1);
+	    $this->load->view('login_fetch_user_details',$data);
+	}
+	public function new_registration_form()
+	{
+        $this->load->view('new_registration_form');
+	}
+	public function reset_password()
+	{
+		// if(modules::run('user/user/post_verify_activation_link')){
+			 $this->load->view('reset_password');
+		// } 
+       
+	}
+	
+}
+
+
+
+

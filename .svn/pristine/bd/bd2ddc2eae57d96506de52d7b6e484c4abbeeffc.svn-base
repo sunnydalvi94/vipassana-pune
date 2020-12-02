@@ -1,0 +1,12 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$route['(?i)slider']="slider/slider_rest/slider";
+$route['(?i)hide-slider']="slider/slider_rest/hide_slider";
+$route['(?i)restore-slider']="slider/slider_rest/restore_slider";
+$route['(?i)delete-slider/(:any)']="slider/slider_rest/delete_slider/$1";
+
+$route['(?i)add-slider']='slider/slider_web/add_slider';
+$route['(?i)add-slider/(:any)']='slider/slider_web/add_slider/$1';
+$route['(?i)slider-list']='slider/slider_web/slider_list';
+$route['(?i)upload_slider_image'] ='slider/slider_web/upload_slider_image';

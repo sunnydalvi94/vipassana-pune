@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "1532fdd2-88de-487d-aa50-8592562a0bd2",
+		"name": "slider_type",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_slider_type",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "slider_type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "slider_type",
+							"value": "home page",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "slidr for main page",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}slider-type",
+					"host": [
+						"{{host}}slider-type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_slider_type",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}slider-type?all=true",
+					"host": [
+						"{{host}}slider-type"
+					],
+					"query": [
+						{
+							"key": "slider_type_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide_slider_type",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "slider_type_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}hide-slider-type",
+					"host": [
+						"{{host}}hide-slider-type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore_slider_type",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "slider_type_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-slider-type",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-slider-type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_slider_type",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}\\delete-slider-type\\1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-slider-type",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}

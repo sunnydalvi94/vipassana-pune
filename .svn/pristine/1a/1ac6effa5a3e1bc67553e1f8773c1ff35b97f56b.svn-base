@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "fac7c4b4-f747-44a8-8687-0bb55a1fa0ab",
+		"name": "group_sitting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add-groupsitting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "group_sitting_id",
+							"value": "111",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "area_name",
+							"value": "pune cityyyrrrrrrrerwssuuuiu",
+							"type": "text"
+						},
+						{
+							"key": "day",
+							"value": "monday&tuesday",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "abc.pn",
+							"type": "text"
+						},
+						{
+							"key": "contact",
+							"value": "9970595477(Dr.amit chandak)<br>9970545977(Dr.rampal chandak)",
+							"type": "text"
+						},
+						{
+							"key": "group_sitting_address",
+							"value": "pune",
+							"type": "text"
+						},
+						{
+							"key": "google_map",
+							"value": "ass",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}group_sitting",
+					"host": [
+						"{{host}}group_sitting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-groupsitting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}group_sitting?group_sitting_id=1BJD1",
+					"host": [
+						"{{host}}group_sitting"
+					],
+					"query": [
+						{
+							"key": "group_sitting_id",
+							"value": "1BJD1"
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide-groupsitting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "group_sitting_id",
+							"value": "1BJD1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}hide-group_sitting",
+					"host": [
+						"{{host}}hide-group_sitting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore-groupsitting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "group_sitting_id",
+							"value": "1BJD1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}restore-group_sitting",
+					"host": [
+						"{{host}}restore-group_sitting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-groupsitting",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}delete-group_sitting/1BJD1",
+					"host": [
+						"{{host}}delete-group_sitting"
+					],
+					"path": [
+						"1BJD1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "675695f7-be49-4c8c-b49f-997da60892b7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "fcf99a80-045a-4435-bd52-ac29d6fe5c58",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

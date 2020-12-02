@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "bcb86d89-2174-473d-9d1f-18b32cfca015",
+		"name": "hearing_speech_impaired_children",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add hearing_speech_impaired_children",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hearing_speech_impaired_children_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "hearing_speech_impaired_children_title",
+							"value": "1 DAY COURSE FOR IMPAIRED CHILDREN",
+							"type": "text"
+						},
+						{
+							"key": "hearing_speech_impaired_children_description",
+							"value": "A mediator teacher in Pune with 15 years experience with hearing impaired children was encouraged by Mr Goenka to organize a course for her students. So a few teachers ",
+							"type": "text"
+						},
+						{
+							"key": "hearing_speech_impaired_children_date",
+							"value": "schedule as per availability of children,Teacher & Center",
+							"type": "text"
+						},
+						{
+							"key": "hearing_speech_impaired_children_location",
+							"value": "Dhammapunna, Near Swargate, Pune",
+							"type": "text"
+						},
+						{
+							"key": "hearing_speech_impaired_children_duration",
+							"value": "8.30 AM to 3.30 PM",
+							"type": "text"
+						},
+						{
+							"key": "hearing_speech_impaired_children_note",
+							"value": "Contact office to know more details.\n",
+							"type": "text"
+						},
+						{
+							"key": "hearing_speech_impaired_children_video_url",
+							"value": "www.youtube.com/embed/BzQM6GNBbak",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}hearing-speech-impaired-children",
+					"host": [
+						"{{host}}hearing-speech-impaired-children"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get hearing_speech_impaired_children",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}hearing-speech-impaired-children",
+					"host": [
+						"{{host}}hearing-speech-impaired-children"
+					],
+					"query": [
+						{
+							"key": "hearing_speech_impaired_children_id",
+							"value": "Ly2ad",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide hearing_speech_impaired_children",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hearing_speech_impaired_children_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}hide-hearing-speech-impaired-children",
+					"host": [
+						"{{host}}hide-hearing-speech-impaired-children"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete hearing_speech_impaired_children",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}delete-hearing-speech-impaired-children/518Yn",
+					"host": [
+						"{{host}}delete-hearing-speech-impaired-children"
+					],
+					"path": [
+						"518Yn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore hearing_speech_impaired_children",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hearing_speech_impaired_children_id",
+							"value": "V1BDd",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}restore-hearing-speech-impaired-children",
+					"host": [
+						"{{host}}restore-hearing-speech-impaired-children"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "126c1c1d-2e98-4f94-88db-7249735f58bc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0b5b4d70-6b60-48d0-9673-fca72da824e7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

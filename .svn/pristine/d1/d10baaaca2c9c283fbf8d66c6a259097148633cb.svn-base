@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "73164250-35b5-4ac3-b91f-eb900953ffe6",
+		"name": "Children_course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "children_course_id",
+							"value": "2nWpd",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "children_course_title",
+							"value": "Meditation Course",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "12-12-2020",
+							"type": "text"
+						},
+						{
+							"key": "timing",
+							"value": "7am - 10pm",
+							"type": "text"
+						},
+						{
+							"key": "age_limit",
+							"value": "5yrs to 12 yrs",
+							"type": "text"
+						},
+						{
+							"key": "registration",
+							"value": "aa",
+							"type": "text"
+						},
+						{
+							"key": "venue",
+							"value": "pune",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "please apply fast. Limited seats available.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/children_course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"children_course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/children_course?all=true",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"children_course"
+					],
+					"query": [
+						{
+							"key": "children_course_id",
+							"value": "2nWpd",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "children_course_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-children_course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-children_course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "children_course_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-children_course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-children_course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/delete-children_course/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-children_course",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "cf9cb44c-a7f1-49c7-b08d-e4059b058dcd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8299b00c-b35d-47c8-b7ce-445bb7f263b6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

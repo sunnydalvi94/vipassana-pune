@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "893aa684-c378-45c9-a094-5a32152d01c6",
+		"name": "seva_registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add seva_registration",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "seva_registration_id",
+							"value": "7yPXy",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "ten_day_course_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Snehal",
+							"type": "text"
+						},
+						{
+							"key": "middel_name",
+							"value": "sudhir ",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "rajhans",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "9898989090",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mrudul@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "occupation",
+							"value": "IT developer",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Pune",
+							"type": "text"
+						},
+						{
+							"key": "area_of_city",
+							"value": "Wakad",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "39",
+							"type": "text"
+						},
+						{
+							"key": "answer",
+							"value": "sdfgf",
+							"type": "text"
+						},
+						{
+							"key": "comments",
+							"value": "ghgj",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"seva-registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get seva_registration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"seva-registration"
+					],
+					"query": [
+						{
+							"key": "seva_registration_id",
+							"value": "7yPXy",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide seva_registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "seva_registration_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-seva-registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete seva_registration",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-seva-registration/7yPXy",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-seva-registration",
+						"7yPXy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore seva_registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "seva_registration_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-seva-registration"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fe1948da-0311-409b-bb4e-9c0f081b12b8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "dee31e4b-e9d6-4e7c-aa36-a786c5590663",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

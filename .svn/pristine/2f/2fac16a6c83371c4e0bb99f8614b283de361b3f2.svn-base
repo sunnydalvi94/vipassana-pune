@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<P> 
+Your New Activation Code is:
+	<a href="<?php echo base_url()?>reset-password/<?php echo isset($activation_code)?$activation_code:'' ?>">
+		<?php echo base_url()?>reset-password/<?php echo isset($activation_code)?$activation_code:'' ?>	
+	</a>
+</P>
+</body>
+</html>

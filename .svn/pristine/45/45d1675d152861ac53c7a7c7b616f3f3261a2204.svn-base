@@ -1,0 +1,78 @@
+ #contatti{
+        padding-bottom:30px;
+        }
+        #contatti .maps iframe{
+        width: 100%;
+        height: 300px;
+        }
+        .owl-carousel .owl-controls {
+        margin-top: 3px;
+        position: relative;
+        bottom: 365px;
+        } 
+        .wheel{
+        height:3vw;
+        margin-top: -1vw;
+        margin-bottom: -2vw;
+          }
+        @media (max-width:750px) {
+        .wheel{
+        height:7vw;
+        margin-top: -14px;
+          }
+        }
+        @media (max-width: 400px){
+            .about_center,.markal_route{
+            padding:0px!important;
+            }
+            }
+            @media (max-width:400px) {
+            .timing_route{
+            padding-top:10px;   
+            font-size:20px!important;
+            }
+            .contact{
+            font-size:20px!important;
+            }
+            .route_title{
+            font-size:18px!important;
+            }
+        }  
+            @media (max-width:400px) {
+            .wheel{
+            height:10vw;
+      }
+        } 
+          @media (max-width: 575.98px) {
+
+            #contatti{padding-bottom:30px;}
+            #contatti .maps iframe{
+                width: 100%;
+                height:200px;
+                }
+        }
+            @media (min-width: 576px) {
+
+            #contatti{padding-bottom:30px;}
+            #contatti .maps iframe{
+                width: 100%;
+                height:300px;
+                }
+        }
+            @media (min-width: 768px) {
+
+            #contatti{padding-bottom:30px;}
+
+            #contatti .maps iframe{
+                width: 100%;
+                height:300px;
+                }
+        }
+            @media (min-width: 992px) {
+            #contatti{padding-bottom:30px;}
+
+            #contatti .maps iframe{
+                width: 100%;
+                height: 300px;
+                }
+        }

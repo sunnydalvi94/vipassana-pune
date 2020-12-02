@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "8e5da81e-90cb-443a-bee6-08a7ede1d8e3",
+		"name": "payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add payment",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "payment_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "donation_id",
+							"value": "2nWpd",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "30000",
+							"type": "text"
+						},
+						{
+							"key": "date_time",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "pending",
+							"type": "text"
+						},
+						{
+							"key": "response",
+							"value": "yes",
+							"type": "text"
+						},
+						{
+							"key": "request",
+							"value": "credit card",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/payment",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pending-payment-status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "payment_id",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}pending-payment-status",
+					"host": [
+						"{{host}}pending-payment-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "success-payment-status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "payment_id",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}success-payment-status",
+					"host": [
+						"{{host}}success-payment-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}payment",
+					"host": [
+						"{{host}}payment"
+					],
+					"query": [
+						{
+							"key": "payment_id",
+							"value": "7yPXy",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "payment_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-payment",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete payment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-payment/7yPXy",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-payment",
+						"7yPXy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "payment_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-payment",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-payment"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e6168d7a-86db-4053-ae74-086759b3e21d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "7182dbb3-5a6f-47a7-be61-dcdaf5863614",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

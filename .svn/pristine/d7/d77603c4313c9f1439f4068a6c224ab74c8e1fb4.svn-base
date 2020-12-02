@@ -1,0 +1,10 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$route['(?i)about']="about/about_rest/about";
+$route['(?i)hide-about']="about/about_rest/hide_about";
+$route['(?i)restore-about']="about/about_rest/restore_about";
+$route['(?i)delete-about/(:any)']="about/about_rest/delete_about/$1";
+
+
+

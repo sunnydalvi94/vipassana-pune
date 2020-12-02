@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "fc90a3e1-d184-48c1-b494-bd0cc4ad8524",
+		"name": "seva_registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add seva_registration",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "seva_registration_id",
+							"value": "7yPXy",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "ten_day_course_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Snehal",
+							"type": "text"
+						},
+						{
+							"key": "middel_name",
+							"value": "sudhir ",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "rajhans",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "9898981189",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mrudulha4j@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "occupation",
+							"value": "IT developer",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Pune",
+							"type": "text"
+						},
+						{
+							"key": "area_of_city",
+							"value": "Wakad",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "39",
+							"type": "text"
+						},
+						{
+							"key": "answer",
+							"value": "sdfgf",
+							"type": "text"
+						},
+						{
+							"key": "comments",
+							"value": "ghgj",
+							"type": "text"
+						},
+						{
+							"key": "question1",
+							"value": "Swargate Center Office- Help\n\n\n",
+							"type": "text"
+						},
+						{
+							"key": "question2",
+							"value": "Civil Service,Garden Services\n\nIn 10 Day/Teenager Courses [ Full Time/Part Time (Min 4-5 Days)] at Dhammananda,Markal & Dhamma Punna Swargate Centers\n",
+							"type": "text"
+						},
+						{
+							"key": "question3",
+							"value": "In 10 Day/Teenager Courses [ Full Time/Part Time (Min 4-5 Days)] at Dhammananda,Markal & Dhamma Punna Swargate Centers,3 Day/One Day Courses at Dhammananda,Markal & DhammaPunna Swargate Centers\n\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"seva-registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get seva_registration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"seva-registration"
+					],
+					"query": [
+						{
+							"key": "seva_registration_id",
+							"value": "01O0n",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide seva_registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "seva_registration_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-seva-registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete seva_registration",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-seva-registration/7yPXy",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-seva-registration",
+						"7yPXy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore seva_registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "seva_registration_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-seva-registration"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5fb32f6e-1754-4cba-abe1-95cfeb0b0373",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b0729187-bf67-4058-9429-1107749bff94",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

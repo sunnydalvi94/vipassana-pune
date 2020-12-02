@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8" />
+    <title>Mitra Pune Activities</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
+    <link href="./assets/site/plugins/socicon/socicon.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css"/>      
+    <link href="./assets/site/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/plugins/animate/animate.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/plugins/ilightbox/css/ilightbox.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/demos/default/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/demos/default/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+    <link href="./assets/site/demos/default/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css"/>
+    <link href="./assets/site/demos/default/css/custom.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon " type="image/gif" href="assets/site/img/logo/wheel.gif">
+    <style>
+    .c-content-isotope-gallery .c-content-isotope-item > .c-content-isotope-image-container > .c-content-isotope-overlay{
+    opacity:0.8;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body class="c-layout-header-fixed c-layout-header-mobile-fixed  text-justify">
+<div class="c-layout-page">
+    <?php $this->load->view('site/header'); ?>
+    <section>
+        <div class="container">
+            <div class="c-body" style="padding: 0px 0px 0px 0px ;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="c-content-title-2">
+                            <h3 class="c-center">Mitra Pune Activities</h3>
+                            <div class="c-line c-dot c-theme-bg c-theme-bg-after"></div>
+                        </div>  
+                    </div>
+                </div>
+            </div> 
+        </div>    
+        <div class="container">
+            <h3 class="c-font-uppercase c-font-bold">
+                <span class="c-theme-font">videos </span>
+            </h3>
+
+            <div class="c-content-isotope-gallery c-opt-3">
+                <div class="c-content-isotope-item">
+                    <div class="c-content-isotope-image-container">
+                        <img class="c-content-isotope-image" src="assets/site/img/child_photo/impaired_child_photo.jpg" />
+                        <div class="c-content-isotope-overlay c-ilightbox-image-3" href='https://www.youtube.com/embed/BzQM6GNBbak' data-options="smartRecognition: true">
+                            <div class="c-content-isotope-overlay-icon">
+                                <i class="fa fa-play c-font-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-content-isotope-item">
+                    <div class="c-content-isotope-image-container">
+                        <img class="c-content-isotope-image" src="assets/site/img/child_photo/impaired_child_photo.jpg" />
+                        <div class="c-content-isotope-overlay c-ilightbox-image-3" href='https://www.youtube.com/embed/BzQM6GNBbak' data-options="smartRecognition: true">
+                            <div class="c-content-isotope-overlay-icon">
+                                <i class="fa fa-play c-font-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section>
+    <!-- <div class="c-content-box c-size-md">
+        <div class="container">
+            <div class="cbp-panel" >
+                <h3 class="c-font-uppercase c-font-bold">
+                    <span class="c-theme-font">images </span>
+                </h3>
+                <div class="cbp-panel">
+                    <div id="grid-container" class="cbp cbp-l-grid-work">
+                        <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity1.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;">12-04-2019 : Introduction to Vipasaana and Anapana session is conducted National <br> Informatics Center (NIC), Pune. Approximately, 50 technical staff have attended the <br> session.</div>
+                        </div>
+                        <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity2.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;">09-04-2019 : Vipasaana intro and Anapana session conducted At zp office camp</div>
+                        </div>
+                         <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity3.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;">03-04-2019: Today 14 teachers of Pune Blind School (boys) was given Mitra training and around 100 students was given Anapana session</div>
+                        </div>
+                         <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity4.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;">01-04-2019: Around 350 students of Silver crest school and college of Dnyagnagna conducted the Anapana session</div>
+                        </div>
+                         <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity5.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;"><br>26-03-2019 : प्रज्ञा विद्या मंदिर.,गणेशनगर, थेरगाव, पुणे 33,गणपती मंदिर रोड</div>
+                        </div>
+                         <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity6.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;"><br>12-03-2019:मिञ उपक्रम न्यू इंग्लिश स्कूल वडनेर बु.ता. पारनेर जि. अहमदनगर</div>
+                        </div>
+                         <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity7.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;">10-03-2019 20 girls participated in Aanapan session at chimboli near Moshi Madar Teresa Samajik sanstha , chimboli near Mosh</div>
+                        </div>
+                         <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity8.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;">08-03-2019 Mitra orietation training was conducted for about 70 teachers in two batches at silver crest high school today</div>
+                        </div>
+                         <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity9.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;">07-03-2019 Todays Anapana Intro and training session at Kondhur</div>
+                        </div>
+                         <div class="cbp-item identity">
+                            <a href="assets/site/ajax/projects/project1.html" class="cbp-caption cbp-singlePage">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img  src="assets/site/img/pune_activity/activity10.jpg" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                </div>
+                            </a>
+                            <a href="assets/site/ajax/projects/project3.html" class="cbp-l-grid-work-title cbp-singlePage"></a>
+                            <div class="cbp-l-grid-work-desc" style="height:50px;"><br>06-03-2019 मिञ उपक्रम जि.प.शाळा बाभळसर बु. ता.शिरुर जि.पुणे . विद्यार्थी ----३५</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>   -->
+    </section>
+    <section>
+    <div class="c-content-box c-size-md">
+	<div class="container">
+        <h3 class="c-font-uppercase c-font-bold">
+            <span class="c-theme-font">Images </span>
+        </h3>
+		<!-- Begin: Cubeportfolio grid --> 
+		<div class="cbp-panel">
+	        <div id="grid-container" class="cbp cbp-l-grid-masonry-projects">
+	            <div class="cbp-item web-design logos">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity18.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity18.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">23-01-2019 Khed (Rajgurunagar)Vipassana Aanapan session is done today ( 23/1/2019 ) <br> for Health departmentsTHO ,Asha workers , and their staff (appro. 350 participants)</div>
+	            </div>
+                <div class="cbp-item identity web-design">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img  src="assets/site/img/pune_activity/activity21.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="c-masonry-border"></div>
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="assets/site/img/pune_activity/activity21.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">01-02-2019 पंचायत समिती आंबेगाव सभागृह, घोडेगांव, ता.आंबेगांव, जि. पुणे येथिल आनापान <br> सति कार्यक्रम</div>
+                </div>
+	            <div class="cbp-item identity web-design">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity19.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity19.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">09-02-2019</div>
+	            </div>
+	            <div class="cbp-item web-design graphic">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity20.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity20.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">02-02-2019 पंचायत समिती जुन्नर, सभागृह.एकुण आशा वर्कर-३२०</div>
+	            </div>
+	           
+	            <div class="cbp-item graphic logos">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity22.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity22.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">01-02-2019 आरोग्य विभागातील 300 आशा सेविकांना आनापान ध्यान साधना प्रदान केली <br> , इंदापूर ता.इंदापूर जि.पुणे</div>
+	            </div>
+	            <div class="cbp-item identity logos">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity23.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity23.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">01-02-2019 Haveli taluka Pune- about 100 Asha staff attended.</div>
+                </div>
+                <div class="cbp-item identity logos">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity24.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity24.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;"></div>
+                </div>
+                <div class="cbp-item identity logos">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity25.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity25.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;"></div>
+                </div>
+                <div class="cbp-item identity logos">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity26.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity26.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">29-01-2019: Vp Prashant Munrshwar: Aanapan session is conducted for students <br> of  5th-8th standard at Mahtama Pule Prathmic Vidya Mandir, Hadapsar. Approximately 150 students attended the session.</div>
+                </div>
+                <div class="cbp-item identity logos">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity27.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity27.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">26-01-2019: 80 students of gov. hostel at Rajgurunagar attainded Mitra Intro Program.</div>
+                </div>
+                <div class="cbp-item identity logos">
+	                <div class="cbp-caption">
+	                    <div class="cbp-caption-defaultWrap">
+	                        <img  src="assets/site/img/pune_activity/activity28.jpg" alt="">
+	                    </div>
+	                    <div class="cbp-caption-activeWrap">
+	                    	<div class="c-masonry-border"></div>
+	                        <div class="cbp-l-caption-alignCenter">
+	                            <div class="cbp-l-caption-body">
+	                                <a href="assets/site/img/pune_activity/activity28.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">18-01-2019: न्यु इंग्लीश ज्युनीयर विद्यालय पिरंगुट 11 वी 200 विद्यार्थ्यांनी आनापान घेतले</div>
+	            </div>
+                 <div class="cbp-item identity logos">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img  src="assets/site/img/pune_activity/activity31.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="c-masonry-border"></div>
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="assets/site/img/pune_activity/activity31.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">26-01-2019: 80 students of gov. hostel at Rajgurunagar attainded Mitra Intro Program .</div>
+                </div>
+                 <div class="cbp-item identity logos">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img  src="assets/site/img/pune_activity/activity32.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="c-masonry-border"></div>
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="assets/site/img/pune_activity/activity32.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">07-01-2019: नरवीर तानाजी मालुसरे विद्यालय दापोडे, Velhe Taluka Pune 70 students</div>
+                </div>
+                <div class="cbp-item identity logos">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img  src="assets/site/img/pune_activity/activity34.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="c-masonry-border"></div>
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="assets/site/img/pune_activity/activity34.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" >Zoom</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-masonry-projects-desc" style="height:50px;padding-top: 5px;">6-01-2019: Anapan introduction camp at Navonmesh Vidyalay Chakan district Khed <br> conducted. About 150 students from three different schools and about 20 teachers attended this session</div>
+                </div>
+	        </div>
+    	</div>
+    	<!-- End-->
+	</div>
+</div>
+    </section>
+</div>
+        <?php $this->load->view('site/footer'); ?>
+        <script src="./assets/site/plugins/jquery.min.js" type="text/javascript" ></script>
+        <script src="./assets/site/plugins/jquery-migrate.min.js" type="text/javascript" ></script>
+        <script src="./assets/site/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" ></script>
+        <script src="./assets/site/plugins/jquery.easing.min.js" type="text/javascript" ></script>
+        <script src="./assets/site/plugins/reveal-animate/wow.js" type="text/javascript" ></script>
+        <script src="./assets/site/demos/default/js/scripts/reveal-animate/reveal-animate.js" type="text/javascript" ></script>
+
+        <!-- END: CORE PLUGINS -->
+
+        <!-- BEGIN: LAYOUT PLUGINS -->
+        <script src="./assets/site/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/smooth-scroll/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/js-cookie/js.cookie.js" type="text/javascript"></script>
+            <!-- END: LAYOUT PLUGINS -->
+
+        <!-- BEGIN: THEME SCRIPTS -->
+        <script src="./assets/site/base/js/components.js" type="text/javascript"></script>
+        <script src="./assets/site/base/js/components-shop.js" type="text/javascript"></script>
+        <script src="./assets/site/base/js/app.js" type="text/javascript"></script>
+        <script>
+        $(document).ready(function() {    
+            App.init(); // init core    
+        });
+        </script>
+        <!-- END: THEME SCRIPTS -->
+
+        <!-- BEGIN: PAGE SCRIPTS -->
+        <script src="./assets/site/plugins/isotope/isotope.pkgd.min.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/isotope/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/isotope/packery-mode.pkgd.min.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/ilightbox/js/jquery.requestAnimationFrame.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/ilightbox/js/jquery.mousewheel.js" type="text/javascript"></script>
+        <script src="./assets/site/plugins/ilightbox/js/ilightbox.packed.js" type="text/javascript"></script>
+        <script src="./assets/site/demos/default/js/scripts/pages/isotope-gallery.js" type="text/javascript"></script>
+        <script src="./assets/site/demos/default/js/scripts/pages/2col-portfolio.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,474 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Mitra_school_seva_registration_api extends Base_Controller 
+{
+    public function __construct()
+  	{ 
+		parent::__construct();
+		$this->load->model('standard/standard_model');
+	}
+	/*
+	========================================================
+	Author:Mrudul Thite                     Date:12/05/2020
+	========================================================
+	Purpose: Get User mitra_school_seva_registration
+	return array(
+	 	'state'=>TRUE,
+		'msg'=>'Records Found!',
+	 	'details'=>array(  
+	 		array(
+	 		"mitra_school_seva_registration_id": "2",
+            "mitra_school_seva_registration_id": "3",
+            "first_name": "mrudul",
+            "middle_name": "sudhir ",
+            "last_name": "rajhans",
+            "mobile_number": "9898989090",
+            "email": "mrudul@gmail.com",
+            "occupation": "IT developer",
+            "city": "Pune",
+            "area_of_city": "Wakad",
+            "gender": "female",
+            "age": "39",
+            "answer": "sdfgf",
+            "comments": "ghgj",
+            "display": "Y",
+            "inserted_by": "1",
+            "inserted_on": "2020-05-13 11:33:47",
+            "modified_by": "1",
+            "modified_on": "2020-05-13 11:33:47",
+            "in_use": "Y",
+            "center_name": "Aurangabad",
+            "short_decription": "sdaf",
+            "url": "dsg",
+            "cover_photo": "sdfsd"
+	 		)
+	 	)
+	 );
+    */
+	public function _get_mitra_school_seva_registration($details=false)
+    {
+		$details = $this->decryptArray($details);
+		if(isset($details['mitra_school_seva_registration_id']))
+        {
+        	$id=$details['mitra_school_seva_registration_id'];
+        $results = $this->standard_model->selectAllWhr('tbl_mitra_school_seva_registration','mitra_school_seva_registration_id',$id);
+        }
+        else if(isset($details['all'])){
+        $results = $this->standard_model->selectAll('tbl_mitra_school_seva_registration');
+        }
+        else {
+	    $results = $this->standard_model->selectAll('tbl_mitra_school_seva_registration','in_use','Y');        	
+          
+		}
+
+		
+	    if($results)
+        {
+        	$data=array();
+                foreach ($results as $result)
+                {
+                  $data[] = (array)$result;  
+                }
+                if(isset($data) && is_array($data)){
+                $result = $this->encryptArray($data);
+                 }
+
+            return array(
+                  'msg'=>'Record Found!',
+                  'state'=>true,
+                  'details'=>$result
+			);
+			$result= $this->encryptArray($details);
+        }
+        else
+        {
+             return array(
+                  'msg'=>'Record not Found!',
+                  'state'=>false,
+                  'details'=>$details['mitra_school_seva_registration_id']
+            );
+        }
+    }
+	/*
+	========================================================
+	Author:Mrudul Thite                     Date:12/05/2020
+	========================================================
+	 "state": true,
+    "msg": "mitra_school_seva_registration added!",
+    "details": {
+        "mitra_school_seva_registration_id": "518Yn",
+        "first_name": "mrudul",
+        "middle_name": "sudhir ",
+        "last_name": "rajhans",
+        "mobile_number": "9898989090",
+        "email": "mrudul@gmail.com",
+        "occupation": "IT developer",
+        "city": "Pune",
+        "area_of_city": "Wakad",
+        "mitra_school_seva_registration_id": "1",
+        "gender": "female",
+        "age": "39",
+        "answer": "sdfgf",
+        "comments": "ghgj",
+        "modified_by": 1,
+        "modified_on": "2020-05-15 11:49:50",
+        "inserted_by": 1,
+        "inserted_on": "2020-05-15 11:49:50"
+    }
+    */
+ //    public function _set_mitra_school_seva_registration($details=false)
+	// {
+
+	//   	$validation_error='';
+ //        $details = $this->decryptArray($details);
+  
+	// 	if($this->validationmitra_school_seva_registrationMasterDetails($details))
+	// 	{
+	//         if($details)
+	//         {
+	//             $user_id= $this->session->userdata('user_id');
+	                            		
+	//             $mitra_school_seva_registration = array(
+	//             'mitra_school_seva_registration_id'=>isset($details['mitra_school_seva_registration_id'])?$details['mitra_school_seva_registration_id']:NULL,
+	//             'first_name'=>$details['first_name'],
+	//             'middle_name'=>$details['middle_name'],
+	//             'last_name'=>$details['last_name'],
+	//             'mobile_number'=>$details['mobile_number'],
+	//             'email'=>$details['email'],
+	//             'occupation'=>$details['occupation'],
+	//             'city'=>$details['city'],
+	//             'area_of_city'=>$details['area_of_city'],
+	//             'ten_day_course_id'=>$details['ten_day_course_id'],
+	//             'gender'=>$details['gender'],
+	//             'age'=>$details['age'],
+	//             'answer'=>$details['answer'],
+	//             'comments'=>$details['comments'],
+	//             'modified_by'=>1,
+	//             'modified_on'=>date('Y-m-d H:i:s'),
+	                        
+	//                     );
+	//             if(!isset($details['mitra_school_seva_registration_id']) && empty($details['mitra_school_seva_registration_id']))
+	//             {
+	//                 $mitra_school_seva_registration['inserted_by']=1;
+	//                 $mitra_school_seva_registration['inserted_on']=date('Y-m-d H:i:s');
+	//             }
+	//             $mitra_school_seva_registration_id = $this->standard_model->single_insert('tbl_mitra_school_seva_registration',$mitra_school_seva_registration);
+	//             $mitra_school_seva_registration['mitra_school_seva_registration_id']=$mitra_school_seva_registration_id;
+	//             $mitra_school_seva_registration= $this->encryptArray($mitra_school_seva_registration);
+
+
+	//             if(isset($details['mitra_school_seva_registration_id']) && !empty($details['mitra_school_seva_registration_id']))
+	// 			{
+	// 				$results = $this->standard_model->selectAllWhr('tbl_mitra_school_seva_registration','mitra_school_seva_registration_id',$details['mitra_school_seva_registration_id']); 
+	// 				if($results)
+	// 				{
+	// 					if(isset($details['mitra_school_seva_registration_id']) && !empty($details['mitra_school_seva_registration_id']))
+	// 					{
+	// 					$flag=1;
+	// 					}
+	// 					else
+	// 					{
+	// 					$flag=0;
+	// 					}	
+	// 					return array(
+	// 					'state'=>true,
+	// 					'msg'=>'Record Updated!',
+	// 					'details'=>$mitra_school_seva_registration
+	// 					);							
+	// 				}
+	// 				else{
+	// 					return array(
+	// 						'state'=>false,
+	// 						'msg'=>'Id Not Found!',
+	// 						'detafalse
+	// 					);
+	// 					}
+	// 			}
+	// 			else{
+	// 				return array(
+	// 				'sttrue,
+	// 				'msg'=>'New mitra_school_seva_registration added!',
+	// 				'details'=>$mitra_school_seva_registration
+	// 				);
+	// 			}   
+	//     	}
+	//     	else
+	// 		{
+	// 			return array(
+	// 				'stFalse,
+	// 				'msg'=>'mitra_school_seva_registration Failed to Saved!',
+	// 				'details'=>false
+	// 			);
+	// 		}
+	// 	}
+	// 	else
+	// 	{
+	// 	    $validation_error = validation_errors();
+	// 	    return array(
+	// 			'state'=>False,
+	// 			'msg'=>$validation_error,
+	// 			'details'=>'Validation is failed'
+	// 	    );
+	// 	}	
+	// }
+
+public function _set_mitra_school_seva_registration($details=false)
+  {
+      $details = $this->decryptArray($details);
+			
+	           if($details)
+	            {
+	              $user_id=$this->session->userdata('user_id');
+	              $batch = array(
+	                               'first_name'=>$details['first_name'],
+						            'middle_name'=>$details['middle_name'],
+						            'last_name'=>$details['last_name'],
+						            'mobile_number'=>$details['mobile_number'],
+						            'email'=>$details['email'],
+						            'occupation'=>$details['occupation'],
+						            'city'=>$details['city'],
+						            'area_of_city'=>$details['area_of_city'],
+						            'ten_day_course_id'=>$details['ten_day_course_id'],
+						            'gender'=>$details['gender'],
+						            'age'=>$details['age'],
+						            'answer'=>$details['answer'],
+						            'comments'=>$details['comments'],
+	                                'mitra_school_seva_registration_id'=>isset($details['mitra_school_seva_registration_id'])?$details['mitra_school_seva_registration_id']:NULL
+	                              );
+	              if(!isset($details['mitra_school_seva_registration_id']) && empty($details['mitra_school_seva_registration_id']))
+	              {
+	                  $batch['inserted_by']=1;
+	                  $batch['inserted_on']=date('Y-m-d');
+	              }
+	                   
+	              $mitra_school_seva_registration_id = $this->standard_model->single_insert('tbl_mitra_school_seva_registration',$batch);
+	              $batch['mitra_school_seva_registration_id']=$mitra_school_seva_registration_id;
+	              $batch= $this->encryptArray($batch);
+	              return array(
+	                    'msg'=>'mitra_school_seva_registration data  Saved!',
+	                    'state'=>true,
+	                    'details'=>$batch
+	                  );
+	            }
+	            else
+	            {
+	              return array(
+	                    'msg'=>'mitra_school_seva_registration  Failed to Saved!',
+	                    'state'=>False, 
+	                    'details'=>false
+	                  );
+	            }
+        
+    }
+
+	  	
+
+    /*
+	========================================================
+	Author:Mrudul Thite                     Date:12/05/2020
+	========================================================
+	Purpose: validation for mitra_school_seva_registration
+	*/
+
+	// public function validationmitra_school_seva_registrationMasterDetails($details)
+ //    {
+	 
+	// }
+   /*
+	========================================================
+	Author:Mrudul Thite                     Date:12/05/2020
+	========================================================
+	"state": true,
+    "msg": "mitra_school_seva_registration Hidden!",
+    "details": [
+        {
+            "mitra_school_seva_registration_id": "518Yn",
+            "mitra_school_seva_registration_id": "1",
+            "first_name": "mrudul",
+            "middle_name": "sudhir ",
+            "last_name": "rajhans",
+            "mobile_number": "9898989090",
+            "email": "mrudul@gmail.com",
+            "occupation": "IT developer",
+            "city": "Pune",
+            "area_of_city": "Wakad",
+            "gender": "female",
+            "age": "39",
+            "answer": "sdfgf",
+            "comments": "ghgj",
+            "display": "Y",
+            "inserted_by": "1",
+            "inserted_on": "2020-05-15 11:49:50",
+            "modified_by": "1",
+            "modified_on": "2020-05-15 11:50:31",
+            "in_use": "N"
+        }
+	*/
+	public function _hide_mitra_school_seva_registration($details=false)
+	{
+		$details = $this->decryptArray($details);
+		if(isset($details['mitra_school_seva_registration_id']))
+		{
+			$id=$details['mitra_school_seva_registration_id'];
+			$mitra_school_seva_registration=array(
+				'in_use'=>'N',
+			);
+			$results = $this->standard_model->updateRecord('tbl_mitra_school_seva_registration','mitra_school_seva_registration_id',$id,$mitra_school_seva_registration);
+			$resdata = $this->standard_model->selectAllWhr('tbl_mitra_school_seva_registration','mitra_school_seva_registration_id',$details['mitra_school_seva_registration_id']);
+			if($resdata)
+				 {
+					$data=array();
+		              foreach ($resdata as $result)
+		                {
+		                  $data[] = (array)$result;  
+		                }
+		                if(isset($data) && is_array($data)){
+		                $result = $this->encryptArray($data);
+		                 }
+		            	return array(
+		                  'state'=>true,
+		                  'msg'=>'mitra_school_seva_registration Hidden!',
+		                  'details'=>$result
+								);
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Hide mitra_school_seva_registration';
+				return array(
+					'state'=>false,
+					'msg'=>$message,
+					'details'=>false
+			    );
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'mitra_school_seva_registration_id Required!',
+			);
+		}
+	}
+	/*
+	========================================================
+	Author:Mrudul Thite                     Date:12/05/2020
+	========================================================
+	 "state": true,
+    "msg": "mitra_school_seva_registration Restore!",
+    "details": [
+        {
+            "mitra_school_seva_registration_id": "518Yn",
+            "mitra_school_seva_registration_id": "1",
+            "first_name": "mrudul",
+            "middle_name": "sudhir ",
+            "last_name": "rajhans",
+            "mobile_number": "9898989090",
+            "email": "mrudul@gmail.com",
+            "occupation": "IT developer",
+            "city": "Pune",
+            "area_of_city": "Wakad",
+            "gender": "female",
+            "age": "39",
+            "answer": "sdfgf",
+            "comments": "ghgj",
+            "display": "Y",
+            "inserted_by": "1",
+            "inserted_on": "2020-05-15 11:49:50",
+            "modified_by": "1",
+            "modified_on": "2020-05-15 11:50:53",
+            "in_use": "Y"
+        }
+	*/
+	public function _restore_mitra_school_seva_registration($details=false)
+	{
+		$details = $this->decryptArray($details);
+		if(isset($details['mitra_school_seva_registration_id']))
+		{	
+		    $id=$details['mitra_school_seva_registration_id'];
+			$mitra_school_seva_registration=array(
+				'in_use'=>'Y',
+			);
+			$results = $this->standard_model->updateRecord('tbl_mitra_school_seva_registration','mitra_school_seva_registration_id',$id,$mitra_school_seva_registration);
+			$resdata = $this->standard_model->selectAllWhr('tbl_mitra_school_seva_registration','mitra_school_seva_registration_id',$details['mitra_school_seva_registration_id']);
+			if($resdata)
+			{
+					$data=array();
+		              foreach ($resdata as $result)
+		                {
+		                  $data[] = (array)$result;  
+		                }
+		                if(isset($data) && is_array($data)){
+		                $result = $this->encryptArray($data);
+		                 }
+		            	return array(
+		                  'state'=>true,
+		                  'msg'=>'mitra_school_seva_registration Restore!',
+		                  'details'=>$result
+								);
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Restore mitra_school_seva_registration';
+				return array(
+						'state'=>false,
+						'msg'=>$message,
+						'details'=>false
+				);
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'mitra_school_seva_registration_id Required!',
+			);
+		}
+	}
+	/*
+	========================================================
+	Author:Mrudul Thite                     Date:12/05/2020
+	========================================================
+	"state": true,
+    "msg": "mitra_school_seva_registration Delete!",
+    "details": {
+        "mitra_school_seva_registration_id": "518Yn"
+    }
+	*/
+	public function _delete_mitra_school_seva_registration($details=null)
+	{  
+		$details = $this->decryptArray($details);
+		
+		if(isset($details['mitra_school_seva_registration_id']))
+		{    
+			$id=$details['mitra_school_seva_registration_id'];
+		    $mitra_school_seva_registration=array(
+					'display'=>'N',
+				);
+			$results = $this->standard_model->updateRecord('tbl_mitra_school_seva_registration','mitra_school_seva_registration_id',$id,$mitra_school_seva_registration);
+			if($results)
+			{
+				$results = $this->encryptArray($details);
+				return array(
+					'state'=>true,
+					'msg'=>'mitra_school_seva_registration Delete!',
+					'details'=>$results
+				);
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Delete mitra_school_seva_registration';
+				return array(
+						'state'=>false,
+						'msg'=>$message,
+						'details'=>false
+				);
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'mitra_school_seva_registration_id Required!',
+			);
+		}
+	 }
+}

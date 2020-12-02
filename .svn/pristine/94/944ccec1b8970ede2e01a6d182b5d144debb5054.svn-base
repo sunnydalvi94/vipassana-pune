@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "19ad4462-056c-43b4-8af2-841094c15b06",
+		"name": "Children_course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "children_course_id",
+							"value": "e1731",
+							"type": "text"
+						},
+						{
+							"key": "children_course_title",
+							"value": "15 days vipassana course",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "14 feb - 30 feb 2020",
+							"type": "text"
+						},
+						{
+							"key": "timing",
+							"value": "7am - 10pm",
+							"type": "text"
+						},
+						{
+							"key": "age_limit",
+							"value": "5yrs to 12 yrs",
+							"type": "text"
+						},
+						{
+							"key": "registration",
+							"value": "done",
+							"type": "text"
+						},
+						{
+							"key": "venue",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "note",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}children-course",
+					"host": [
+						"{{host}}children-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}children-course?children_course_id=e1731",
+					"host": [
+						"{{host}}children-course"
+					],
+					"query": [
+						{
+							"key": "children_course_id",
+							"value": "e1731"
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "children_course_id",
+							"value": "e1731",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-children-course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-children-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "children_course_id",
+							"value": "e1731",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-children-course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-children-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_children_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/delete-children-course/e1731",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-children-course",
+						"e1731"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "b5dca7fb-9bda-4952-91ed-fab78ee080a2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "902f1137-a78f-4520-a357-5b5cd5a251e9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

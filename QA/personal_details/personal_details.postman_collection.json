@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "213e32a6-b203-42ff-8eb2-0e2e00e6be4d",
+		"name": "personal_details",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add pesonal_details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "personal_details_id",
+							"value": "yaMry",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "shubhangi",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "jagadale",
+							"type": "text"
+						},
+						{
+							"key": "pan_no",
+							"value": "abcde1234a",
+							"type": "text"
+						},
+						{
+							"key": "address_line_1",
+							"value": "kedgoan",
+							"type": "text"
+						},
+						{
+							"key": "address_line_2",
+							"value": "kedgoan",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "ahmednagar",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "maharashtra",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "india",
+							"type": "text"
+						},
+						{
+							"key": "pin_code",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "shubhnagijagadale1996@outlook.com",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "9011364730",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "abcd",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456123455622",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/personal-details",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"personal-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get personal-details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/personal-details?personal_details_id=k1pAn",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"personal-details"
+					],
+					"query": [
+						{
+							"key": "personal_details_id",
+							"value": "k1pAn"
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide personal-details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "personal_details_id",
+							"value": "k1pAn",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-personal-details",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-personal-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore personal-details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "personal_details_id",
+							"value": "k1pAn",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-personal-details",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-personal-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete personal_details",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-personal-details/k1pAn",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-personal-details",
+						"k1pAn"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "781ad6fb-864a-44dd-a985-3e9fa2578f7b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "baa4705e-0676-43aa-b587-e03be40e9f46",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

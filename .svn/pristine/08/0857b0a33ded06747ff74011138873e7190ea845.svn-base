@@ -1,0 +1,3 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$config['keys']=array("mitra_activity_id","mitra_school_seva_registration_id","seva_registration_id","album_id","album_image_id","how_to_learn_id","teenager_course_id","children_course_id","payment_id","donation_id","about_id","our_center_id","slider_id","group_sitting_id","ten_day_course_id","one_day_course_id","faq_id","children_slider_id","slider_type_id");
+

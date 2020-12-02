@@ -1,0 +1,24 @@
+ /*......Tabs color........... */
+	.c-content-tab-4.c-opt-5 > .nav > li > a:hover, .c-content-tab-4.c-opt-5 > .nav > li > a:focus {
+	background-color:#bfdbef!important;
+	}
+
+	.c-content-tab-4.c-opt-5 > .nav > li:nth-child(even).active > a, .c-content-tab-4.c-opt-5 > .nav > li:nth-child(even):active > a {
+	background:#72ADD8!important;
+	}
+
+	.c-content-tab-4.c-opt-5 > .nav > li > a {
+	background-color:#bfdbef!important;
+	}
+	.c-content-tab-4.c-opt-5 > .nav > li.active > a, .c-content-tab-4.c-opt-5 > .nav > li:active > a {
+	background:#72ADD8!important;
+	}
+
+/*........circle list.................................*/
+
+	.c-content-list-1.c-theme.c-separator-dot > li:before, .c-content-list-1.c-theme > li:before {
+	background:#5893dd!important;
+	}
+	.c-content-list-1.c-separator-dot > li:before {
+	margin-top: 8px!important;
+	}

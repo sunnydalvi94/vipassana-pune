@@ -1,0 +1,11 @@
+        .label{
+            font-size:11px!important;
+        }
+        .c-checkbox label > .box, .c-radio label >.box,.c-radio input[type=radio]:checked ~ label > .check{
+         margin-top: 4px!important;
+        }
+        @media (max-width:750px) {
+        .website_link{
+         font-size:13px;
+      }
+        }

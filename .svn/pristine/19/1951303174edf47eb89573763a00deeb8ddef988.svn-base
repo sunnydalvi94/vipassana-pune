@@ -1,0 +1,10 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$route['(?i)add-donation'] ='donation/donation_web/add_donation';
+
+$route['(?i)donation']="donation/donation_rest/donation";
+$route['(?i)hide-donation']="donation/donation_rest/hide_donation";
+$route['(?i)restore-donation']="donation/donation_rest/restore_donation";
+$route['(?i)delete-donation/(:any)']="donation/donation_rest/delete_donation/$1";
+   

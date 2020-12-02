@@ -1,0 +1,25 @@
+  @media (max-width:500px) {
+   .table2{
+  display: none;
+  }
+  .table1{
+  display: block;
+      }
+      .c-content-tab-4 > .nav > li > a {
+    padding: 0px 15px;
+     }
+
+  }
+ @media (min-width:1000px) {
+   .table1{
+  display: none;
+      }
+      .table2{
+  display: block;
+      }
+    }
+    
+/*.glyphicon { margin-right:10px; }
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }*/

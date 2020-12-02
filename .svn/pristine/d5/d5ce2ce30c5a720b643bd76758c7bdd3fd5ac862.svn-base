@@ -1,0 +1,65 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+Class User_model extends CI_Model
+{
+	private $returnarray;
+	public $error;
+	public $error_code;
+    public function __construct() 
+    {
+	  parent::__construct();
+	  $this->error=array();
+      $error = Array('code'=>'', 'message'=>'');
+    }   
+    /*
+	================================================================================
+	Author:Shubhangi Jagadale                        Date:10/06/2020
+	=================================================================================
+	*/
+	public function updateActivationCode($details=array(),$user_id,$activation_code)
+	{
+        $query = $this->db->WHERE('user_id',$user_id)
+                          ->WHERE('in_use','Y')
+                          ->UPDATE('tbl_user',array('activation_code'=>$activation_code));
+                       //   echo $this->db->last_query();
+                          if($query)
+                          {
+                              if($this->db->affected_rows()>0)
+                              {
+                                  return true;
+                              }
+                              else
+                              {
+                                  $this->error=array('message' =>"No Changes Made.",'code'=>0);
+                                  return false;
+                              }
+                          }
+                                                
+    }
+    /*
+	================================================================================
+	Author:Shubhangi Jagadale                        Date:10/06/2020
+	=================================================================================
+	*/
+	public function update_student_profile($details=array(),$user_id,$student_image)
+	{
+        $query = $this->db->WHERE('user_id',$user_id)
+                        ->WHERE('in_use','Y')
+                        ->UPDATE('tbl_student',array('student_image'=>$student_image));
+              // echo $this->db->last_query();
+        if($query)
+        {
+            if($this->db->affected_rows()>0)
+            {
+                return true;
+            }
+            else
+            {
+                $this->error=array('message' =>"No Changes Made.",'code'=>0);
+                return false;
+            }
+        }
+    }
+	
+
+     
+}//EOF

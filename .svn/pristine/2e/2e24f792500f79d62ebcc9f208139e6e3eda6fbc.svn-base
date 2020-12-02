@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "213e32a6-b203-42ff-8eb2-0e2e00e6be4d",
+		"name": "faq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add faq",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "question_name",
+							"value": "How sto registesrs stusdent for exam s?",
+							"type": "text"
+						},
+						{
+							"key": "answer",
+							"value": "1.s Login withs syosur losgin_id. you will redirect to a page .2. On My Profile page, click on Tab.:",
+							"type": "text"
+						},
+						{
+							"key": "sequence",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "faq_id",
+							"value": "V1BDd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/faq",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"faq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get faq",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/faq?faq_id=V1BDd",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"faq"
+					],
+					"query": [
+						{
+							"key": "faq_id",
+							"value": "V1BDd"
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide faq",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "faq_id",
+							"value": "V1BDd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-faq",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-faq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore faq",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "faq_id",
+							"value": "V1BDd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-faq",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-faq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete faq",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-faq/V1BDd",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-faq",
+						"V1BDd"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

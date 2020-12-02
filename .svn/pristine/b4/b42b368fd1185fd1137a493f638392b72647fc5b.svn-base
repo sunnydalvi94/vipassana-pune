@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="utf-8" />
+        <title>Children Anapana |Vipassana</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
+        <link href="<?php echo base_url(); ?>assets/site/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/revo-slider/css/layers.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/revo-slider/css/navigation.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/owl-carousel/assets/site/owl.carousel.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/plugins/ilightbox/css/ilightbox.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/demos/index/css/plugins.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/demos/index/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>assets/site/demos/index/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css" />
+        <link rel="shortcut icon" href="favicon.html" />
+        <link rel="shortcut icon " type="image/gif" href="<?php echo base_url(); ?>assets/site/img/logo/wheel.gif">
+         <!-- ..........................group sitting and one day -style link................................. -->
+        <link href="assets/site/css/group-stting-and-one-day.css" rel="stylesheet" type="text/css"/>
+<style>
+.c-content-title-3, .c-title-md{
+	padding: 0px;
+}
+.c-content-media-1 {
+    padding: 20px 30px 0px 30px;
+}
+.col-md-12{
+	padding: 0px;
+}
+
+ @media (max-width:800px) {
+   .table2{
+	display: none;
+	}
+	.table1{
+	display: block;
+      }
+      .c-content-tab-4 > .nav > li > a {
+    padding: 0px 15px;
+     }
+
+  }
+ @media (min-width:1200px) {
+   .table1{
+	display: none;
+      }
+      .table2{
+	display: block;
+      }
+    }
+th,td{
+	vertical-align: middle!important;
+	text-align: center;
+}
+.zoom-in {
+  position: relative;
+  width: 50%;
+}
+.text {
+  display: block;
+  width: 187%;
+
+}
+.overlay {
+  position: absolute;
+  top:-55px;
+  left:-5px;
+  right: 5px;
+  background-color: #008CBA;
+  overflow: hidden;
+  width:240px;
+  height:135px;
+  transform: scale(0);
+  transition: .3s ease;
+}
+.zoom-in:hover .overlay {
+  transform: scale(1);
+}
+p{
+	font-size: 17px;
+}	
+	</style>
+</head>
+<body class="c-layout-header-fixed c-layout-header-mobile-fixed" >
+   <div class="c-layout-page">
+	<?php $this->load->view('site/header');?>
+   <div class=" c-size-md">
+	<div class="container-fluid"style="padding: 0px 30px 0px 30px;">
+		<div class="c-body">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="c-content-title-2">
+						<h3 class="c-center" style=";margin-bottom: 15px;">Children Anapana</h3>
+						<!-- <h4  class="c-center" style="font-size: 18px;margin-bottom: 15px;">For Old Vipassana Student</h4> -->
+						<div class="c-line c-center c-dot c-theme-bg c-theme-bg-after" style=""></div>
+					</div>	
+				</div>
+			</div>
+		</div> 
+		<script type="text/javascript">
+			function onTabChange(param){
+				window.location=window.location.pathname + '#' +param;
+			}
+			onTabChange('baner');
+			
+		</script>
+		<div class="col-md-12 col-sm-12">
+			<div class="c-content-tab-4 c-opt-3 tab_content" role="tabpanel" class=" ">
+				<ul class="nav nav-justified" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#tab-1"  onclick="onTabChange('swargate')" role="tab" data-toggle="tab">Swargate</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab-2" role="tab" onclick="onTabChange('kothrud')" data-toggle="tab">Kothrud</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab-3" role="tab" onclick="onTabChange('camp')" data-toggle="tab">Camp</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab-4" role="tab" onclick="onTabChange('narhe')" data-toggle="tab">Narhe</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="tab-1">
+						<ul class="c-tab-items" style="padding:30px 40px 30px 40px;">
+							<li class="row"data-auto-height="true">
+								<div class="col-md-12">
+									<div class="c-content-media-1 " data-height="height ">
+										<div class="row">
+											<div class="col-md-12">
+												<div  class="table1 row">
+													<div class="col-md-2">
+														<h3 class="c-font-bold"><i class="fa fa-map-marker c-theme-font ">&nbsp;</i> Area</h3>
+														<p>
+														Swargate	
+														</p>
+													</div>
+													<div class="col-md-2">
+														<h3 class="c-font-bold"><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</h3></th>
+														<p>
+														2 <sup>nd</sup> Thursday and 4<sup>th</sup> Sunday
+														</p>
+													</div>
+													<div class="col-md-2">
+														<h3 class="c-font-bold"><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</h3>
+														<p>
+														8:30 AM to 4:30 PM
+														</p>
+													</div>
+													<div class="col-md-2">
+														<h3 class="c-font-bold"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3>
+														<p>
+														Dhammapunna,Pune Vipassana Samiti,
+														Dadawadi,Opp.Nehru Stadium,
+														Near Anand Mangal Karyalaya,
+														Swargate, Pune - 411002
+														</p>
+													</div>
+													<div class="col-md-2">
+														<h3 class="c-font-bold"><i class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3>
+														<p>
+														020-24468903,&nbsp;020-24436250,&nbsp;7378365783
+														</p>
+													</div>
+													<div class="col-md-1">
+														<h3 class="c-font-bold"><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3>
+														<div class="zoom-in" style="z-index: 1">
+															  <div class="text c-theme-on-hover"><b>View</b></div>
+															  <div class="overlay">
+															  <img src="<?php echo base_url(); ?>assets/site/img/slider_courses/child_slide2.jpg"  alt="Avatar" class="image">
+															  </div>
+														</div>
+													</div>
+													<div class="col-md-1">
+														<h3 class="c-font-bold"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</h3>
+														<p>	
+														   <a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span>&nbsp; <img style="height:50px;" src="<?php echo base_url(); ?>assets/site/img/logo/google_map1.jpg"> </span></a>
+														</p>
+													</div>
+												</div>
+												<div class="table2">
+													<table  class="table table-bordered  " style="width:100%;">
+													<thead>
+													<tr>
+														<th><h3><i class="fa fa-map-marker  c-theme-font">&nbsp;</i> Area</h3></th>
+														<th> 
+														<h3><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</h3></th>
+														<th><h3><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</h3></th>
+														<th style="width:25%;"><h3><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3></th>
+														<th><h3><i class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3></th>
+														<th><h3><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3></th>
+														<th><h3><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</h3></th>
+													</tr>
+													</thead>
+													<tbody >
+													<tr >
+														<th scope="row" >
+														Swargate
+														</th>
+														<td>
+														2 <sup>nd</sup> Thursday and 4<sup>th</sup> Sunday
+														</td>
+														<td>
+														8:30 AM to 4:30 PM	
+														</td>
+														<td style="text-align:left;">
+														Dhammapunna,Pune Vipassana Samiti,
+														Dadawadi,Opp.Nehru Stadium,
+														Near Anand Mangal Karyalaya,
+														Swargate, Pune - 411002	
+													    </td>
+														<td>
+														020-24468903,&nbsp;020-24436250,&nbsp;7378365783
+														</td>
+														<td>
+															<div class="zoom-in">
+																<div  class="text c-theme-on-hover"><b style="text-align: center;">View</b></div>
+																  <div class="overlay">
+																  <img src="<?php echo base_url(); ?>assets/site/img/slider_courses/child_slide2.jpg"  alt="Avatar" class="image">
+																</div>
+															</div>
+														<td>
+														<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Td6mVGCCtvQ2"><span>&nbsp; <img style="height:50px;" src="<?php echo base_url(); ?>assets/site/img/logo/google_map1.jpg"> </span></a>	
+														</td>
+													</tr>
+													</tbody>
+												</table>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="tab-2">
+						<ul class="c-tab-items"style="padding:30px 40px 30px 40px;">
+					    	<li class="row"data-auto-height="true">
+									<div class="col-md-12"style="padding: 0px;">
+									<div class="c-content-media-1 ">
+							            <div class="c-content-title-3 c-title-md " style="border:none;padding: 0px;">
+											<div class="row">
+												<div class="col-md-12"style="padding: 0px;">
+													<div  class="table1 row " >
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="fa fa-map-marker   c-theme-font ">&nbsp;</i> Area</h3>
+															<p>
+															Kothrud	
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</h3></th>
+															<p>
+															1<sup>st </sup> Sunday and 3<sup>rd</sup> Sunday
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</h3>
+															<p>
+															1<sup>st</sup> Sun - 8:45 AM to 4:00 PM <br> 3<sup>rd</sup>  Sun - 7:15 AM to 2:00 PM
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3>
+															<p>
+															45 Nirvana Hills, 1st Floor,
+															Opp. Dashbhuja Ganapati,
+															Near SNDT College, Karve Rd,
+															Kothrud, Pune - 411038
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3>
+															<p>
+															7588193380&nbsp;(Tejas Patil)
+															</p>
+														</div>
+														<div class="col-md-1">
+															<h3 class="c-font-bold"><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3>
+															<div class="zoom-in" style="z-index: 1">
+																  <div class="text c-theme-on-hover"><b>View</b></div>
+																  <div class="overlay">
+																  <img src="<?php echo base_url(); ?>assets/site/img/slider_courses/child_slide2.jpg"  alt="Avatar" class="image">
+																  </div>
+															</div>
+														</div>
+														<div class="col-md-1">
+															<p class="c-font-bold"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</p>
+															<p>	
+																<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span>&nbsp; <img style="height:50px;" src="<?php echo base_url(); ?>assets/site/img/logo/google_map1.jpg"> </span></a>
+															</p>
+														</div>
+													</div>
+													<div class="table2">
+														<table class="table table-bordered"style="width:100%;">
+															<thead>
+															<tr>
+																<th><h3><i class="fa fa-map-marker  c-theme-font">&nbsp;</i> Area</h3></th>
+																<th> 
+																<h3><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</h3></th>
+																<th><h3><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</h3></th>
+																<th style="width:25%;"><h3><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3></th>
+																<th><h3><i  class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3></th>
+																<th><h3><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3></th>
+																<th><h3><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</h3></th>
+															</tr>
+															</thead>
+															<tbody >
+															<tr >
+																<th scope="row" >
+																Kothrud
+															    </th>
+																<td>
+																1<sup>st </sup> Sunday and 3<sup>rd</sup> Sunday
+															    </td>
+																<td>
+																1<sup>st</sup> Sun - 8:45 AM to 4:00 PM <br> 3<sup>rd</sup>  Sun - 7:15 AM to 2:00 PM
+															    </td>
+																<td style="text-align:left;">
+																45 Nirvana Hills, 1st Floor,
+																Opp. Dashbhuja Ganapati,
+																Near SNDT College, Karve Rd,
+																Kothrud, Pune - 411038
+															    </td>
+																<td>
+																7588193380&nbsp;(Tejas Patil)
+																</td>
+																<td>
+																    <div class="zoom-in" style="z-index: 1">
+																		  <div class="text c-theme-on-hover"><b>View</b></div>
+																		  <div class="overlay">
+																		   <img src="<?php echo base_url(); ?>assets/site/img/slider_courses/child_slide2.jpg"  alt="Avatar" class="image">
+																	    </div>
+															       </div>
+																</td>	
+																<td>
+																<a class="vertical-align" target="_blank" href="https://goo.gl/maps/Ya3Yco7juRu"><span>&nbsp; <img style="height:50px;" src="<?php echo base_url(); ?>assets/site/img/logo/google_map1.jpg"> </span></a>
+																</td>
+															</tr>
+															</tbody>
+														</table>
+													</div>
+												
+												</div>
+											</div>
+						           		</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="tab-3">
+						<ul class="c-tab-items"style="padding:30px 40px 30px 40px;">
+					    	<li class="row"data-auto-height="true">
+									<div class="col-md-12"style="padding: 0px;">
+									<div class="c-content-media-1 ">
+							            <div class="c-content-title-3 c-title-md " style="border:none;padding: 0px;">
+											<div class="row">
+												<div class="col-md-12"style="padding: 0px;">
+													<div  class="table1 row " >
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="fa fa-map-marker   c-theme-font ">&nbsp;</i> Area</h3>
+															<p>
+															Camp	
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</h3></th>
+															<p>
+															2<sup>nd</sup> Sunday
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</h3>
+															<p>
+															8:30 AM to 4:00 PM
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3>
+															<p>
+															National Institute of Naturopathy (NIN),
+															Tadiwala Road (Bapu Bhavan),
+															Behind Pune Railway Station,
+															Pune - 411001
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3>
+															<p>
+															7741824424&nbsp;(Sunil Shejul)
+															</p>
+														</div>
+														<div class="col-md-1">
+															<h3 class="c-font-bold"><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3>
+															<div class="zoom-in" style="z-index: 1">
+																  <div class="text c-theme-on-hover"><b>View</b></div>
+																  <div class="overlay">
+																  <img src="<?php echo base_url(); ?>assets/site/img/slider_courses/child_slide2.jpg"  alt="Avatar" class="image">
+																  </div>
+															</div>
+														</div>
+														<div class="col-md-1">
+															<p class="c-font-bold"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</p>
+															<p>	
+																<a class="vertical-align" target="_blank" href="https://goo.gl/maps/WZfZCcBspkHv9EPZA"><span>&nbsp; <img style="height:50px;" src="<?php echo base_url(); ?>assets/site/img/logo/google_map1.jpg"> </span></a>
+															</p>
+														</div>
+													</div>
+													<div class="table2">
+														<table class="table table-bordered"style="width:100%;">
+															<thead>
+															<tr>
+																<th><h3><i class="fa fa-map-marker  c-theme-font">&nbsp;</i> Area</h3></th>
+																<th> 
+																<h3><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</h3></th>
+																<th><h3><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</h3></th>
+																<th style="width:25%;"><h3><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3></th>
+																<th><h3><i  class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3></th>
+																<th><h3><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3></th>
+																<th><h3><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</h3></th>
+															</tr>
+															</thead>
+															<tbody >
+															<tr >
+																<th scope="row" >
+																Camp
+															    </th>
+																<td>
+																2<sup>nd</sup> Sunday
+															    </td>
+																<td>
+																8:30 AM to 4:00 PM
+															    </td>
+																<td style="text-align:left;">
+																National Institute of Naturopathy (NIN),
+																Tadiwala Road (Bapu Bhavan),
+																Behind Pune Railway Station,
+																Pune - 411001
+															    </td>
+																<td>
+																7741824424&nbsp;(Sunil Shejul)
+																</td>
+																<td>
+																    <div class="zoom-in" style="z-index: 1">
+																		  <div class="text c-theme-on-hover"><b>View</b></div>
+																		  <div class="overlay">
+																		   <img src="<?php echo base_url(); ?>assets/site/img/slider_courses/child_slide2.jpg"  alt="Avatar" class="image">
+																	    </div>
+															       </div>
+																</td>	
+																<td>
+																<a class="vertical-align" target="_blank" href="https://goo.gl/maps/WZfZCcBspkHv9EPZA"><span>&nbsp; <img style="height:50px;" src="<?php echo base_url(); ?>assets/site/img/logo/google_map1.jpg"> </span></a>
+																</td>
+															</tr>
+															</tbody>
+														</table>
+													</div>
+												
+												</div>
+											</div>
+						           		</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="tab-4">
+						<ul class="c-tab-items"style="padding:30px 40px 30px 40px;">
+					    	<li class="row"data-auto-height="true">
+									<div class="col-md-12"style="padding: 0px;">
+									<div class="c-content-media-1 ">
+							            <div class="c-content-title-3 c-title-md " style="border:none;padding: 0px;">
+											<div class="row">
+												<div class="col-md-12"style="padding: 0px;">
+													<div  class="table1 row " >
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="fa fa-map-marker   c-theme-font ">&nbsp;</i> Area</h3>
+															<p>
+															Narhe	
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</h3></th>
+															<p>
+															4<sup>th</sup> Sunday
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</h3>
+															<p>
+															8:00 AM to 2:00 PM
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3>
+															<p>
+															Zeal College of Engineering and Research,
+															Survey No.39, Narhe-Dhayari Road,
+															Narhe Pune - 411 041
+															</p>
+														</div>
+														<div class="col-md-2">
+															<h3 class="c-font-bold"><i class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3>
+															<p>
+															9970941977&nbsp;(Dr. Rahul More) <br>7709131481&nbsp;(Laxman Kurne)
+															</p>
+														</div>
+														<div class="col-md-1">
+															<h3 class="c-font-bold"><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3>
+															<div class="zoom-in" style="z-index: 1">
+																  <div class="text c-theme-on-hover"><b>View</b></div>
+																  <div class="overlay">
+																  <img src="<?php echo base_url(); ?>assets/site/img/slider_courses/child_slide2.jpg"  alt="Avatar" class="image">
+																  </div>
+															</div>
+														</div>
+														<div class="col-md-1">
+															<p class="c-font-bold"><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</p>
+															<p>	
+															<a class="vertical-align" target="_blank" href="https://maps.google.com/?cid=2019122827738740523"><span>&nbsp; <img style="height:50px;" src="<?php echo base_url(); ?>assets/site/img/logo/google_map1.jpg"> </span></a>
+															</p>
+														</div>
+													</div>
+													<div class="table2">
+														<table class="table table-bordered"style="width:100%;">
+															<thead>
+															<tr>
+																<th><h3><i class="fa fa-map-marker  c-theme-font">&nbsp;</i> Area</h3></th>
+																<th> 
+																<h3><i class="fa fa-calendar  c-theme-font">&nbsp;</i>Day</h3></th>
+																<th><h3><i class="fa fa-clock-o  c-theme-font">&nbsp;</i>Time</h3></th>
+																<th style="width:25%;"><h3><i style="" class="fa fa-map-marker  c-theme-font">&nbsp;</i>Address</h3></th>
+																<th><h3><i  class="glyphicon glyphicon-phone-alt  c-theme-font"></i>&nbsp;Contact</h3></th>
+																<th><h3><span class="glyphicon glyphicon-picture  c-theme-font"></span>&nbsp; <span class="c-theme-on-hover"> Image</span></h3></th>
+																<th><h3><i style="" class="fa fa-map-marker c-theme-font">&nbsp;</i>Google Map</h3></th>
+															</tr>
+															</thead>
+															<tbody >
+															<tr >
+																<th scope="row" >
+																Narhe
+															    </th>
+																<td>
+																4<sup>th</sup> Sunday
+															    </td>
+																<td>
+																8:00 AM to 2:00 PM
+															    </td>
+																<td style="text-align:left;">
+																Zeal College of Engineering and Research,
+																Survey No.39, Narhe-Dhayari Road,
+																Narhe Pune - 411 041
+															    </td>
+																<td>
+																9970941977&nbsp;(Dr. Rahul More) <br>7709131481&nbsp;(Laxman Kurne)
+																</td>
+																<td>
+																    <div class="zoom-in" style="z-index: 1">
+																		  <div class="text c-theme-on-hover"><b>View</b></div>
+																		  <div class="overlay">
+																		   <img src="<?php echo base_url(); ?>assets/site/img/slider_courses/child_slide2.jpg"  alt="Avatar" class="image">
+																	    </div>
+															       </div>
+																</td>	
+																<td>
+																<a class="vertical-align" target="_blank" href="https://maps.google.com/?cid=2019122827738740523"><span>&nbsp; <img style="height:50px;" src="<?php echo base_url(); ?>assets/site/img/logo/google_map1.jpg"> </span></a>
+																</td>
+															</tr>
+															</tbody>
+														</table>
+													</div>
+												
+												</div>
+											</div>
+						           		</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><br>
+
+	<?php $this->load->view('site/footer'); ?>
+    </div>
+	      <div class="c-layout-go2top">
+            <i class="icon-arrow-up"></i>
+        </div>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/jquery.easing.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/reveal-animate/wow.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/demos/index/js/scripts/reveal-animate/reveal-animate.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.video.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/smooth-scroll/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/typed/typed.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/js-cookie/js.cookie.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/base/js/components.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/base/js/components-shop.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/base/js/app.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function()
+            {
+                App.init(); // init core    
+            });
+        </script>
+        <script src="<?php echo base_url(); ?>assets/site/demos/default/js/scripts/revo-slider/slider-4.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/isotope/isotope.pkgd.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/isotope/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/isotope/packery-mode.pkgd.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/ilightbox/js/jquery.requestAnimationFrame.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/ilightbox/js/jquery.mousewheel.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/ilightbox/js/ilightbox.packed.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/demos/default/js/scripts/pages/isotope-gallery.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>assets/site/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-64667612-1', 'themehats.com');
+        ga('send', 'pageview');
+    </script>
+    </body>
+</html>

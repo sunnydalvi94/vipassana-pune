@@ -1,0 +1,489 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class User_api extends Base_Controller 
+{
+	public function __construct()
+  	{
+	    parent::__construct(); 
+		$this->load->module('user/user_api');
+		$this->load->model('standard/standard_model');
+		$this->load->model('common_model');
+    }
+	/*
+	================================================================================
+    Author:Shubhangi Jagadale                        Date:07/03/2020
+    =================================================================================
+	Purpose: Get list for uers
+	parameter:none,all,user_id 
+	response:{
+    "state": true,
+    "msg": "Records Found",
+    "details":
+	*/
+	public function _get_user_registration($details=false)
+	{
+     $details = $this->decryptArray($details);
+	 if(isset($details['user_id']))
+	 {
+	 $results = $this->standard_model->alljoin2tbl_whr('tbl_user','tbl_role','role_id','user_id',$details['user_id']);
+	 }
+	 else if(isset($details['all'])){
+	 $results= $this->standard_model->selectAllJoin('tbl_user','tbl_role','role_id','user_id');
+	 }
+	 else {
+	   $results= $this->standard_model->selectAllJoin('tbl_user','tbl_role','role_id','in_use','Y');
+	 }
+	 if($results)
+	 {
+		 $data=array();
+		 foreach ($results as $result)
+		 {
+			 $data[] = (array)$result;  
+		 }
+		 if(isset($data) && is_array($data))
+		 {
+			 $result = $this->encryptArray($data);
+		 }
+		 return array(
+		 'msg'=>'Record Found!',
+		 'state'=>true,
+		 'details'=>$result
+		 );
+		 $result= $this->encryptArray($result);
+	 }
+	 else
+	 {
+		 return array(
+		 'msg'=>'Record not Found!',
+		 'state'=>false,
+		 'details'=>false
+		 );
+	 }
+	}
+	/*
+	=================================================================================
+    Author:Shubhangi Jagadale                        Date:07/03/2020
+   =================================================================================
+	Purpose: Save users
+	parameter:column_name,user_id,role_id,fullname,email,contact_no,gender,username,password,city
+			  pincode,address,user_image,display,in_use,inserted_by,inserted_on,modified_by,modified_on
+	response:
+	return array(
+			'state'=>TRUE,
+			'msg'=>'user Saved!',
+			'details'=>$details
+		);
+	*/
+	public function _set_user_registration($details=false)
+
+	{
+		$validation_error='';
+	    $details = $this->decryptArray($details);
+	   if(isset($details['user_id']) && !empty($details['user_id']))
+		{
+			$falg=1;
+		}
+		else
+		{
+			$falg=0;
+		}
+		$rol_id=$details['role_id'];
+		$role_id=$this->standard_model->selectAllWhr('tbl_role','role_id',$rol_id);
+		if(isset($role_id) && !empty($role_id))
+		{
+			if($this->validationuserdetails($details,$falg))
+			{
+				if($details)
+				{
+					$user_id1= $this->session->userdata('user_id');
+					$user = array(
+						'user_id'=>isset($details['user_id'])?$details['user_id']:NULL,
+								'role_id'=>$rol_id,
+								'fullname'=>$details['fullname'],
+								'username'=>$details['username'],
+								'password'=>$details['password'],
+								'contact_no'=>$details['contact_no'],
+								'email'=>$details['email'],
+								'last_login'=>$details['last_login'],
+								'modified_by'=>1,
+							);
+					if(!isset($details['user_id']) && empty($details['user_id']))
+					{
+						$user['inserted_by']=1;
+						$user['inserted_on']=date('Y-m-d H:i:s');
+					}
+					$user_id = $this->standard_model->single_insert('tbl_user',$user);
+					$user['user_id']=$user_id;
+					$user= $this->encryptArray($user);
+					if(isset($details['user_id']) && !empty($details['user_id']))
+					{
+						return array(
+								'state'=>true,
+								'msg'=>'Upadate Record!',
+								'details'=>$user
+								);
+					}
+					else{
+					return array(
+						'state'=>true,
+						'msg'=>'user Added!',
+						'details'=>$user
+						);
+					}
+				}
+				else
+				{
+					return array(
+					'state'=>False,
+					'msg'=>'user Failed to Saved!',
+					'details'=>false
+					);
+				}
+			}
+			else
+			{
+				$validation_error = validation_errors();
+				return array(
+					'state'=>False,
+					'details'=>'Validation is failed',
+					'msg'=>$validation_error
+				);
+			}	
+		}
+		else{
+			return array(
+				'state'=>false,
+				'msg'=>'foreign key constraint fails',
+				'details'=>false
+				);
+		}	
+	}
+	/*
+    =================================================================================
+    Author:Shubhangi Jagadale                        Date:07/03/2020
+    =================================================================================
+	Purpose: Validation for user
+	response:
+    "state": false,
+    "msg": "Validation is failed",
+    "details": "This username already exists.</p>\n"
+}
+	*/  
+	public function validationuserdetails($details,$falg)
+    {
+		$this->form_validation->set_error_delimiters('','');
+		$this->form_validation->set_data(
+		array(
+			'user_id'=>isset($details['user_id']) ? $details['user_id'] :'',
+			'fullname'=>isset($details['fullname']) ? $details['fullname'] :'',
+			'last_login'=>isset($details['last_login']) ? $details['last_login'] :'',
+			'username'=>isset($details['username']) ? $details['username'] :'',
+			'contact_no'=>isset($details['contact_no']) ? $details['contact_no'] :'',
+			'role_id'=>isset($details['role_id']) ? $details['role_id'] :'',
+			'email'=>isset($details['email']) ? $details['email'] :'')
+			);
+		$this->form_validation->set_rules('user_id', 'user_id',array('min_length[1]','max_length[21]','regex_match[/^([0-9][0-9]{0,20})$/]'),
+		array(
+			'min_length'=>'user_id Min 1 number required.',
+			'max_length'=>'user_id Max 21 number allowed.',
+			'regex_match'=>'user_id Only numbers are allowed.'
+		));
+		$this->form_validation->set_rules('role_id', 'role_id',array('required','min_length[1]','max_length[21]','regex_match[/^([0-9][0-9]{0,4})$/]'),
+		array(
+				'required'=>'role_id is Required',
+				'min_length'=>'role_id Min 1 number required.',
+				'max_length'=>'role_id Max 21 number allowed. ',
+				'regex_match'=>'role_id Only numbers are allowed.'
+		));
+		$this->form_validation->set_rules('fullname', 'fullname',array('required','min_length[2]','max_length[255]','regex_match[/^([A-Za-z][A-Za-z\.\s]{1,245})$/]'),
+		array(
+			'required'=>'Fullname is Required', 
+			'min_length'=>'Fullname Min 2 char required.',
+			'max_length'=>'Fullname Max 255 char allowed. ',
+			'regex_match'=>'Fullname Only alphanumeric chars, Alphabets and special char & ( ) / . ,  - _ | [ ] " : ; space are allowed.'
+		));
+		// $this->form_validation->set_rules('last_login', 'last_login',array('required','max_length[210]','regex_match[/^([A-Za-z][A-Za-z\.\s]{1,49})$/]'),
+		// array(
+		// 	'required'=>'last_login is Required', 
+		// 		'max_length'=>'Max 210 char allowed.',
+		// 		'regex_match'=>'Alphabets allowed.  Special characters and space are allowed.'
+		// ));
+		$this->form_validation->set_rules('username', 'username',array('required','max_length[255]','regex_match[/^([A-Za-z0-9][A-Za-z0-9]{1,254})$/]'),
+		array(
+			'required'=>'username is Required', 
+			'min_length'=>'Fullname Min 2 char required.',
+			'max_length'=>'Fullname Max 255 char allowed. ',
+			'regex_match'=>'Only Alphanumeric are allowed.'
+		));
+		if($falg==0){
+		$this->form_validation->set_rules('email', 'email',array('required','regex_match[/^(\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+)$/]','is_unique[tbl_user.email]'),
+		array(
+			'required'=>'email is Required', 
+			'regex_match'=>'Only alphanumeric chars and special char  _  -  @  .  are allowed.',
+			'is_unique' =>'Duplicate entry for email.'
+		));}
+		else{
+			$this->form_validation->set_rules('email', 'email',array('required','regex_match[/^(\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+)$/]'),
+		array(
+			'required'=>'email is Required', 
+			'regex_match'=>'Only alphanumeric chars and special char  _  -  @  .  are allowed.'
+		));
+		}
+		if($falg==0){
+        $this->form_validation->set_rules('contact_no', 'contact_no',array('required','min_length[10]','max_length[10]','regex_match[/^([0-9]{0,10})$/]','is_unique[tbl_user.contact_no]'),
+		array(
+			'required'=>'contact_no number is Required',
+			'min_length'=>'contact_no Min 10 number required.',
+			'max_length'=>'contact_no Max 10 number allowed. ',
+			'regex_match'=>'contact_no Only numbers are allowed.',
+			'is_unique' =>'Duplicate entry for contact Number.'
+		));}
+		else
+		{
+			$this->form_validation->set_rules('contact_no', 'contact_no',array('required','min_length[10]','max_length[10]','regex_match[/^([0-9]{0,10})$/]'),
+			array(
+				'required'=>'contact_no number is Required',
+				'min_length'=>'contact_no Min 10 number required.',
+			    'max_length'=>'contact_no Max 10 number allowed. ',
+			    'regex_match'=>'contact_no Only numbers are allowed.',
+			));
+		}
+		if($this->form_validation->run()==true)
+        {
+			
+			return true;
+        }
+        else
+        {
+            return false;
+		}
+	}	
+	/*
+	=================================================================================
+    Author:Shubhangi Jagadale                        Date:07/03/2020
+    =================================================================================
+	Purpose:- To hide User registration
+	parameter:user_id
+	response:
+	return array(
+			'state'=>TRUE,
+			'msg'=>'user Hidden!',
+			'details'=>$details
+		);
+	*/
+	public function _hide_user($details=false)
+	{ 
+		$details = $this->decryptArray($details);
+        if(isset($details['user_id']))
+		{
+			$id=$details['user_id'];
+		
+			$user=array(
+				'in_use'=>'N',
+			);
+			$results = $this->standard_model->updateRecord('tbl_user','user_id',$id,$user);
+			if($results)
+			{
+				$fetchdata = $this->standard_model->selectAllWhr('tbl_user','user_id',$details['user_id']);
+				if($fetchdata)
+				{
+				   $data=array();
+					 foreach ($fetchdata as $result)
+					   {
+						 $data[] = (array)$result;  
+					   }
+					   if(isset($data) && is_array($data)){
+					   $result = $this->encryptArray($data);
+						}
+						return array(
+						'msg'=>'Hide Record!',
+						'state'=>true,
+						'details'=>$result
+						);
+		        }
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Hide user';
+				return array(
+					'state'=>false,
+					'msg'=>$message,
+					'details'=>false
+			    );
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'user_id Required!',
+			);
+		}
+	}
+	/*
+	=================================================================================
+    Author:Shubhangi Jagadale                        Date:07/03/2020
+    =================================================================================
+	Purpose:- To restore User registration
+	parameter:user_id
+	response:
+	return array(
+			'state'=>TRUE,
+			'msg'=>'user Restore!',
+			'details'=>$details
+		);
+	*/
+	public function _restore_user($details=false)
+	{
+		$details = $this->decryptArray($details);
+		 if(isset($details['user_id']))
+		{
+	    	$id=$details['user_id'];			
+			$user=array(
+				'in_use'=>'Y',
+			);
+			$results = $this->standard_model->updateRecord('tbl_user','user_id',$id,$user);
+			if($results)
+				{
+					$fetchdata = $this->standard_model->selectAllWhr('tbl_user','user_id',$details['user_id']);
+					if($fetchdata)
+					{
+					   $data=array();
+						 foreach ($fetchdata as $result)
+						   {
+							 $data[] = (array)$result;  
+						   }
+						   if(isset($data) && is_array($data)){
+						   $result = $this->encryptArray($data);
+							}
+							return array(
+							'msg'=>'Restore Record!',
+							'state'=>true,
+							'details'=>$result
+							);
+					}
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to restore user';
+				return array(
+						'state'=>false,
+						'msg'=>$message,
+						'details'=>false
+				);
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'user_id Required!',
+			);
+		}
+	}
+	/*
+	=================================================================================
+    Author:Shubhangi Jagadale                        Date:07/03/2020
+    =================================================================================
+	Purpose:- To Permanent delete User registration
+	parameter:user_id
+	response:
+	return array(
+			'state'=>TRUE,
+			'msg'=>'user deleted!',
+			'details'=>$details
+		);
+	*/
+	public function _permanent_delete_user_registration($details=false)
+	{
+		$details = $this->decryptArray($details);
+		if(isset($details['user_id']))
+		{    
+			$id=$details['user_id'];			
+			$user=array(
+					'display'=>'N',
+				);
+			$results = $this->standard_model->updateRecord('tbl_user','user_id',$id,$user);
+			if($results)
+			{
+				$results = $this->encryptArray($details);
+				return array(
+					'state'=>true,
+					'msg'=>'user Delete!',
+					'details'=>$results
+				);
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Delete user';
+				return array(
+						'state'=>false,
+						'msg'=>$message,
+						'details'=>false
+				);
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'user_id Required!',
+			);
+		}
+	}
+    
+	/*
+	=================================================================================
+	Author:Shubhangi Jagadale                        Date:17/03/2020
+	=================================================================================
+	*/
+	public function _set_change_password($details=false)
+	{
+		$old_password=$details['old_password'];
+		$new_password=$details['new_password'];
+		$confirm_password=$details['confirm_password'];
+		$user_id=$this->session->userdata('user_id');
+		if(isset($old_password) && !empty($old_password))
+		{ 
+			$result=$this->common_model->selectDetailsWhr('tbl_user','user_id',$user_id);
+			if($old_password==$result->password)
+	        {
+				if($new_password == $confirm_password)
+				{
+					$change_password=array(
+						'password'=>$confirm_password,
+						'user_id'=>$result->user_id
+					);   
+					$result1=$this->standard_model->single_insert('tbl_user',$change_password);
+					return array(
+						'state'=>True,
+						'msg'=>'password Change!',
+						'details'=>$result1
+						);
+				}
+				else
+				{
+					return array(
+						'state'=>False,
+						'msg'=>'New Password and Confirm Password not Match!',
+						'details'=>False
+						);
+				}
+	   	    }
+			else{
+				return array(
+					'state'=>False,
+					'msg'=>'Old password Not Match!',
+					'details'=>False
+					);
+			}			
+	    }
+		else
+		{
+			return array(
+				'state'=>False,
+				'msg'=>'Old password Required!',
+				'details'=>False
+				);
+		}
+	}
+} // EOF

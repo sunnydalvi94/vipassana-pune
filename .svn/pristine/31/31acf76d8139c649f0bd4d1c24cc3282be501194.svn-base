@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "84e87a1a-1973-44e2-81da-1ebdd10c1c4e",
+		"name": "Album_Image",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_album_image",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "album_image_id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "album_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "album_image_path",
+							"value": "image.tex",
+							"type": "text"
+						},
+						{
+							"key": "album_image_description",
+							"value": "Gautam Buddha Image in Aurangabad Center.",
+							"type": "text"
+						},
+						{
+							"key": "album_image_sequence",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/album-image",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"album-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_album_image",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/album-image?album_image_id=7yPXy",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"album-image"
+					],
+					"query": [
+						{
+							"key": "album_image_id",
+							"value": "7yPXy"
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide_album_image",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "album_image_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}hide-album-image",
+					"host": [
+						"{{host}}hide-album-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore_album_image",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "album_image_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-album-image",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-album-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_album_image",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/delete-album-image/7yPXy",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-album-image",
+						"7yPXy"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}

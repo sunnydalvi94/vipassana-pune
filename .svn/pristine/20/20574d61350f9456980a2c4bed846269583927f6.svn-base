@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "1eee7ce5-94e0-47c5-ad8b-9c2fcf568970",
+		"name": "Album",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_album",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "album_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "album_name",
+							"value": "Vipassana Nagar center",
+							"type": "text"
+						},
+						{
+							"key": "sequence",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "album_cover_photo",
+							"value": "Gautam_Buddha.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/album",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"album"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_album",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "album_id",
+							"value": "2nWpd",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/album",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"album"
+					],
+					"query": [
+						{
+							"key": "album_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide_album",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "album_id",
+							"value": "2nWpd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-album",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-album"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore_album",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "album_id",
+							"value": "2nWpd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-album",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-album"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_album",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/delete-album/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-album",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}

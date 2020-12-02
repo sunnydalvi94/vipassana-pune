@@ -1,0 +1,149 @@
+<?php
+class Common_model extends CI_Model {
+    public function __construct() {
+        parent::__construct();
+    }
+    public function insert_record($tbl_name, $record) {
+        return $this->db->insert($tbl_name, $record);
+    }
+    public function selectDetailsWhr($tblname,$where,$condition)
+    {
+        $this->db->where($where,$condition);
+        $this->db->where('display','Y');
+        $query = $this->db->get($tblname);
+        if($query->num_rows()== 1)
+        {           
+            return $query->row();
+        }
+        else
+        {
+            return false;
+        }           
+    }
+    public function fetchDataDesc($table_name, $asc_by_col_name)
+    {       
+        $this->db->select('*')->from($table_name)->where('display','Y')->order_by($asc_by_col_name, "DESC");  
+        $qry = $this->db->get();
+
+        if($qry->num_rows()>0)
+        {
+            return $qry->result();
+        }
+        else
+        {
+            return false;
+        }
+    }
+     public function fetchDataHomeSlider($table_name, $asc_by_col_name)
+    {       
+        $this->db->select('*')->from($table_name)->where('slider_type_id','1')->order_by($asc_by_col_name, "ASC");  
+        $qry = $this->db->get();
+
+        if($qry->num_rows()>0)
+        {
+            return $qry->result();
+        }
+        else
+        {
+            return false;
+        }
+    }
+      public function fetchDataFeedback1Asc($table_name, $asc_by_col_name)
+    {       
+        $this->db->select('*')->from($table_name)->where('slider_type_id','2')->order_by($asc_by_col_name, "ASC");  
+        $qry = $this->db->get();
+
+        if($qry->num_rows()>0)
+        {
+            return $qry->result();
+        }
+        else
+        {
+            return false;
+        }
+    }
+      public function fetchDataFeedback2Asc($table_name, $asc_by_col_name)
+    {       
+        $this->db->select('*')->from($table_name)->where('slider_type_id','3')->order_by($asc_by_col_name, "ASC");  
+        $qry = $this->db->get();
+
+        if($qry->num_rows()>0)
+        {
+            return $qry->result();
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public function fetchDataASC($table_name, $asc_by_col_name)
+    {       
+        $this->db->select('*')->from($table_name)->where('display','Y')->order_by($asc_by_col_name, "ASC");  
+        $qry = $this->db->get();
+
+        if($qry->num_rows()>0)
+        {
+            return $qry->result();
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public function productCategory($tbl)
+    {
+        $query= $this->db->query(" SELECT DISTINCT tbl1.name FROM tbl_category as tbl1 left join tbl_product as tbl2 on tbl2.category_id=tbl1.category_id where tbl1.display='Y' order by tbl2.name DESC");
+       
+        if($query->num_rows() > 0)
+        {
+            return $query->result();
+        }
+        else
+        {
+            return false;
+        }   
+    }
+     public function alljoin2tbl($tbl1,$tbl2,$where)
+    {
+        $query=$this->db->query("SELECT * from $tbl1 tbl1 left join $tbl2 tbl2 on tbl1.$where=tbl2.$where where  tbl1.display='Y' AND tbl2.display='Y'");
+        if($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $row)
+            {
+                $tbl_data[]=$row;
+            }
+            return $tbl_data;
+        }
+        else
+        {
+            return false;
+        }
+    }
+     public function alljoin2tbl_whr($tbl1,$tbl2,$where,$condition,$id)
+    {
+        $query=$this->db->query("SELECT * from $tbl1 tbl1 left join $tbl2 tbl2 on tbl1.$where=tbl2.$where where tbl1.$condition=$id AND tbl1.display='Y' AND tbl2.display='Y'");
+        if($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $row)
+            {
+                $tbl_data[]=$row;
+            }
+            return $tbl_data;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public function addData($tablename,$data) 
+    {
+        $query=$this->db->insert($tablename,$data); 
+        $user_id= $this->db->insert_id(); 
+        if($query) {
+            return $user_id; 
+        } 
+        else {
+            return false; 
+        } 
+    }
+}?>

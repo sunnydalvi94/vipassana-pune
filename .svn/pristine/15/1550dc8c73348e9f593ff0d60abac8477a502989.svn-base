@@ -1,0 +1,35 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$route['site'] ='site';
+$route['menu-dhamma-punna']='site/menu_dhamma_punna';
+$route['menu-dhamma-ananda']='site/menu_dhamma_ananda';
+$route['dhamma-punna-gallery']='site/dhamma_punna_gallery';
+$route['dhamma-ananda-gallery']='site/dhamma_ananda_gallery';
+$route['mitra-pune-activities']='site/mitra_pune_activities';
+$route['donation']='site/donation';
+$route['code-of-discipline']='site/code_of_discipline';
+$route['questions-answers-vipassana']='site/questions_answers_vipassana';
+$route['what-brings-to-center']='site/what_brings_to_center';
+$route['apply-for-ten-days-courses']='site/apply_for_ten_days_courses';
+$route['children-courses']='site/children_courses';
+$route['teenager-courses']='site/teenager_courses';
+$route['hearing-speech-impaired-children-courses']='site/hearing_speech_impaired_children_courses';
+$route['dhamma-ananda']='site/dhamma_ananda';
+$route['dhamma-punna']='site/dhamma_punna';
+$route['seva']='site/seva';
+$route['mitra-school-seva-registration']='site/mitra_school_seva_registration';
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+Searching 6 files for "fetchDataASC"
+
+C:\wamp\www\vipassana\source\application\modules\ten_day_course\controllers\Ten_day_course_web.php:
+   10   public function ten_day_course_list()
+   11   {
+   12:   $data['ten_day_course_data']=$this->common_model->fetchDataAsc('tbl_ten_day_course','ten_day_course_id');
+   13    $data['keydata'] = $this->common_model->selectDetailsWhr('tbl_rest_keys','id',1);	
+   14    $this->load->view('ten-day-course-list',$data);
+
+1 match in 1 file

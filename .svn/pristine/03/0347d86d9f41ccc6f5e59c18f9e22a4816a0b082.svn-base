@@ -1,0 +1,74 @@
+ /*..........................................apply for ten day courses..................................................*/
+ @media (max-width:900px) {
+       .c-content-title-2{
+        margin-top:30px;
+       }
+
+    }
+ /*.............................................. children courses......................................*/
+   .owl-carousel .owl-controls {
+    margin-top: 3px;
+    position: relative;
+    bottom: 375px;
+    /* z-index: 0; */
+    }   
+    @media (max-width:900px) {
+       .c-content-title-2{
+        margin-top:30px;
+       }
+    }
+    .c-content-tab-4.c-opt-5 > .tab-content .c-tab-items > li p {
+    color:#5c6873;
+     }
+
+    /*........................................code of discipline......................................*/
+
+   /* @media (max-width:900px) {
+   .c-content-title-2{
+    margin-top:30px;
+     }
+    }
+    .c-content-tab-4.c-opt-5 > .tab-content .c-tab-items > li p {
+    color:#5c6873;
+     }*/
+     .c-content-tab-4 > .tab-content .c-tab-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px 20px 30px 20px;
+    }   
+
+    /*...............................................donation......................................*/
+
+   /* @media (max-width:900px) {
+       .c-content-title-2{
+        margin-top:30px;
+       }
+    }*/
+    .f-size{
+        font-size:17px;
+    }
+    .c-content-list-1.c-separator-dot > li:before {
+    margin-top: 14px;
+    }
+
+    /*.................................................Mitra activity...............................*/
+    .c-content-isotope-gallery .c-content-isotope-item > .c-content-isotope-image-container > .c-content-isotope-overlay{
+    opacity:0.8;
+    cursor: pointer;
+    }
+    /*@media (max-width:900px) {
+       .c-content-title-2{
+        margin-top:30px;
+       }
+    }*/
+
+/*................................index page...............................................................*/
+ /* .c-content-isotope-gallery .c-content-isotope-item > .c-content-isotope-image-container > .c-content-isotope-overlay{
+    opacity:0.8;
+    cursor: pointer;
+    }*/
+    @media (max-width: 991px){
+        .c-layout-revo-slider-4 {
+            min-height: 180px;
+        }
+    }

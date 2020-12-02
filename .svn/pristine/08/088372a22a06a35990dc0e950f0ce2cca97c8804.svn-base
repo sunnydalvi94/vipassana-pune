@@ -1,0 +1,92 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Site extends Base_Controller {
+
+	/*
+	-------------------------------------------------------------
+	Author 	: Sunny Dalvi				Date: 03/02/2020
+	-------------------------------------------------------------
+	*/
+
+	public function __construct()
+  	{
+		parent::__construct();
+		$this->load->model("site_model");
+    }
+
+	public function index()
+	{
+        $this->load->view('index');
+	}
+	public function menu_dhamma_punna()
+	{
+        $this->load->view('menu_dhamma_punna');
+	}
+	public function menu_dhamma_ananda()
+	{
+        $this->load->view('menu_dhamma_ananda');
+	}
+	public function dhamma_punna_gallery()
+	{
+        $this->load->view('dhamma_punna_gallery');
+	}
+	public function dhamma_ananda_gallery()
+	{
+        $this->load->view('dhamma_ananda_gallery');
+	}
+	public function mitra_activities_pune()
+	{
+        $this->load->view('mitra_activities_pune');
+	}
+	public function donation()
+	{
+        $this->load->view('donation');
+	}
+	public function discipline_timetable()
+	{
+        $this->load->view('discipline_timetable');
+	}
+	public function question_ans_vipassna()
+	{
+        $this->load->view('question_ans_vipassna');
+	}
+	public function bring_center()
+	{
+        $this->load->view('bring_center');
+	}
+	public function apply_for_courses()
+	{
+        $this->load->view('apply_for_courses');
+	}
+	public function children_courses()
+	{
+        $this->load->view('children_courses');
+	}
+	public function teenger_courses()
+	{
+        $this->load->view('teenger_courses');
+	}
+	public function hearing_impaired_child_courses()
+	{
+        $this->load->view('hearing_impaired_child_courses');
+	}
+	public function dhamma_ananda()
+	{
+        $this->load->view('dhamma_ananda');
+	}
+	public function dhamma_punna()
+	{
+        $this->load->view('dhamma_punna');
+	}
+	public function seva()
+	{
+        $this->load->view('seva');
+	}
+	public function mitra_school_seva_registration()
+	{
+        $this->load->view('mitra_school_seva_registration');
+	}
+}
+
+

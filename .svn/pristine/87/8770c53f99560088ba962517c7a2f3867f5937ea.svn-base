@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "3ef2fc77-5b3b-44e8-833d-c7cf5d0a9527",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get user",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}user-reg",
+					"host": [
+						"{{host}}user-reg"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "role_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "personal_details_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "Admin12",
+							"type": "text"
+						},
+						{
+							"key": "fullname",
+							"value": "shubhangi jagadale",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "8805408799",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "shubhangi9jagadal91996@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "pune",
+							"type": "text"
+						},
+						{
+							"key": "pincode",
+							"value": "414105",
+							"type": "text"
+						},
+						{
+							"key": "pan_no",
+							"value": "ALWPG5809L",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "pune",
+							"type": "text"
+						},
+						{
+							"key": "user_image",
+							"value": "shubhangi.png",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}user-reg",
+					"host": [
+						"{{host}}user-reg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "jdb81",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}hide-user-reg",
+					"host": [
+						"{{host}}hide-user-reg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "jdb81",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}restore-user-reg",
+					"host": [
+						"{{host}}restore-user-reg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}delete-user-reg/jdb81",
+					"host": [
+						"{{host}}delete-user-reg"
+					],
+					"path": [
+						"jdb81"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "old_password",
+							"value": "1234567",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "123456",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}change-user-password",
+					"host": [
+						"{{host}}change-user-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgot password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "shubhangijagadale1996@gmail.com",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}forgot-user-password",
+					"host": [
+						"{{host}}forgot-user-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activation link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "shubhangijagadale1996@gmail.com",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}activation-link",
+					"host": [
+						"{{host}}activation-link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify_activation_link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "activation_code",
+							"value": "6ecbcf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}verify-activation-link",
+					"host": [
+						"{{host}}verify-activation-link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "new_password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}reset-password",
+					"host": [
+						"{{host}}reset-password"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "232efc2c-7089-46d8-9c6f-952cbddf00eb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "663ccc3d-d737-4e85-9fd5-1fd7789efc2d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

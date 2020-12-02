@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "c989da2b-f410-46be-bfe0-35bafcbca834",
+		"name": "mitra-activities",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add mitra-activities",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mitra_activity_id",
+							"value": "518Yn",
+							"type": "text"
+						},
+						{
+							"key": "mitra_activity_title",
+							"value": "Meditation1",
+							"type": "text"
+						},
+						{
+							"key": "mitra_activity_cover_image",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "mitra_activity_video_url",
+							"value": "https://www.youtube.com/embed/BzQM6GNBbak",
+							"type": "text"
+						},
+						{
+							"key": "visibilty",
+							"value": "show",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/mitra-activities",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"mitra-activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get mitra-activities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/mitra-activities",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"mitra-activities"
+					],
+					"query": [
+						{
+							"key": "mitra_activity_id",
+							"value": "Ly2ad",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide mitra-activities",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mitra_activity_id",
+							"value": "Ly2ad",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-mitra-activities",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-mitra-activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete mitra-activities",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-mitra-activities/Ly2ad",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-mitra-activities",
+						"Ly2ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore mitra-activities",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mitra_activity_id",
+							"value": "Ly2ad",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-mitra-activities",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-mitra-activities"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ab06b94c-52b7-4b8a-b886-cc8a6caa21db",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "78564810-2551-4f9b-a579-a8a32bab7faf",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

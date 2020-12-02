@@ -1,0 +1,2 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$config['keys']=array("academic_year_id","city_id","class_id","class_year_id","class_year_notice_id","class_year_teacher_id","country_id","district_id","division_id","e_id","gender_id","media_id","notice_id","type_id","notice_type_id","parent_id","personal_id","id","role_id","salutation_id","sms_id","standard_id","state_id","stud_par_notice_rcvr_id","student_id","student_parent_id","student_year_class_id","teacher_id","user_id","v_id");

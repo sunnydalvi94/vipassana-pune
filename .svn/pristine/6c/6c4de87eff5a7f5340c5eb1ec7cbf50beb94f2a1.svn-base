@@ -1,0 +1,161 @@
+<html>
+    <head>
+    <style>
+    .c-theme-nav li:focus > a:not(.btn), .c-theme-nav li:active > a:not(.btn), .c-theme-nav li:hover > a:not(.btn) {
+    color: #E7CEA5 !important;}
+    .font_size_menu{
+        font-size:1vw;
+    }
+    .font_size_submenu{
+        font-size:13px!important;
+      }
+    .wheel{
+        height:3vw;
+        margin-top: -1vw;
+        margin-bottom: -2vw;
+      }
+    @media (max-width:750px) {
+        .wheel{
+        height:7vw;
+        margin-top: -14px;
+      }
+      .font_size_menu{
+    font-size:12px!important;
+      }
+      .font_size_submenu{
+        font-size:12px!important;
+      }
+    }
+    @media (max-width:400px) {
+    .font_size_menu{
+    font-size:12px!important;
+      }
+      .font_size_submenu{
+        font-size:12px!important;
+      }
+      .c-layout-header .c-navbar .c-mega-menu.c-fonts-bold > .nav.navbar-nav > li > .c-link{
+          height:31px!important;
+      }
+      .wheel{
+        height:10vw;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    <header class="c-layout-header c-layout-header-2 c-layout-header-dark-mobile c-header-transparent-dark" data-minimize-offset="80" style="background: rgb(31, 133, 218,0.6);">
+        <div class="c-navbar">
+            <div class="container">
+                <div class="c-navbar-wrapper clearfix">
+                    <div class="c-brand c-pull-left">
+                        <a href="site" class="c-logo">
+                            <img  src="assets/site/img/logo/wheel.gif" alt="JANGO" class="c-desktop-logo wheel">
+                            <img  src="assets/site/img/logo/wheel.gif" alt="JANGO" class="c-desktop-logo-inverse wheel">
+                            <img   src="assets/site/img/logo/wheel.gif" alt="JANGO" class="c-mobile-logo wheel">
+                        </a>
+                        <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
+                            <span class="c-line"></span>
+                            <span class="c-line"></span>
+                            <span class="c-line"></span>
+                        </button>
+                    </div>
+                    <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-theme c-fonts-uppercase c-fonts-bold" >
+                        <ul class="nav navbar-nav c-theme-nav"> 
+                            <!-- <li class=" punna">
+                                <a href="website-dhamma-punna" class="c-link dropdown-toggle"style="position: absolute;left: 8%;bottom: 31%;" >Dhamma Punna<span class="c-arrow c-toggler"></span></a>
+                            </li>
+                            <li class=" ananda">
+                                <a href="website-dhamma-ananda" class="c-link dropdown-toggle"style="position: absolute;left: 8%; top: 24px;">Dhamma Ananda<span class="c-arrow c-toggler"></span></a>
+                            </li> -->
+                            <li class=" c-menu-type-classic">
+                                <a href="site" class="c-link dropdown-toggle" > <span class="font_size_menu">HOME </span> <span class="c-arrow c-toggler"></span></a>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"><span class="font_size_menu"> ABOUT CENTER </span> <span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu ">
+                                    <a href="dhamma-punna"><span class="font_size_submenu" >Dhamma Punna&nbsp;(Pune City) </span> <span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                        <li class="dropdown-submenu">
+                                    <a href="dhamma-ananda"><span class="font_size_submenu"> Dhamma Ananda&nbsp;(Markal) </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"> <span class="font_size_menu"> Mitra Upakram</span><span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu">
+                                    <a href="javascript:;"><span class="font_size_submenu">about MITRA Upakram </span> <span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="mitra-school-seva-registration"> <span class="font_size_submenu"> MITRA School Seva Registration</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="mitra-pune-activities"><span class="font_size_submenu"> Mitra Pune Activities</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"><span class="font_size_menu"> Apply for Course</span><span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu ">
+                                    <a href="code-of-discipline"><span class="font_size_submenu">Code of Discipline Timetable</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="questions-answers-vipassana"><span class="font_size_submenu"> Frequently Asked Questions</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="what-brings-to-center"><span class="font_size_submenu">What Bring's To Center </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="apply-for-ten-days-courses"><span class="font_size_submenu">Apply for 10 day course </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="donation" class="c-link dropdown-toggle"><span class="font_size_menu">Donation </span> <span class="c-arrow c-toggler"></span></a>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"><span class="font_size_menu">Gallery </span><span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu">
+                                    <a href="dhamma-punna-gallery"><span class="font_size_submenu">Dhamma Punna&nbsp;Gallery </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                        <li class="dropdown-submenu">
+                                    <a href="dhamma-ananda-gallery"><span class="font_size_submenu"> Dhamma Ananda&nbsp;Gallery</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle"><span class="font_size_menu">Children & Teenager </span><span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu ">
+                                    <a href="children-courses"><span class="font_size_submenu">Children Courses </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                        <li class="dropdown-submenu">
+                                    <a href="teenager-courses"><span class="font_size_submenu"> Teenager Courses</span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="hearing-speech-impaired-children-courses"><span class="font_size_submenu">Hearing Speech Impaired Children Courses </span><span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="seva" class="c-link dropdown-toggle" class="c-link dropdown-toggle"><span class="font_size_menu"> Seva</span><span class="c-arrow c-toggler"></span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>  
+            </div>
+        </div>    
+    </header> 
+    <script>
+            //  $(function() {
+            //     $('nav a[href^="' + location.pathname.split("")[1] + '"]').addClass('active');
+            //     });
+        </script>  
+    </body>
+</html>
+
+             
+    

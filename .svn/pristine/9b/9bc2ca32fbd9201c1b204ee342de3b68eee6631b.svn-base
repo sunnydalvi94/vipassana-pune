@@ -1,0 +1,190 @@
+-- ----------- Snehal Kulkarni-------- 11/05/2020 6:30 pm-----------
+-- ------ Table structure for table table tbl_album
+
+CREATE TABLE IF NOT EXISTS `tbl_album` (
+  `album_id` bigint(21) NOT NULL AUTO_INCREMENT,
+  `album_name` varchar(100) DEFAULT NULL,
+  `sequence` int(10) DEFAULT NULL,
+  `album_cover_photo` varchar(50) DEFAULT NULL,
+  `inserted_by` int(11) NOT NULL,
+  `inserted_on` datetime NOT NULL,
+  `modified_by` int(11) NOT NULL,
+  `modified_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `display` enum('Y','N') NOT NULL DEFAULT 'Y',
+  `in_use` enum('Y','N') NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`album_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- ----------- Mrudul Thite-------- 11/05/2020 7:00 pm-----------
+-- Table structure for table `tbl_mitra_school_seva_registration`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_mitra_school_seva_registration` (
+  `mitra_school_seva_registration_id` bigint(21) NOT NULL AUTO_INCREMENT,
+  `ten_day_course_id` bigint(21) NOT NULL,
+  `first_name` varchar(100) DEFAULT NULL,
+  `middel_name` varchar(100) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `mobile_no` varchar(20) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `occupation` varchar(250) DEFAULT NULL,
+  `city` varchar(200) DEFAULT NULL,
+  `area_of_city` varchar(100) DEFAULT NULL,
+  `gender` varchar(50) DEFAULT NULL,
+  `age` int(30) DEFAULT NULL,
+  `answer` varchar(250) DEFAULT NULL,
+  `comments` varchar(255) DEFAULT NULL,
+  `display` enum('Y','N') NOT NULL DEFAULT 'Y',
+  `inserted_by` bigint(20) UNSIGNED NOT NULL,
+  `inserted_on` datetime NOT NULL,
+  `modified_by` bigint(20) UNSIGNED NOT NULL,
+  `modified_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `in_use` enum('Y','N') NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`mitra_school_seva_registration_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+-- Indexes for table `tbl_mitra_school_seva_registration`
+--
+  
+ALTER TABLE  `tbl_mitra_school_seva_registration` ADD KEY IF NOT EXISTS `ten_day_course_id` (`ten_day_course_id`);
+
+
+
+-- Table structure for table `tbl_seva_registration`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_seva_registration` (
+  `seva_registration_id` bigint(21) NOT NULL AUTO_INCREMENT,
+  `ten_day_course_id` bigint(21) NOT NULL,
+  `first_name` varchar(100) DEFAULT NULL,
+  `middel_name` varchar(100) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `mobile_no` varchar(20) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `occupation` varchar(250) DEFAULT NULL,
+  `city` varchar(200) DEFAULT NULL,
+  `area_of_city` varchar(100) DEFAULT NULL,
+  `gender` varchar(50) DEFAULT NULL,
+  `age` int(30) DEFAULT NULL,
+  `answer` varchar(250) DEFAULT NULL,
+  `comments` varchar(255) DEFAULT NULL,
+  `display` enum('Y','N') NOT NULL DEFAULT 'Y',
+  `inserted_by` bigint(20) UNSIGNED NOT NULL,
+  `inserted_on` datetime NOT NULL,
+  `modified_by` bigint(20) UNSIGNED NOT NULL,
+  `modified_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `in_use` enum('Y','N') NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`seva_registration_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+-- Indexes for table `tbl_seva_registration`
+--
+
+ALTER TABLE `tbl_seva_registration` ADD KEY IF NOT EXISTS `ten_day_course_id` (`ten_day_course_id`);
+
+
+
+ 
+
+CREATE TABLE IF NOT EXISTS `tbl_user` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `role_id` int(11) DEFAULT NULL,
+  `fullname` varchar(35) DEFAULT NULL,
+  `email` varchar(35) DEFAULT NULL,
+  `mobile` varchar(12) DEFAULT NULL,
+  `username` text,
+  `password` varchar(32) DEFAULT NULL,
+  `city` varchar(20) DEFAULT NULL,
+  `pincode` int(11) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `user_image` text,
+  `created_by` text,
+  `created_on` datetime DEFAULT NULL,
+  `modified_by` varchar(30) DEFAULT NULL,
+  `modified_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `display` enum('Y','N') NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`user_id`, `role_id`, `fullname`, `email`, `mobile`, `username`, `password`, `city`, `pincode`, `address`, `user_image`, `created_by`, `created_on`, `modified_by`, `modified_on`, `display`) VALUES
+(1, 1, 'Roshan deshmukh', 'rsdroshan@gmail.com', '8983045984', 'admin', '123456', NULL, NULL, 'Hatekar wadi', NULL, '1', '2019-06-20 19:41:25', NULL, '2019-12-18 06:03:15', 'Y');
+
+
+
+--
+-- Table structure for table `ci_sessions`
+--
+
+CREATE TABLE `ci_sessions` (
+  `id` varchar(40) NOT NULL,
+  `ip_address` varchar(45) NOT NULL,
+  `timestamp` int(10) UNSIGNED NOT NULL DEFAULT 0,
+  `data` blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ci_sessions`
+--
+
+INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
+('05jftglqe4h2fmkp5iudrjpq4gu0q7ds', '::1', 1589283553, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393238333535333b),
+('0rq2qhbeibh15v0f3q26pghar6korcnv', '::1', 1589286112, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393238353935383b),
+('3ouescgd7796rpdg00dbm0q8j1vpt5it', '::1', 1589349026, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393334393032363b),
+('57va3hhkdni59c14r674o198oc4rrio0', '::1', 1589265975, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393236353937353b),
+('59r72qivqlra33b19oshgbnjqgujhuq6', '::1', 1589976640, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393937363634303b),
+('5d333ih6ev7iuvud99j619rrsuk1iib2', '::1', 1589349875, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393334393837353b),
+('5j2blsif0m1nenr2cl2irornb9bk9qpp', '::1', 1590151507, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539303135313530373b),
+('5jp1ek6ql3mmnin30f8pal8k7qssbnf2', '::1', 1589265975, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393236353937353b),
+('66pr5klm9u850p21fqdb5jt72lvv3fk1', '::1', 1589618803, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393631383830333b),
+('6pl4omr1sf2v7cq0jrqel09l6g9fh138', '::1', 1576666198, 0x5f5f63695f6c6173745f726567656e65726174657c693a313537363636353931353b736573735f6578706972655f6f6e5f636c6f73657c623a313b),
+('7l8rq7ehngunh87jhuobab72snld5kn7', '::1', 1589376870, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393337363731303b),
+('7svqi2vbust4spveqti8oeptnc0psqb1', '::1', 1590152440, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539303135323433333b),
+('8de46m455ik1hmjlhssp94b9c9mdvrtj', '::1', 1589978766, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393937383736363b),
+('8hcgbmrangv1f9a5oappn4urmop85i36', '::1', 1589279937, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393237393933373b),
+('8i32shc0cvqp2kp6p9teorhiq0bmn074', '::1', 1590151849, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539303135313834393b),
+('8tr36980cit6qs3j4k77eqlhfij05kqn', '::1', 1589975895, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393937353839353b),
+('927ro16bia7so0vtsfj3sv4bf1m27f9b', '::1', 1589267852, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393236373835323b),
+('dqeue33ah6odo3g1v9mlbema5693f59a', '::1', 1589376072, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393337363037323b),
+('el8ovf70eln0q4s3ckfb5e3mo5c0398f', '::1', 1589549600, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393534393630303b),
+('f6a8rk179d31aj23pe2gonufl742ac4u', '::1', 1589550106, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393534393933393b),
+('fb3h74q1rkd93e660jedan4pc6acp4sd', '::1', 1589976213, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393937363231333b),
+('flco5pgkoomg84hkl2fbuh50meuoe3oh', '::1', 1589349483, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393334393438333b),
+('fr3pe3e02r4n6vqddd55se3krkjpms5j', '::1', 1589618323, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393631383332333b),
+('g0cf2jk458sdo5hgtda2ank8p0fda2b8', '::1', 1589549939, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393534393933393b),
+('gu6cnvp9o88suh8prnaggd2rp3m7adcs', '::1', 1589376710, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393337363731303b),
+('hvov8gjji0sfl77mnnfucb2iqu241fn1', '::1', 1589625162, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393632353136323b),
+('irjvjupv0rnpnubjeq7715ug0cp159ce', '::1', 1589285657, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393238353635373b),
+('jbhetpg2ttp3i1lfl42hq7mlg78m2894', '::1', 1589348149, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393334383134393b),
+('jmd86v4jorui3285oqqjm1p1k0rbb8ae', '::1', 1589625486, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393632353438363b),
+('k051dqecgvoee3705sqim1i5677ic15k', '::1', 1589285004, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393238353030343b),
+('kifdoq66ud8eu6utlatb08lk8as05cm8', '::1', 1589347816, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393334373831363b),
+('l3nstnn6t4kqij7railmgqo1nfu5c27h', '::1', 1589549290, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393534393239303b),
+('l5fm86scgad75qp6151gcsakvp19ag8v', '::1', 1590392661, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539303339323636303b),
+('n398l248b391ckrkben9mtd107e4redb', '::1', 1589285958, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393238353935383b),
+('ondpiho1f19lsvls1n0f7ifcj5tlp18l', '::1', 1589350442, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393335303434323b),
+('ouimao3d1ahu3kgvgt5ke8je64ctgg8h', '::1', 1589268273, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393236383237333b),
+('p8h56sqt04vo3grs33d7f0lmstd7sels', '::1', 1590152433, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539303135323433333b),
+('qp47uaahje1blbs4efgl0vhi6jpmgos8', '::1', 1589268317, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393236383237333b),
+('qs8d4epggmospddtnprts0e8pne1km9e', '::1', 1589978811, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393937383736363b),
+('t75evtdp3rd3ckmk9giati6n1sk6n5qu', '::1', 1589350443, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393335303434323b),
+('th51bt1v3acomqcc179bio11mhoasqhj', '::1', 1589375752, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393337353735323b),
+('up2qc1jrdpiu6b02t6g93qgrrria0lng', '::1', 1589350565, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393335303536353b),
+('v8pdm9d3sp5kspj9vaki8pfubs0lmg8q', '::1', 1589625501, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393632353438363b),
+('vstkdm307kh625lgd0h18e15gekjvl4p', '::1', 1589281995, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538393238313939353b);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `ci_sessions`
+--
+ALTER TABLE `ci_sessions`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `ci_sessions_timestamp` (`timestamp`);

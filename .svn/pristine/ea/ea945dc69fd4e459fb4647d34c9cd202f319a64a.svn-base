@@ -1,0 +1,867 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class User_api extends Base_Controller 
+{
+    public function __construct()
+  	{
+		parent::__construct();
+		$this->load->model('standard/standard_model');
+		$this->load->model('user/user_model');
+	//	$this->load->module('mail/Mail');
+	} 
+	/*
+    =================================================================================
+    Author:Shubhangi Jagadale                        Date:13/06/2020
+    =================================================================================
+	Purpose: Get User user
+	return array(
+	{
+		"state": true,
+		"msg": "new user Added!",
+		"details": {
+			"user_id": 4,
+			"user_name": "How sto registesrs stusdent for exam s?",
+			"user_desc": "1.s Login withs syosur losgin_id. you will redirect to a page .2. On My Profile page, click on Tab.:",
+			"sequence": "1",
+			"modified_by": 1,
+			"modified_on": "2020-05-12 12:55:17",
+			"inserted_by": 1,
+			"inserted_on": "2020-05-12 12:55:17"
+		}
+    });
+    */
+	public function _get_user_data($details=array())
+    {
+		$details = $this->decryptArray($details);
+		$results = $this->user_model->fetch_user_data($details);
+		if($results)
+		{
+			$data=array();
+			foreach ($results as $result)
+			{
+				$data[] = (array)$result;  
+			}
+			if(isset($data) && is_array($data)){
+			$result = $this->encryptArray($data);
+			}
+			return array(
+				'msg'=>'Succesfully Fetch Record!',
+				'state'=>true,
+				'details'=>$result
+			);
+		}
+		else
+		{
+			return array(
+				'msg'=>'Unable Fetch Record!',
+				'state'=>false,
+				'details'=>False
+			);
+		}
+    }
+	/*
+	=================================================================================
+    Author:Shubhangi Jagadale                        Date:13/06/2020
+	=================================================================================
+	Purpose: Save user user
+	return array(
+			'state'=>TRUE,
+			'msg'=>'New user added!',
+			'details'=>$details
+		);
+    */
+    public function _set_user_data($details=array())
+	{
+		$validation_error='';
+		$details = $this->decryptArray($details);	
+		if(isset($details['user_id']) && !empty($details['user_id']))
+		{
+		  $flag=1;
+		}
+		else
+		{
+		  $flag=0;
+		}
+		$rol_id=$details['role_id'];
+		$role_id=$this->standard_model->selectAllWhr('tbl_role','role_id',$rol_id);
+		if(isset($role_id) && !empty($role_id))
+		{
+			if($this->validationuserMasterDetails($details,$flag))
+			{
+				if($details)
+				{
+					$password=$this->encryptePasswors($details['password']);
+					$user_id1= $this->session->userdata('user_id');
+					$user = array(
+						'user_id'=>isset($details['user_id'])?$details['user_id']:NULL,
+						'role_id'=>$details['role_id'],
+						'personal_details_id'=>$details['personal_details_id'],
+						'fullname'=>$details['fullname'],
+						'username'=>$details['username'],
+						'password'=>$password,
+						'mobile'=>$details['mobile'],
+						'email'=>$details['email'],
+						'city'=>$details['city'],
+						'pincode'=>$details['pincode'],
+						'pan_no'=>$details['pan_no'],
+						'address'=>$details['address'],
+						'user_image'=>$details['user_image'],
+						'modified_by'=>$user_id1,
+						'modified_on'=>date('Y-m-d H:i:s')
+						);
+						$userdata = array(
+							'user_id'=>isset($details['user_id'])?$details['user_id']:NULL,
+							'role_id'=>$details['role_id'],
+							'personal_details_id'=>$details['personal_details_id'],
+							'fullname'=>$details['fullname'],
+							'username'=>$details['username'],
+						//	'password'=>$pass,
+							'mobile'=>$details['mobile'],
+							'email'=>$details['email'],
+							'city'=>$details['city'],
+							'pincode'=>$details['pincode'],
+							'pan_no'=>$details['pan_no'],
+							'address'=>$details['address'],
+							'user_image'=>$details['user_image'],
+							'modified_by'=>$user_id1,
+							'modified_on'=>date('Y-m-d H:i:s')
+							);
+						if(!isset($details['user_id']) && empty($details['user_id']))
+						{
+							$user['inserted_by']=$user_id1;
+							$user['inserted_on']=date('Y-m-d H:i:s');
+							$userdata['inserted_by']=$user_id1;
+							$userdata['inserted_on']=date('Y-m-d H:i:s');
+						}
+						$user_id = $this->standard_model->single_insert('tbl_user',$user);
+						$userdata['user_id']=$user_id;
+						$userdata= $this->encryptArray($userdata);
+						if(isset($details['user_id']) && !empty($details['user_id']))
+						{
+							
+							$results = $this->standard_model->selectAllWhr('tbl_user','user_id',$details['user_id']); 
+							if($results)
+							{
+								if(isset($details['user_id']) && !empty($details['user_id']))
+								{
+								$falg=1;
+								}
+								else
+								{
+								$falg=0;
+								}	
+								return array(
+									'state'=>true,
+									'msg'=>'Record Updated!',
+									'details'=>$userdata
+								);							
+							}
+							else{
+								return array(
+									'state'=>false,
+									'msg'=>'Id Not Found!',
+									'details'=>false
+								);
+								}
+						}
+						else{
+							return array(
+								'state'=>true,
+								'msg'=>'new user Added!',
+								'details'=>$userdata
+							);
+						}
+					}
+					else
+					{
+						return array(
+							'state'=>False,
+							'msg'=>'user Failed to Saved!',
+							'details'=>false
+						);
+					}
+				}
+				else
+				{
+					$validation_error = validation_errors();
+					return array(
+						'state'=>False,
+						'msg'=>$validation_error,
+						'details'=>'Validation is failed'
+					);
+				}
+			}
+			else{ 
+			  return array(
+			  'state'=>false,
+			  'msg'=>'foreign key constraint fails',
+			  'details'=>false
+			  );
+			}	
+	}
+    /*
+	=================================================================================
+	Author:Shubhangi Jagadale                        Date:13/06/2020
+	=================================================================================
+	Purpose: validation for user
+	*/
+	function validationuserMasterDetails($details,$flag)
+    {
+		$var1="'";
+	 	$var2='"';
+	 	$this->form_validation->set_error_delimiters('','');
+		$this->form_validation->set_data(
+		array(
+		//	'user_id'=>isset($details['user_id']) ? $details['user_id'] :'',
+			'fullname'=>isset($details['fullname']) ? $details['fullname'] :'',
+			'last_login'=>isset($details['last_login']) ? $details['last_login'] :'',
+			'username'=>isset($details['username']) ? $details['username'] :'',
+			'personal_details_id'=>isset($details['personal_details_id']) ? $details['personal_details_id'] :'',
+			'mobile'=>isset($details['mobile']) ? $details['mobile'] :'',
+			'city'=>isset($details['city']) ? $details['city'] :'',
+			'role_id'=>isset($details['role_id']) ? $details['role_id'] :'',
+			'pan_no'=>isset($details['pan_no']) ? $details['pan_no'] :'',
+			'email'=>isset($details['email']) ? $details['email'] :'',
+			'user_image'=>isset($details['user_image']) ? $details['user_image'] :'')
+			);
+	    $this->form_validation->set_rules('personal_details_id','personal_details_id', array('required','min_length[1]','max_length[11]',"regex_match[/^([0-9][0-9]{0,10})$/]"),
+	    array(  
+				'required'=>'personal_details_id is Required',  
+		   		'min_length'=>'personal_details_id Min 1 Number Required.',
+				'max_length'=>'personal_details_id Max 11 Number allowed.',
+				'regex_match'=>'personal_details_id Should Have Only Numbers'
+		));
+		$this->form_validation->set_rules('role_id', 'role_id',array('required','min_length[1]','max_length[21]','regex_match[/^([0-9][0-9]{0,4})$/]'),
+		array(
+				'required'=>'role_id is Required',
+				'min_length'=>'role_id Min 1 number required.',
+				'max_length'=>'role_id Max 21 number allowed. ',
+				'regex_match'=>'role_id Only numbers are allowed.'
+		));
+		$this->form_validation->set_rules('fullname', 'fullname',array('required','min_length[2]','max_length[255]','regex_match[/^([A-Za-z][A-Za-z\s]{1,245})$/]'),
+		array(
+			'required'=>'Fullname is Required', 
+			'min_length'=>'Fullname Min 2 char required.',
+			'max_length'=>'Fullname Max 255 char allowed. ',
+			'regex_match'=>'Fullname Only Alphabets and space are allowed.'
+		));
+		$this->form_validation->set_rules('city', 'city',array('min_length[2]','max_length[255]','regex_match[/^([A-Za-z][A-Za-z\s]{1,245})$/]'),
+		array(
+			'min_length'=>'City Min 2 char required.',
+			'max_length'=>'City Max 255 char allowed. ',
+			'regex_match'=>'City Only alphanumeric chars, Alphabets and space are allowed.'
+		));
+		$this->form_validation->set_rules('username', 'username',array('required','min_length[2]','max_length[30]','regex_match[/^([A-Za-z0-9][A-Za-z0-9]{1,29})$/]'),
+		array(
+			'required'=>'Username is Required', 
+			'min_length'=>'Username Min 2 char required.',
+			'max_length'=>'Username Max 30 char allowed. ',
+			'regex_match'=>'Only Alphanumeric are allowed.'
+		));
+		// $this->form_validation->set_rules('password', 'password',array('required','min_length[6]','max_length[15]','regex_match[{6,15}]'),
+		// array(
+		// 	'required'=>'password is Required', 
+		// 	'min_length'=>'password Min 6 char required.',
+		// 	'max_length'=>'password Max 15 char allowed. ',
+		// ));
+		if($flag==0){
+			$this->form_validation->set_rules('email', 'email',array('required','regex_match[/^(\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+)$/]','is_unique[tbl_user.email]'),
+			array(
+				'required'=>'email is Required', 
+				'regex_match'=>'Email should be Email Format.',
+				'is_unique' =>'Duplicate entry for email.'
+			));
+		}
+		else{
+			$this->form_validation->set_rules('email', 'email',array('required','regex_match[/^(\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+)$/]'),
+			array(
+				'required'=>'email is Required', 
+				'regex_match'=>'Email should be Email Format.'
+			));
+		}
+		if($flag==0){
+			$this->form_validation->set_rules('mobile', 'mobile',array('required','min_length[10]','max_length[10]','regex_match[/^([0-9]{0,10})$/]','is_unique[tbl_user.mobile]'),
+			array(
+				'required'=>'Mobile Number is Required',
+				'min_length'=>'Mobile Number Min 10 number required.',
+				'max_length'=>'Mobile Number Max 10 number allowed. ',
+				'regex_match'=>'Mobile Only numbers are allowed.',
+				'is_unique' =>'Duplicate entry for Mobile Number.'
+			));
+		}
+		else
+		{
+			$this->form_validation->set_rules('mobile', 'mobile',array('required','min_length[10]','max_length[10]','regex_match[/^([0-9]{0,10})$/]'),
+			array(
+				'required'=>'Mobile Number is Required',
+		    	'min_length'=>'Mobile Number Min 10 number required.',
+				'max_length'=>'Mobile Number Max 10 number allowed. ',
+				'regex_match'=>'Mobile Only numbers are allowed.',
+			));
+		}
+		$this->form_validation->set_rules('pan_no', 'pan_no',array('min_length[10]','max_length[10]','regex_match[/^([a-zA-Z]){5}([0-9]){4}([a-zA-Z]){1}$/]'),
+        array(
+         //   'required'=>'PAN Card Number  Required',
+            'min_length'=>'PAN Card Number Min 10 Number required. ',
+            'max_length'=>'PAN Card Number Max  10 Number allowed. ',
+            'regex_match'=>'Please Enter Valid PAN Number!'
+		));
+		$this->form_validation->set_rules('user_image', 'user_image',array('min_length[2]','max_length[50]','regex_match[/^([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif)){1,49}$/]'),
+        array(
+			'min_length'=>'Image Min 2 char required.',
+			'max_length'=>'Image Max 50 char allowed. ',
+            'regex_match'=>'Image Extension should be jpg,jpeg,png,gif.'
+		));
+	    if($this->form_validation->run()==true)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	/*
+	=================================================================================
+	Author:Shubhangi Jagadale                        Date:13/06/2020
+	=================================================================================
+	Purpose: validation for user
+	*/
+	function validationChangePassword($details)
+    {
+		$var1="'";
+	 	$var2='"';
+	 	$this->form_validation->set_error_delimiters('','');
+		$this->form_validation->set_data(
+		array('old_password'=>isset($details['old_password']) ? $details['old_password'] :'',
+			'new_password'=>isset($details['new_password']) ? $details['new_password'] :'',
+			'confirm_password'=>isset($details['confirm_password']) ? $details['confirm_password'] :'')
+			);	
+		$this->form_validation->set_rules('old_password', 'old_password',array('required','min_length[6]','max_length[15]'),
+		array(
+			'required'=>'old_password is Required', 
+			'min_length'=>'old_password Min 6 char required.',
+			'max_length'=>'old_password Max 15 char allowed. ',
+		));
+		$this->form_validation->set_rules('new_password', 'new_password',array('required','min_length[6]','max_length[15]'),
+		array(
+			'required'=>'new_password is Required', 
+			'min_length'=>'new_password Min 6 char required.',
+			'max_length'=>'new_password Max 15 char allowed. ',
+		));
+		$this->form_validation->set_rules('confirm_password', 'confirm_password',array('required','min_length[6]','max_length[15]'),
+		array(
+			'required'=>'confirm_password is Required', 
+			'min_length'=>'confirm_password Min 6 char required.',
+			'max_length'=>'confirm_password Max 15 char allowed. ',
+		));
+	    if($this->form_validation->run()==true)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+    /*
+	=================================================================================
+	 Author:Shubhangi Jagadale                        Date:13/06/2020
+	=================================================================================
+	Purpose: Hide user
+	return array(
+	 		'state'=>TRUE,
+	 		'msg'=>'User hidden!',
+	 		'details'=>$details
+	 	);
+	*/
+	public function _hide_user($details=array())
+	{
+		$details = $this->decryptArray($details);
+		if(isset($details['user_id']))
+		{
+			$id=$details['user_id'];
+			$user=array(
+				'in_use'=>'N',
+			);
+			$results = $this->standard_model->updateRecord('tbl_user','user_id',$id,$user);
+			if($results)
+			{
+				$fetchdata = $this->standard_model->selectAllWhr('tbl_user','user_id',$details['user_id']);
+				if($fetchdata)
+				{
+				    $data=array();
+					foreach ($fetchdata as $result)
+					{
+						$data[] = (array)$result;  
+					}
+					if(isset($data) && is_array($data)){
+					$result = $this->encryptArray($data);
+					}
+					return array(
+						'msg'=>'Hide Record!',
+						'state'=>true,
+						'details'=>$result
+					);
+		        }
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Hide user';
+				return array(
+					'state'=>false,
+					'msg'=>$message,
+					'details'=>false
+				);
+			}
+		}
+		else
+		{
+			return array(
+				'state'=>false,
+				'msg'=>'user_id Required!',
+			);
+		}
+	}
+	/*
+	=================================================================================
+	Author:Shubhangi Jagadale                        Date:31/01/2020
+	=================================================================================
+	Purpose: Restore user
+	return array(
+		'state'=>TRUE,
+		'msg'=>'user restored!',
+		'details'=>$details
+	);
+	*/
+	public function _restore_user($details=array())
+	{
+		$details = $this->decryptArray($details);
+		if(isset($details['user_id']))
+		{	
+		    $id=$details['user_id'];
+			$user=array(
+				'in_use'=>'Y',
+			);
+			$results = $this->standard_model->updateRecord('tbl_user','user_id',$id,$user);
+			if($results)
+			{
+				$fetchdata = $this->standard_model->selectAllWhr('tbl_user','user_id',$details['user_id']);
+				if($fetchdata)
+				{
+				   $data=array();
+					foreach ($fetchdata as $result)
+					{
+						$data[] = (array)$result;  
+					}
+					if(isset($data) && is_array($data)){
+					$result = $this->encryptArray($data);
+					}
+					return array(
+						'msg'=>'Restore Record!',
+						'state'=>true,
+						'details'=>$result
+					);
+		        }
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Hide user';
+				return array(
+					'state'=>false,
+					'msg'=>$message,
+					'details'=>false
+				);
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'user_id Required!',
+			);
+		}
+	}
+	/*
+	=================================================================================
+	Author:Shubhangi Jagadale                        Date:31/01/2020
+	=================================================================================
+	Purpose:Delete user
+	/*return array(
+		'state'=>TRUE,
+		'msg'=>'user deleted!',
+		'details'=>$details
+	);
+	*/
+	public function _delete_user($details=array())
+	{  
+		$details = $this->decryptArray($details);
+		if(isset($details['user_id']))
+		{    
+			$id=$details['user_id'];
+			$user=array(
+				'display'=>'N',
+			);
+			$results = $this->standard_model->updateRecord('tbl_user','user_id',$id,$user);
+			if($results)
+			{
+				$results = $this->encryptArray($details);
+				return array(
+					'state'=>true,
+					'msg'=>'User Delete!',
+					'details'=>$results
+				);
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Delete user';
+				return array(
+					'state'=>false,
+					'msg'=>$message,
+					'details'=>false
+				);
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'user_id Required!',
+			);
+		}
+	}
+	/*
+    =================================================================
+    Author:Shubhangi Jagadale                      Date:13-06-2020
+    ==================================================================
+	*/
+	private function encryptePasswors($details=''){
+		if($details)
+		{
+			return md5(sha1(md5($details)));
+		}
+		else{
+			return false;
+		}
+	 }     
+	/*
+    =================================================================
+    Author:Shubhangi Jagadale                      Date:13-06-2020
+    ==================================================================
+	*/
+	public function _change_user_password($details=array())
+	{
+		$old_password=$this->encryptePasswors($details['old_password']);
+		$new_password=$this->encryptePasswors($details['new_password']);
+		$confirm_password=$this->encryptePasswors($details['confirm_password']);
+		$user_id=$this->session->userdata('user_id');
+	 	if($this->validationChangePassword($details))
+	 	{
+	 		if(isset($old_password) && !empty($old_password))
+	 		{ 
+	 			if($old_password!= $new_password)
+	 			{
+	 				$result=$this->common_model->selectDetailsWhr('tbl_user','user_id',$user_id); 
+	 				if($old_password==$result->password)
+	 				{
+	 					if($new_password == $confirm_password)
+	 					{
+	 						$change_password=array(
+	 							'password'=>$confirm_password,
+	 							'user_id'=>$result->user_id
+	 						);
+	 						$result1=$this->standard_model->single_insert('tbl_user',$change_password);
+							 return array('state'=>True,'msg'=>'Reset Password Succesfully!','details'=>$result1);
+						}
+	 					else
+	 					{
+	 						return array('state'=>False,'msg'=>'New Password and Confirm Password not Match!','details'=>False);
+	 					}
+	 				}
+	 				else
+	 				{
+	 					return array('state'=>False,'msg'=>'Old password Not Match!','details'=>False);
+	 				}	
+	 			}
+	 			else
+	 	     	{
+	 				return array('state'=>False,'msg'=>'Old password and New Password are Same!','details'=>False);
+	 		    }		
+	 		}
+	 		else
+	 		{
+	 			return array('state'=>False,'msg'=>'Old password Required!','details'=>False);
+	 		}
+	 	}
+	 	else
+	 	{
+	 	 	$validation_error = validation_errors();
+	 	 	return array('state'=>False,'msg'=>$validation_error,'details'=>'Validation is failed');
+	 	}
+	}
+	/*
+    =================================================================
+    Author:Shubhangi Jagadale                      Date:13-06-2020
+    ==================================================================
+	*/
+	public function _forgot_user_password($details=array())
+    {
+		$email=$this->input->post('email');
+		if(isset($email) && !empty($email))
+		{ 
+			$result = $this->common_model->selectDetailsWhr('tbl_user','email',$email);
+			if($result)
+			{
+				$password=mt_rand(10,1000000);
+				$data=array(
+				   'user_id'=>$result->user_id,
+				   'password'=>$password,
+				);
+				$result1=$this->standard_model->single_insert('tbl_user',$data);
+				if($result1)
+				{
+					$this->load->library('email_sent');
+					$datavalue["password"]=$password;
+					$datavalue["fullname"]=$result->fullname;
+					$subject = 'YourClass Forgot Password';
+		            //$msg_body= $this->load->view("mailer/forgot_pass",$datavalue,true);
+					$msg_body="Your New password is".$password;
+					$alt_msg = 'Vipassna Forgot Password';
+					$data=array('subject'=>$subject,'msg_body'=>$msg_body,'alt_msg'=>$alt_msg);
+					$email_id[]=array('email_id'=>$email);
+					$result2=$this->email_sent->mail_sent($data,$email_id);
+					// echo $this->db->last_query();
+					return array('state'=>True,'msg'=>'New Password Send to your Register Email_Id','details'=>$result2);
+				}
+				else
+				{
+					return array('state'=>False,'msg'=>'Email not Update!','details'=>False);
+				}
+			}
+			else
+			{
+				return array('state'=>False,'msg'=>'Email not Find!','details'=>False);
+			}
+		}
+		else
+		{
+			return array('state'=>False,'msg'=>'Please Enter Your Email_id!','details'=>False);
+		}
+	}  
+     /*
+    =================================================================
+    Author:Shubhangi Jagadale                      Date:15-06-2020
+    ==================================================================
+	*/
+	public function _post_activation_link($details=array())
+    {
+		$email=$this->input->post('email');
+		if(isset($email) && !empty($email))
+		{ 
+			$userdata = $this->common_model->selectDetailsWhr('tbl_user','email',$email);
+			if($userdata)
+			{
+				$user1=$userdata->fullname;
+				$activation_code=mt_rand(10,1000000);
+				$activation_code=$this->encryptePasswors($activation_code);
+				$activation_code=substr($activation_code,0,6);
+			   	$user_id=$userdata->user_id;
+				$user=$this->user_model->updateActivationCode($details,$user_id,$activation_code);
+				if($user)
+				{
+				$user_details= array(
+					'email'=>$email,
+					'fullname'=>$userdata->fullname,
+					'activation_code'=>$activation_code						
+					);	
+				$subject = 'Vipassana Activation Code';
+				$msg_body  = $this->load->view('mail/recovery-link',$user_details,true);
+				//	$msg_body="Your New Activation Code is</br>".$activation_code."<a href=".base_url().'reset-password/'.$activation_code.">Click here</a>";
+				$mail_details = array(
+					'to'=>$user_details['email'],
+						'subject'=>$subject,
+						'message'=>$msg_body	
+						);	
+				$this->notify($mail_details);
+				unset($user_details['activation_code']);
+				return array(
+						'state'=>True,
+						'msg'=>'New Activation Code Send to your Register Email_Id',
+						'details'=>$mail_details
+					);
+				}
+				else
+				{
+				return array(
+					'state'=>False,
+					'msg'=>'Email not Update!',
+					'details'=>False
+				);
+				}
+			}
+			else
+			{
+				return array(
+					'state'=>False,
+					'msg'=>'Email not Find!',
+					'details'=>False
+				);
+			}
+		}
+		else
+		{
+			return array(
+				'state'=>False,
+				'msg'=>'Please Enter Your Email_id!',
+				'details'=>False
+			);
+		}
+	} 
+	/*
+    =================================================================
+    Author:Shubhangi Jagadale                      Date:15-06-2020
+    ==================================================================
+	*/
+	public function _post_verify_activation_link($details=array())
+    {
+		$activation_code=$details['activation_code'];
+		if(isset($activation_code) && !empty($activation_code))
+		{
+			$fetch_activation_code = $this->common_model->selectDetailsWhr('tbl_user','activation_code',$activation_code);
+			if($fetch_activation_code)
+			{
+				if($fetch_activation_code->activation_code == $activation_code)
+				{
+					$rest_user_id=$this->session->userdata('user_id');
+					if($rest_user_id == $fetch_activation_code->user_id)
+					{
+						$data1=array(
+							'user_id'=>$fetch_activation_code->user_id,
+							'activation_code'=>$rest_user_id,
+						);
+						$replace_activation_code=$this->standard_model->single_insert('tbl_user',$data1);
+					   	if($replace_activation_code)
+						{
+							return array('state'=>True,'msg'=>'Verify Activation Code!','details'=>True,
+							'redirect' => base_url().'reset-password'
+							);
+						}
+						else
+						{
+							return array('state'=>False,'msg'=>'Reset Password Page not found!','details'=>False,
+							'redirect' => base_url().'forgot-password');
+						}
+					}
+					else
+				    {
+						return array('state'=>False,'msg'=>'user not Match!','details'=>False,
+						'redirect' => base_url().'forgot-password');
+			    	}
+				}
+				else
+				{
+					return array('state'=>False,'msg'=>'Activation Code not found!','details'=>False,
+					'redirect' => base_url().'forgot-password');
+				}
+			}
+			else
+		    {
+				return array('state'=>False,'msg'=>'Activation Code not found!','details'=>False,
+				'redirect' => base_url().'forgot-password');
+	    	}
+		}
+		else
+		{
+			return array('state'=>False,'msg'=>'Please Enter Your Activation Code!','details'=>False);
+		}
+	}	
+	/*
+    =================================================================
+    Author:Shubhangi Jagadale                      Date:15-06-2020
+    ==================================================================
+	*/
+	public function _post_reset_password($details=array())
+    {
+		$new_password=$this->encryptePasswors($details['new_password']);
+		$confirm_password=$this->encryptePasswors($details['confirm_password']);
+		$rest_user_id=$this->session->userdata('user_id');
+		$fetch_user=$this->common_model->selectDetailsWhr('tbl_user','user_id',$rest_user_id);
+		if($fetch_user)//check login user_id and activation code are same or not
+		{
+			if($this->validationResetPassword($details))
+	     	{
+				if($new_password == $confirm_password)
+				{
+					$change_password=array(
+						'password'=>$confirm_password,
+						'user_id'=>$rest_user_id
+					);
+					$change_password=$this->standard_model->single_insert('tbl_user',$change_password);
+					return array(
+						'state'=>True,
+						'msg'=>'Reset Password Succesfully!',
+						'details'=>$change_password,
+						'redirect' => base_url().'admin'
+					);
+				}
+				else
+				{
+					return array(
+						'state'=>False,
+						'msg'=>'New Password and Confirm Password not Match!',
+						'details'=>False
+					);
+				}
+			}
+		   else
+	    	{
+	 	    	$validation_error = validation_errors();
+	 	    	return array('state'=>False,'msg'=>$validation_error,'details'=>'Validation is failed');
+			}
+		}
+		else
+		{
+			return array(
+				'state'=>False,
+				'msg'=>'Session Expired!',
+				'details'=>False
+			);
+	    }
+	}
+	/*
+	=================================================================================
+	Author:Shubhangi Jagadale                        Date:13/06/2020
+	=================================================================================
+	Purpose: validation for user
+	*/
+	function validationResetPassword($details)
+    {
+		$var1="'";
+	 	$var2='"';
+	 	$this->form_validation->set_error_delimiters('','');
+		$this->form_validation->set_data(
+		array('new_password'=>isset($details['new_password']) ? $details['new_password'] :'',
+			'confirm_password'=>isset($details['confirm_password']) ? $details['confirm_password'] :'')
+			);	
+		$this->form_validation->set_rules('new_password', 'new_password',array('required','min_length[6]','max_length[15]'),
+		array(
+			'required'=>'new_password is Required', 
+			'min_length'=>'new_password Min 6 char required.',
+			'max_length'=>'new_password Max 15 char allowed. ',
+		));
+		$this->form_validation->set_rules('confirm_password', 'confirm_password',array('required','min_length[6]','max_length[15]'),
+		array(
+			'required'=>'confirm_password is Required', 
+			'min_length'=>'confirm_password Min 6 char required.',
+			'max_length'=>'confirm_password Max 15 char allowed. ',
+		));
+	    if($this->form_validation->run()==true)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}	
+}

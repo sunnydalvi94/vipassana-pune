@@ -1,0 +1,8 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+
+// --------- API ROUTES -----------
+
+$route['(?i)album']="album/album_rest/album";
+$route['(?i)hide-album']="album/album_rest/hide_album";
+$route['(?i)restore-album']="album/album_rest/restore_album";
+$route['(?i)delete-album/(:any)']="album/album_rest/delete_album/$1";

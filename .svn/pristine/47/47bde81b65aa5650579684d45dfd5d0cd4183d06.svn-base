@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "40e9e66d-9309-4ed2-808e-d94b3f6846c9",
+		"name": "one_day_course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add one_day_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "one_day_course_id",
+							"value": "V1BDd",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "one_day_course_area",
+							"value": "karve nagar1",
+							"type": "text"
+						},
+						{
+							"key": "one_day_course_image",
+							"value": "abc.png",
+							"type": "text"
+						},
+						{
+							"key": "day",
+							"value": "2 <sup>nd </sup>Thursday and 4<sup>th </sup> Sunday",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "8:30 AM to 4:30 PM",
+							"type": "text"
+						},
+						{
+							"key": "one_day_course_address",
+							"value": "Dhammapunna,Pune Vipassana Samiti, Dadawadi,Opp.Nehru Stadium, Near Anand Mangal Karyalaya, Swargate, Pune - 411002",
+							"type": "text"
+						},
+						{
+							"key": "contact_no",
+							"value": "020-24468903, <br> 020-24436250,<br> 7378365783",
+							"type": "text"
+						},
+						{
+							"key": "venue",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "google_map",
+							"value": "https://www.google.com/maps",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/one-day-course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"one-day-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one_day_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/one-day-course?all=true",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"one-day-course"
+					],
+					"query": [
+						{
+							"key": "one_day_course_id",
+							"value": "V1BDd",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide one_day_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "one_day_course_id",
+							"value": "2nWpd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-one-day-course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-one-day-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore one_day_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "one_day_course_id",
+							"value": "2nWpd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-one-day-course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-one-day-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete one_day_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-one-day-course/V1BDd",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-one-day-course",
+						"V1BDd"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

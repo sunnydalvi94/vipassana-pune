@@ -1,0 +1,316 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Group_sitting_api extends Base_Controller 
+{
+    public function __construct()
+  	{
+		parent::__construct();
+		$this->load->model('standard/standard_model');
+	}
+    public function _set_group_sitting($details=false)
+	{
+	      $validation_error='';
+	      $details=$this->decryptArray($details);
+	      if(isset($details['group_sitting_id']) && !empty($details['group_sitting_id']))
+	      {
+	      	$flag=1;
+	      }
+	      else
+	      {
+	      	$flag=0;
+	      }
+	    if($this->validationGroup_sittingDetails($details))
+	    {
+	      	if($details)
+	      	{
+	      	 $group_sitting = array
+			      	 (   
+			      	 	'group_sitting_id'=>isset($details['group_sitting_id'])?$details['group_sitting_id']:NULL,
+			      	 	'area_name' =>$details['area_name'] ,
+			      	 	'image' =>$details['image'] , 
+			      	 	'day' =>$details['day'] , 
+			      	 	'time' =>$details['time'] , 
+			      	 	'contact' =>$details['contact'] , 
+			      	 	'group_sitting_address' =>$details['group_sitting_address'] , 
+			      	 	'google_map' =>$details['google_map'] , 
+			      	 	'modified_by'=>1,
+	                    'modified_on'=>date('Y-m-d H:i:s'),
+	                 );	
+			  if(!isset($details['group_sitting_id']) && empty($details['group_sitting_id']))
+	                {
+	                    $group_sitting['inserted_by']=1;
+	                    $group_sitting['inserted_on']=date('Y-m-d H:i:s');
+	                }
+	      	     $group_sitting_id= $this->standard_model->single_insert('tbl_group_sitting',$group_sitting);
+	      	     $group_sitting['group_sitting_id']=$group_sitting_id;
+	      	     $group_sitting= $this->encryptArray($group_sitting);
+	      	    if($flag==0)
+	               {
+	                return array(
+	                            'state'=>true,
+	                            'msg'=>'group_sitting Added!',
+	                            'details'=>$group_sitting
+	                            );
+	            	}else
+	            	{
+	            	return array(
+	                            'state'=>true,
+	                            'msg'=>'groupsitting updated!',
+	                            'details'=>$group_sitting
+	                            );
+	            	}
+	        }
+	      	 else
+	        {
+	                return array(
+	                'state'=>False,
+	                'msg'=>'groupsitting Failed to Saved!',
+	                'details'=>false
+	                );
+	        }
+	    }
+	    else
+			{
+			    $validation_error = validation_errors();
+			    return array(
+					'state'=>False,
+					'msg'=>$validation_error,
+					'details'=>'Validation is failed'
+			    );
+			}
+	}
+	public function validationGroup_sittingDetails($details)
+    {
+		$this->form_validation->set_error_delimiters('','');
+		$this->form_validation->set_data(
+        array(
+        	'group_sitting_id'=>isset($details['group_sitting_id']) ? $details['group_sitting_id'] :'',
+        	'area_name'=>isset($details['area_name']) ? $details['area_name'] : '',
+        	'day'=>isset($details['day']) ? $details['day'] : '',
+        	'time'=>isset($details['time']) ? $details['time'] : '',
+        	'contact'=>isset($details['contact']) ? $details['contact'] : '',
+        	'group_sitting_address'=>isset($details['group_sitting_address']) ? $details['group_sitting_address'] : '',
+        	'google_map'=>isset($details['google_map']) ? $details['google_map'] : '',
+              ));
+        $this->form_validation->set_rules('group_sitting_id','group_sitting_id', array('min_length[1]','max_length[5]',"regex_match[/^([0-9][0-9]{0,4})$/]"),
+        array(
+           'min_length'=>'group_sitting_id Min 1 Number Required.',
+		   'max_length'=>'group_sitting_id Max 5 Number allowed.',
+		   'regex_match'=>'group_sitting_id Should Have Only Numbers'
+             ));
+        $this->form_validation->set_rules('area_name','area_name',array('required','min_length[1]','max_length[255]',"regex_match[/^([A-Za-z][A-Za-z\,\(\)\-\'\"\:\;\&\|\s]{1,254})$/]"),
+		array(
+			'required'=>'Required the name',
+			'min_length'=>'Min 1 Character Required.',
+			'max_length'=>'Max 255 Character Allowed.',
+			'regex_match'=>'area_name should not have Numbers'
+			));
+        $this->form_validation->set_rules('day','day',array('required','min_length[1]','max_length[255]'),
+		array(
+			'required'=>'Required the name',
+			'min_length'=>'Min 1 Character Required.',
+			'max_length'=>'Max 255 Character Allowed.',
+			'regex_match'=>'day should not have Numbers'
+			));
+        $this->form_validation->set_rules('time','time',array('required'),
+		array(
+			'required'=>'Required the name',
+			 ));
+        $this->form_validation->set_rules('google_map','google_map',array('required'),
+		array(
+			'required'=>'Required the name',
+			  ));
+        $this->form_validation->set_rules('contact', 'contact',array('required','min_length[10]','max_length[100]',"regex_match[/^[0-9][0-9]{9,99}$/]"),
+        array(
+			'required'=>'contact is Required', 
+			'regex_match'=>'Only integer are allowed.',
+			'max_length'=>'contact Max  100 Number allowed.',
+			'min_length'=>'contact Min 10 Number required.'
+              ));
+        $this->form_validation->set_rules('group_sitting_address', 'group_sitting_address',array('required','min_length[2]','max_length[255]',"regex_match[/^([A-Z0-9a-z][A-Z0-9a-z\(\)\&\-\.\,\_\'\/\[\]\'\:\;\s]{1,254})$/]"),
+	    array(
+		   'required'=>'group_sitting_address is Required', 
+		   'min_length'=>'group_sitting_address Min 2 char required.',
+           'max_length'=>'group_sitting_address Max 255 char allowed.',
+           'regex_match'=>'integer and character are allowed.'
+			));
+        if($this->form_validation->run()==true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public function _get_group_sitting($details=false)
+	 {
+
+		$details = $this->decryptArray($details);
+		if(isset($details['group_sitting_id']))
+        {
+        	$id=$details['group_sitting_id'];
+        $results = $this->standard_model->selectAllWhr('tbl_group_sitting','group_sitting_id',$id);
+        }
+        else if(isset($details['all'])){
+        $results = $this->standard_model->selectAll('tbl_group_sitting');
+        }
+        else {
+	    $results = $this->standard_model->selectAll('tbl_group_sitting','in_use','Y');        	
+          
+		}
+		 if($results)
+        {
+        	$data=array();
+                foreach ($results as $result)
+                {
+                  $data[] = (array)$result;  
+                }
+                if(isset($data) && is_array($data)){
+                $result = $this->encryptArray($data);
+                 }
+
+            return array(
+                  'msg'=>'Record Found!',
+                  'state'=>true,
+                  'details'=>$result
+			);
+			$result= $this->encryptArray($details);
+        }
+        else
+        {
+             return array(
+                  'msg'=>'Record not Found!',
+                  'state'=>false,
+                  'details'=>$details['group_sitting_id']
+                          );
+        }
+	}
+    public function _hide_group_sitting($details=false)
+	{
+		$details = $this->decryptArray($details);
+		if(isset($details['group_sitting_id']))
+		{
+			$id=$details['group_sitting_id'];
+			$group_sitting=array(
+				'in_use'=>'N',
+			);
+			$results = $this->standard_model->updateRecord('tbl_group_sitting','group_sitting_id',$id,$group_sitting);
+            $resdata = $this->standard_model->selectAllWhr('tbl_group_sitting','group_sitting_id',$details['group_sitting_id']);
+			if($resdata)
+				 {
+					$data=array();
+		              foreach ($resdata as $result)
+		                {
+		                  $data[] = (array)$result;  
+		                }
+		                if(isset($data) && is_array($data)){
+		                $result = $this->encryptArray($data);
+		                 }
+		            	return array(
+		                  'state'=>true,
+		                  'msg'=>'groupsitting Hidden!',
+		                  'details'=>$result
+								);
+			     }
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Hide groupsitting';
+				return array(
+					'state'=>false,
+					'msg'=>$message,
+					'details'=>false
+			    );
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'group_sitting_id Required!',
+			);
+		}
+	}
+    public function _restore_group_sitting($details=false)
+	 {
+		$details = $this->decryptArray($details);
+		if(isset($details['group_sitting_id']))
+		{
+			$id=$details['group_sitting_id'];
+			$group_sitting=array(
+				'in_use'=>'Y',
+			);
+			$results = $this->standard_model->updateRecord('tbl_group_sitting','group_sitting_id',$id,$group_sitting);
+
+			$resdata = $this->standard_model->selectAllWhr('tbl_group_sitting','group_sitting_id',$details['group_sitting_id']);
+			if($resdata)
+		    {
+					$data=array();
+		              foreach ($resdata as $result)
+		                {
+		                  $data[] = (array)$result;  
+		                }
+		                if(isset($data) && is_array($data)){
+		                $result = $this->encryptArray($data);
+		                 }
+		            	return array(
+		                  'state'=>true,
+		                  'msg'=>'groupsitting Restore!',
+		                  'details'=>$result
+								);
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Restore groupsitting';
+				return array(
+					'state'=>false,
+					'msg'=>$message,
+					'details'=>false
+			    );
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'group_sitting_id Required!',
+			);
+		}
+	}
+	public function _delete_group_sitting($details=null)
+	{  
+		$details = $this->decryptArray($details);
+		if(isset($details['group_sitting_id']))
+		{    
+			$id=$details['group_sitting_id'];
+		    $group_sitting=array(
+					'display'=>'N',
+				);
+			$results = $this->standard_model->updateRecord('tbl_group_sitting','group_sitting_id',$id,$group_sitting);
+			if($results)
+			{
+				$results = $this->encryptArray($details);
+				return array(
+					'state'=>true,
+					'msg'=>'groupsitting Delete!',
+					'details'=>$results
+				);
+			}
+			else
+			{
+				$message=isset($this->standard_model->error )? $this->standard_model->error['message']:'Unable to Delete groupsitting';
+				return array(
+						'state'=>false,
+						'msg'=>$message,
+						'details'=>false
+				);
+			}
+		}
+		else
+		{
+			return array(
+			'state'=>false,
+			'msg'=>'group_sitting_id Required!',
+			);
+		}
+	}
+}

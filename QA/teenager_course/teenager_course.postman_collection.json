@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "72f75d53-0389-443f-9fd3-5018d1c300bb",
+		"name": "teenager_course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add teenager-course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "teenager_course_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "teenager_course_name",
+							"value": "DHAMMANANDA",
+							"type": "text"
+						},
+						{
+							"key": "teenager_course_url",
+							"value": "https://www.dhamma.org/en/schedules/schananda",
+							"type": "text"
+						},
+						{
+							"key": "teenager_course_address",
+							"value": " Pune Riverside Vipassana Cendive (Markal)",
+							"type": "text"
+						},
+						{
+							"key": "teenager_course_duration",
+							"value": " 7 Days",
+							"type": "text"
+						},
+						{
+							"key": "teenager_course_age_limit",
+							"value": " 15 years completed to 19 years",
+							"type": "text"
+						},
+						{
+							"key": "teenager_course_venue",
+							"value": "pune",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/teenager-course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"teenager-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get teenager-course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/teenager-course?all=true",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"teenager-course"
+					],
+					"query": [
+						{
+							"key": "teenager_course_id",
+							"value": "518Yn",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide teenager-course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mitraSchool_seva_registration_id",
+							"value": "mdMZy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-teenager-course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-teenager-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete teenager-course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-teenager-course/Ly2ad",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-teenager-course",
+						"Ly2ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore teenager-course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "teenager_course_id",
+							"value": "Ly2ad",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-teenager-course",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-teenager-course"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fea31b4c-1084-4586-bedb-efd6504b0508",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "4093e26c-2e32-47f4-b30f-6951c01a7083",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

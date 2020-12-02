@@ -1,0 +1,7 @@
+-- Mrudul Thite 22-07-2020 12:10pm
+
+ALTER TABLE `tbl_mitra_school_seva_registration`CHANGE `modified_by` `modified_by` BIGINT(20) UNSIGNED NULL DEFAULT NULL;
+
+ALTER TABLE `tbl_seva_registration` CHANGE `inserted_by` `inserted_by` BIGINT(20) UNSIGNED NULL DEFAULT NULL;
+ALTER TABLE `tbl_mitra_school_seva_registration` CHANGE `inserted_by` `inserted_by` BIGINT(20) UNSIGNED NULL DEFAULT NULL;
+ALTER TABLE `tbl_seva_registration` CHANGE `modified_by` `modified_by` BIGINT(20) UNSIGNED NULL DEFAULT NULL;

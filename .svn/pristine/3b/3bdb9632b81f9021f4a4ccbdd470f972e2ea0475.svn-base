@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "3466538c-69e1-439e-9ac1-f4ee2660f228",
+		"name": "about",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add-about",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "about_id",
+							"value": "2nWpd",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "about_name",
+							"value": "vipassana",
+							"type": "text"
+						},
+						{
+							"key": "about_description",
+							"value": "this is description",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"value": "abc.mp4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/about",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"about"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-about",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/about?about_id=7yPXy&all=true",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"about"
+					],
+					"query": [
+						{
+							"key": "about_id",
+							"value": "7yPXy"
+						},
+						{
+							"key": "all",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide-about",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "about_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-about",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-about"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore-about",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "about_id",
+							"value": "7yPXy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-about",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-about"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-about",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/delete-about/7yPXy",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-about",
+						"7yPXy"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}

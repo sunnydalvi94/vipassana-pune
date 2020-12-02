@@ -1,0 +1,106 @@
+<a name="footer"></a>
+<footer class="c-layout-footer c-layout-footer-3 c-bg-dark" style="padding:0px 0px 30px 0px;">
+    <div class="c-prefooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="c-container c-first">
+                        <div class="c-content-title-1">
+                            <h3 class="c-font-uppercase c-font-bold">
+                               <a href="site"  class="c-theme-font">VIPASSANA CENTRES</a>
+                            </h3>
+                            <div class="c-line-left hide"></div>
+                        </div>
+                        <ul class="c-links c-content-list-1 c-theme c-separator-dot c-square"style="margin:0px 0px 0px 0px;">  
+                            <li><a href="dhamma-punna" class="c-font-uppercase c-theme-on-hover  c-font-bold c-font-white">DHAMMA PUNNA&nbsp;(PUNE CITY)</a></li>
+                            <li  style="border-bottom: 1px solid #394047";><a href="dhamma-ananda"class="c-font-uppercase c-theme-on-hover  c-font-bold c-font-white">DHAMMA ANANDA&nbsp;(MARKAL)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="c-container c-first">
+                        <div class="c-content-title-1">
+                            <h3 class="c-font-uppercase c-font-bold c-font-white"><span class="c-theme-font">QUICK LINKS</span></h3>
+                            <div class="c-line-left hide"></div>
+                        </div>
+                        
+                        <ul class="c-links">
+                            <li><a href="https://www.dhamma.org">www.dhamma.org</a></li>
+                            <li><a href="https://www.vridhamma.org/">www.vri.dhamma.org</a></li>
+                            <li><a href="https://www.globalpagoda.org">www.globalpagoda.org</a></li>
+                            <li><a href="https://www.vridhamma.org/">www.children.dhamma.org</a></li>
+                            <li><a href="donation">Donation</a></li>
+                            <li style="border-bottom: 1px solid #394047;"><a href="https://www.vridhamma.org/newsletters">Newsletters</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="c-container c-last">
+                        <div class="c-content-title-1">
+                            <h3 class="c-font-uppercase c-font-bold c-font-white">Find us</h3>
+                            <div class="c-line-left hide"></div>
+                            <div class="c-address " style="margin-bottom:10px;">
+                                <table style="line-height:25px;" class="text-justify">
+                                    <tr>
+                                        <td ><i class="icon-pointer c-theme-font">&nbsp;&nbsp;</i></td>
+                                        <td>Pune Vipassana Samiti Pune</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td> Dadawadi, opp. Nehru Stadium,</td>
+                                    </tr>  
+                                    <tr><td></td>
+                                        <td>
+                                            Near Anand Mangal Karyalaya
+                                        </td>
+                                    </tr>
+                                    <tr><td></td>
+                                        <td>
+                                            Pune 411 002, Maharashtra, India
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table  style="line-height:40px;" >    
+                                    <tr>
+                                        <td> 
+                                            <i class="icon-call-end c-theme-font"></i>&nbsp;&nbsp;
+                                         </td>
+                                        <td>
+                                        (+91) 20-24468903</<i>
+                                        </td>
+                                    </tr>
+                                </table>    
+                                <table>
+                                    <tr>
+                                        <td> 
+                                            <i class="icon-envelope c-theme-font"></i>&nbsp;&nbsp;
+                                        </td>  
+                                        <td>
+                                            E-Mail&nbsp;:&nbsp;info@punna.dhamma.org
+                                        </td>
+                                    </tr>
+                                </table>  
+                            </div>
+                        </div>
+                        <ul class="c-socials">
+                            <li><a href="https://www.facebook.com/Vipassanaorganisation/"><i class="icon-social-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/VipassanaOrg"><i class="icon-social-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCWJoRcIV8f4-UqkitR_gZNw"><i class="icon-social-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <div class="c-postfooter"style="padding:0px 0px 30px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 c-col">
+                    <p class="c-copyright c-font-grey">2015 &copy; <a class=" c-font-white" href="site">VIPASSANA</a> 
+                        <span class="c-font-grey-3">All Rights Reserved.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

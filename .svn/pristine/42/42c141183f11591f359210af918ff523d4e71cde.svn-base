@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "f45f0399-38e2-4b7e-a1d4-b9cb90dab560",
+		"name": "donation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add donation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "donation_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "payment_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "first_name",
+							"value": "mrudul",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "thite",
+							"type": "text"
+						},
+						{
+							"key": "pan_no",
+							"value": "CEQPK4956K",
+							"type": "text"
+						},
+						{
+							"key": "date_time",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "address_line_1",
+							"value": "palsdffgdfjvnjfgv",
+							"type": "text"
+						},
+						{
+							"key": "address_line_2",
+							"value": "dfgfhfghfgjj",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "pune",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "maharashtra",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "india",
+							"type": "text"
+						},
+						{
+							"key": "pin_code",
+							"value": "411057",
+							"type": "text"
+						},
+						{
+							"key": "contact_number",
+							"value": "7722005553",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mrudul@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "done",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "pending",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}donation-form",
+					"host": [
+						"{{host}}donation-form"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get donation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}donation-form",
+					"host": [
+						"{{host}}donation-form"
+					],
+					"query": [
+						{
+							"key": "donation_id",
+							"value": "518Yn",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide donation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "donation_id",
+							"value": "518Yn",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-donation",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-donation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete donation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-donation/518Yn",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-donation",
+						"518Yn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore donation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "donation_id",
+							"value": "518Yn",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-donation",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-donation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "donation with login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "20000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}donation-with-login",
+					"host": [
+						"{{host}}donation-with-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "donation-status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "donation_id",
+							"value": "2nWpd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}donation-status",
+					"host": [
+						"{{host}}donation-status"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "51c64c34-4461-4443-aae3-e5f0b285dad0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "02e7ce55-5e8b-440b-ba20-3b3b50c66dd4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

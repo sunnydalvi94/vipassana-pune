@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "679ebfb1-91c9-4e59-ba4a-0e6c4d98274a",
+		"name": "How_To_Learn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_how_to_learn",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "how_to_learn_id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "how_to_learn_name",
+							"value": "Meditation 1",
+							"type": "text"
+						},
+						{
+							"key": "how_to_learn_description",
+							"value": "To meditate daily is a good habbit.",
+							"type": "text"
+						},
+						{
+							"key": "how_to_learn_video",
+							"value": "meditation.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/how-to-learn",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"how-to-learn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_how_to_learn",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/how-to-learn?all=true",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"how-to-learn"
+					],
+					"query": [
+						{
+							"key": "how_to_learn_id",
+							"value": "2nWpd",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide_how_to_learn",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "how_to_learn_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-how-to-learn",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-how-to-learn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore_how_to_learn",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "how_to_learn_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-how-to-learn",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-how-to-learn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_how_to_learn",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "how_to_learn_id",
+							"value": "7yPXy",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/delete-how-to-learn/3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-how-to-learn",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f32ee4d8-ac43-4b26-8cb7-7df06e050dcc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "4cd81dfa-11c5-4956-89cc-1cfc24c9dba0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

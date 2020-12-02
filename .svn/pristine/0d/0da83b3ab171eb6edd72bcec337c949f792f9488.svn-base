@@ -1,0 +1,15 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$route['(?i)group-sitting']="group_sitting/group_sitting_rest/group_sitting";
+$route['(?i)hide-group-sitting']="group_sitting/group_sitting_rest/hide_group_sitting";
+$route['(?i)restore-group-sitting']="group_sitting/group_sitting_rest/restore_group_sitting";
+$route['(?i)delete-group-sitting/(:any)']="group_sitting/group_sitting_rest/delete_group_sitting/$1";
+
+
+
+
+$route['(?i)add-group-sitting']='group_sitting/group_sitting_web/add_group_sitting';
+$route['(?i)add-group-sitting/(:any)']='group_sitting/group_sitting_web/add_group_sitting/$1';
+$route['(?i)group-sitting']='group_sitting/group_sitting_web/group_sitting_list';
+$route['(?i)upload_group_sitting_image'] ='group_sitting/group_sitting_web/upload_group_sitting_image';

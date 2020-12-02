@@ -1,0 +1,10 @@
+<?php
+class Common_model extends CI_Model {
+    public function __construct() {
+        parent::__construct();
+    }
+
+    public function insert_record($tbl_name, $record) {
+        return $this->db->insert($tbl_name, $record);
+    }
+}

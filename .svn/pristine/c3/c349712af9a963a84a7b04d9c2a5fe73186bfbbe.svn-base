@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "7af6b2f4-18dd-42df-b812-cc154b5dfaae",
+		"name": "ten_day_course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add ten_day_course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ten_day_course_id",
+							"value": "p1GLn",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "center_name",
+							"value": "student",
+							"type": "text"
+						},
+						{
+							"key": "short_decription",
+							"value": "student",
+							"type": "text"
+						},
+						{
+							"key": "ten_day_course_url",
+							"value": "https://youtu.be/1SnPKhCdlsU",
+							"type": "text"
+						},
+						{
+							"key": "cover_photo",
+							"value": "abc",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}ten-day-course",
+					"host": [
+						"{{host}}ten-day-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ten_day_course",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}ten-day-course?all=true",
+					"host": [
+						"{{host}}ten-day-course"
+					],
+					"query": [
+						{
+							"key": "ten_day_course_id",
+							"value": "Ly2ad",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide ten_day_course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ten_day_course_id",
+							"value": "Ly2ad",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}hide-ten-day-course",
+					"host": [
+						"{{host}}hide-ten-day-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore ten_day-course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ten_day_course_id",
+							"value": "Ly2ad",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}restore-ten-day-course",
+					"host": [
+						"{{host}}restore-ten-day-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete ten_day_course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}delete-ten-day-course/Ly2ad",
+					"host": [
+						"{{host}}delete-ten-day-course"
+					],
+					"path": [
+						"Ly2ad"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "94c1ad82-da82-4d7e-8a13-dc4bd8481b59",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a52bca27-d041-4753-9a55-818e7b69e0f8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

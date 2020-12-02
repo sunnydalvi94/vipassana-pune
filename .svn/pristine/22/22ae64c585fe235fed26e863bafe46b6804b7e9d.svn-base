@@ -1,0 +1,124 @@
+<html>
+    <head>
+    <style>
+    .c-theme-nav li:focus > a:not(.btn), .c-theme-nav li:active > a:not(.btn), .c-theme-nav li:hover > a:not(.btn) {
+    color: #E7CEA5 !important;}
+    </style>
+    </head>
+    <body>
+    <header class="c-layout-header c-layout-header-2 c-layout-header-dark-mobile c-header-transparent-dark" data-minimize-offset="80" style="background: rgb(31, 133, 218,0.6);">
+        <div class="c-navbar">
+            <div class="container">
+                <div class="c-navbar-wrapper clearfix">
+                    <div class="c-brand c-pull-left">
+                        <a href="site" class="c-logo">
+                            <img style="height:50px;margin-top: -14px;margin-bottom: -13px;" src="assets/site/img/logo/wheel.gif" alt="JANGO" class="c-desktop-logo">
+                            <img style="height:50px;margin-top: -14px;margin-bottom: -13px;" src="assets/site/img/logo/wheel.gif" alt="JANGO" class="c-desktop-logo-inverse">
+                            <img  style="height:50px;margin-top: -14px;margin-bottom: -13px;" src="assets/site/img/logo/wheel.gif" alt="JANGO" class="c-mobile-logo">
+                        </a>
+                        <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
+                            <span class="c-line"></span>
+                            <span class="c-line"></span>
+                            <span class="c-line"></span>
+                        </button>
+                    </div>
+                    <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-theme c-fonts-uppercase c-fonts-bold" >
+                        <ul class="nav navbar-nav c-theme-nav"> 
+                            <!-- <li class=" punna">
+                                <a href="website-dhamma-punna" class="c-link dropdown-toggle"style="position: absolute;left: 8%;bottom: 31%;" >Dhamma Punna<span class="c-arrow c-toggler"></span></a>
+                            </li>
+                            <li class=" ananda">
+                                <a href="website-dhamma-ananda" class="c-link dropdown-toggle"style="position: absolute;left: 8%; top: 24px;">Dhamma Ananda<span class="c-arrow c-toggler"></span></a>
+                            </li> -->
+                            <li class=" c-menu-type-classic">
+                                <a href="site" class="c-link dropdown-toggle" >HOME<span class="c-arrow c-toggler"></span></a>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle">ABOUT CENTER<span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu ">
+                                    <a href="dhamma-punna">Dhamma Punna&nbsp;(Pune City)<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                        <li class="dropdown-submenu">
+                                    <a href="dhamma-ananda">Dhamma Ananda&nbsp;(Markal)<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle">Mitra Upakram<span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu">
+                                    <a href="javascript:;">about MITRA Upakram<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="mitra-school-seva-registration">MITRA School Seva Registration<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="mitra-pune-activity">Mitra Pune Activities<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle">Apply for Course<span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu ">
+                                    <a href="discipline-timetable">Code of Discipline-Timetable<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="question-ans-vipassna">Frequently Asked Questions<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="bring-center">What To Bring To Center<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="apply-for-courses">Apply for 10 day course<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="donation" class="c-link dropdown-toggle"> Donation<span class="c-arrow c-toggler"></span></a>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle">Gallery<span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu">
+                                    <a href="gallery-pune-city">Dhammapunna&nbsp;(Pune City)<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                        <li class="dropdown-submenu">
+                                    <a href="gallery-markal">Dhammānanda&nbsp;(Markal)<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="javascript:;" class="c-link dropdown-toggle">Children & Teenager<span class="c-arrow c-toggler"></span></a>
+                                <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                    <li class="dropdown-submenu ">
+                                    <a href="children-courses">Children Courses<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                        <li class="dropdown-submenu">
+                                    <a href="teenger-courses">Teenager Courses<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <a href="hearing-impaired-child-courses">Hearing Speech Impaired & Blind Children Courses<span class="c-arrow c-toggler"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" c-menu-type-classic">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSegNgTK1ZxRJyImNVDh_w262g_ik2tNyGWYEpzKNlZek9DJ6g/viewform" class="c-link dropdown-toggle" class="c-link dropdown-toggle">SEVA<span class="c-arrow c-toggler"></span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>  
+            </div>
+        </div>    
+    </header> 
+    <script>
+            //  $(function() {
+            //     $('nav a[href^="' + location.pathname.split("")[1] + '"]').addClass('active');
+            //     });
+        </script>  
+    </body>
+</html>
+
+             
+    

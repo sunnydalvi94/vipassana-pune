@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en"  >
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="utf-8"/>
+	<title>Children Courses</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta content="" name="description"/>
+	<meta content="" name="author"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
+	<link href="assets/site/plugins/socicon/socicon.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css"/>		
+	<link href="assets/site/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/animate/animate.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/demos/default/css/plugins.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/demos/default/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+	<link href="assets/site/demos/default/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css"/>
+	<link href="assets/site/demos/default/css/custom.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon " type="image/gif" href="assets/site/img/logo/wheel.gif">
+	<style>
+	  @media (max-width:361px) {
+    .c-content-media-2-slider .owl-controls {
+	flex-direction: row;
+    display: flex;
+    margin-right: -185px;
+      }
+   } 
+	@media (max-width:730px) {
+		.c-content-media-2-slider .owl-controls {
+			top: 10px;
+			right: 250px;
+		}
+    } 
+	</style>
+</head>
+<body class="c-layout-header-fixed c-layout-header-mobile-fixed" >
+   <div class="c-layout-page">
+	<?php $this->load->view('site/header'); ?>
+   		<div class="c-content-box c-size-md c-bg-grey-1">
+   			<section>
+	   			<div class="container" style="">
+					<div class="c-body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="c-content-title-2" style="margin-bottom: 41px;">
+									<h3 class="c-center">CHILDREN COURSES</h3>
+									<div class="c-line c-center c-dot c-theme-bg c-theme-bg-after" style=""></div>
+								</div>	
+							</div>
+						</div>
+					</div> 
+					<div class="row">
+					    <div class="col-md-12">		
+					    	<div class="c-content-title-3 c-title-md   c-theme-border" style="margin-bottom: 40px;">
+								<h3 class="c-theme-font c-font-uppercase ">Feedback from Children(2 Day Anapana Course)</h3>
+							</div>
+							<div class="c-content-media-2-slider" data-slider="owl">
+								<div class="owl-carousel owl-theme c-theme owl-single" data-single-item="true" data-auto-play="4000" data-rtl="false">
+									<div class="item">
+										<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide6.jpg); min-height: 380px;">
+										</div>
+									</div>
+									<div class="item">
+										<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide1.jpg); min-height: 380px;">
+										</div>
+									</div>
+									<div class="item">
+										<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide2.jpg); min-height: 380px;">
+										</div>
+									</div>
+									<div class="item">
+										<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide3.jpg); min-height: 380px;">
+										</div>
+									</div>
+									<div class="item">
+										<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide4.jpg); min-height: 380px;">
+										</div>
+									</div>
+									<div class="item">
+										<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide5.jpg); min-height: 380px;">
+										</div>
+									</div>
+									
+									<div class="item">
+										<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide7.jpg); min-height: 380px;">
+										</div>
+									</div>
+									<div class="item">
+										<div class="c-content-media-2 c-bg-img-center" style="background-image: url(assets/site/img/slider_courses/child_slide8.jpg); min-height: 380px;">
+										</div>
+									</div>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>
+   			</section>
+   			<!-- ..................................//Schedule of  Dhammapunna for child courses........................ -->
+   			<section>
+					<div class="c-content-box c-size-md c-bg-grey-1">
+						<div class="container">
+							<div class="c-content-title-3 c-title-md  c-font-uppercase  c-theme-border" style="margin-bottom: 40px;">
+								<h3 class="c-theme-font">Children Course Schedule Dhammapunna</h3>
+							</div>
+							<div class="row" data-auto-height="true">
+								<div class="col-md-6  c-margin-b-20">
+									<div class="c-content-media-1 " data-height="height">
+									    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+							                <h3 class="c-theme-on-hover c-font-bold">CHILDERN ONE DAY ANAPANA COURSE</h3>
+							            </div>
+										<div style="line-height:40px;" >
+											<div class="row">
+												<div class="col-md-3">
+													<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Date&nbsp;:</span>
+												</div>
+												<div class="col-md-9">
+													<span>&nbsp;Every 1st and 3rd Sunday</span>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-3">
+													<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i> Timing&nbsp;:</span>
+												</div>
+												<div class="col-md-9">
+													<span>&nbsp;8 AM to 2.30 PM</span>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-3">
+													<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-child  c-theme-font">&nbsp;</i> Age Limit&nbsp;:</span>
+												</div>
+												<div class="col-md-9">
+													<span>&nbsp;9 to 18 yrs</span>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-3">
+													<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="icon-notebook  c-theme-font">&nbsp;</i>Registration&nbsp;:</span>
+												</div>
+												<div class="col-md-9">
+													<span>&nbsp;8 to 8.15 AM, No admissions after&nbsp;8.30AM</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6  c-margin-b-20">
+									<div class="c-content-media-1 " data-height="height">
+									    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+							                <h3 class="c-theme-on-hover c-font-bold">CHILDREN TWO DAY COURSE(RESIDENTIAL)</h3>
+							            </div>
+										<div style="line-height:40px;" >
+											<div class="row">
+												<div class="col-md-3">
+														<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Date&nbsp;:</span>
+													</div>
+													<div class="col-md-9">
+														<span>&nbsp;Please access&nbsp;<span> <a  style="color: blue;" class="c-theme-on-hover" href="assets/site/pdf/child_course_application_english.pdf"> <u>Course Schedule </u></a></span>for Dhammapunna.</span>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-3">
+														<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-clock-o  c-theme-font">&nbsp;</i> Duration&nbsp;:</span>
+													</div>
+													<div class="col-md-9">
+														<span>&nbsp;2 Days</span>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-3">
+														<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-child  c-theme-font">&nbsp;</i> Age Limit&nbsp;:</span>
+													</div>
+													<div class="col-md-9">
+													<span>&nbsp;12 yrs complete till 18 yrs</span>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-3">
+														<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="icon-notebook  c-theme-font">&nbsp;</i>Note&nbsp;:</span>
+													</div>
+													<div class="col-md-9">
+														<span>&nbsp; Prior booking is a must</span>
+													</div>
+												</div>
+											</div>
+								        </div>
+									</div>
+								</div>
+								<div class="col-md-6  c-margin-b-20">
+									<div class="c-content-media-1 " >
+									    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+							                <h3 class="c-theme-on-hover c-font-bold">2 DAY ANAPANA COURSE FOR BOYS</h3>
+							            </div>
+										<div class="row"  style="line-height: 40px;">
+											<div class="col-md-3">
+												<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Date&nbsp;:</span>
+											</div>
+											<div class="col-md-9">
+												<span>&nbsp;17 May - 18 May 2019</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6  c-margin-b-20">
+									<div class="c-content-media-1 "  >
+									    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+							                <h3 class="c-theme-on-hover c-font-bold">2 DAY ANAPANA COURSE FOR GIRLS</h3>
+							            </div>
+										<div class="row" style="line-height: 40px;">
+											<div class="col-md-3">
+												<span class="c-content-title-3 c-title-md  c-theme-on-hover c-font-bold" style="border:none;padding-left: 0px;"><i style="" class="fa fa-calendar  c-theme-font">&nbsp;</i> Date&nbsp;:</span>
+											</div>
+											<div class="col-md-9">
+												<span>&nbsp;14 May - 15 May</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+   			</section>
+   			<section>
+   				<div class="c-content-box c-size-md c-bg-grey-1" style="padding:0px;">
+					<div class="container">
+						<div class="c-content-title-3 c-title-md  c-font-uppercase  c-theme-border" style="margin-bottom: 40px;">
+							<h3 class="c-theme-font">download 2 day's course form</h3>
+						</div>
+						<p class="" >Download the application form on below link and print it out. You can send it by Speed post or hand-deliver it to our office</p>
+						<div class="row" data-auto-height="true">
+							<div class="col-md-6  c-margin-b-20">
+								<div class="c-content-media-1 ">
+								    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+						                <h3 class=" c-font-bold">HINDI APPLICATION FORM</h3>
+						            </div>
+				                    <table style="line-height: 40px;" >
+						                <tr>
+						                	<td>
+						                		<span> <a  style="color: blue;" class="c-theme-on-hover" href="assets/site/pdf/child_course_application_hindi.pdf" download> <u> Download Children 2 Day course(Residential)</u></a></span>
+						                	</td>
+						                </tr>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-6  c-margin-b-20">
+								<div class="c-content-media-1 ">
+								    <div class="c-content-title-3 c-title-md " style="border:none; padding-left: 0px;">
+						                <h3 class=" c-font-bold">ENGLISH APPLICATION FORM</h3>
+						            </div>
+				                    <table style="line-height: 40px;" >
+						                <tr>
+						                	<td>
+						                		<span> <a style="color: blue;" class="c-theme-on-hover" href="assets/site/pdf/child_course_application_english.pdf" download> <u>Download Children 2 Day course(Residential)</u></a> </span>
+						                	</td>
+						                </tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+   			</section>
+   			<section>
+   				<div class="c-content-box c-size-md c-bg-grey-1" style="padding:0px 0px;">
+						<div class="container">
+							<div class="c-content-title-3 c-title-md  c-font-uppercase  c-theme-border" style="margin-bottom: 30px;">
+								<h3 class="c-theme-font">Anapana Courses for Children</h3>
+							</div>
+							<p>Over the past 28 years,hundreds of Anapana courses have been conducted exclusively for children around the world. These courses have yielded substantial benefits for the thousands of children who have attended them. Many of them have experienced a positive change in their outlook, behaviour and attitude. Many have found their ability to concentrate has improved and that their memory has strengthened. And above all,these children have acquired a tool that is of immense value to them for the rest of their lives.</p>
+							<p>Children are, by nature, active and enthusiastic, with an eagerness to leam and explore. For this reason, it is appropriate to offer them an opportunity to explore themselves and their mind with all its hidden faculties, latent abilities and subtle complexities. Learning Ananpana plants a wholesome interest in introspection and meditation, which may open an entirely new dimension of life for them later on.</p>
+							<p>Anapana courses for children have been conducted since 1986. These courses have been offered to children of various ages and socio-economic and cultural groups. They have been conducted in Vipassana meditation centres as well as at schools and other institutions, and have been both residential and nonresidential</p>
+							<p>Whether a children's Anapana course is held at a school or at a Vipassana meditation centre, it is essential that the student be given an opportunity to continue to practice Anapana for a short period each day after the course to yield the true benefit of the practice.</p>
+						</div>
+				</div>			
+   			</section>
+   			<section>
+   				<div class="c-content-box c-size-md c-bg-grey-1" style="padding:30px 0px;">
+					<div class="container">
+						<div class="c-content-title-3 c-title-md  c-font-uppercase  c-theme-border" style="margin-bottom: 30px;">
+							<h3 class="c-theme-font">Children Feedback</h3>
+						</div>
+                        
+		                <script src="https://www.publicalbum.org/js/pa-embed-player.min.js" async></script>
+						<div class="pa-embed-player" style="width:100%; height:480px; display:none;" data-link="https://photos.app.goo.gl/   ZS5SxWvrU5ekMKyR9" data-title="Anapana 2 Day - Open House -Painting/Essay Writing" data-description="59 new photos · Album by Sachin Inamdar" data-slideshow-repeat="false">
+							<img data-src="https://lh3.googleusercontent.com/EztZK5KIiDbcze8PXO26N9LR9p-7IXzvSmXIPFMpfLbUcoT3BObqbgc1msGdWOyYb9sM7mm03FIN3Q1aOsPqWs2dwj804gd9OsDWTnpwa9e6rWayTsf0CyILcmvaFNF1Gq8VtVp4sg=w1920-h1080" src="" alt="" />
+						    <img data-src="https://lh3.googleusercontent.com/PT-nLk86_R2g2hb_x6Zdhn-LiAsztrVS7t92gl6Zro9fdytBrZ4JUjHEZTQqVNZ4_mLXevBeTx0aeWLjdreH2BBSEDbdlCgBziJAH04L9GdZ3BtsNjUBY9zQfBEHS5IRMOTmpVEr8A=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/Z3K1RnVUwJHjtlno3b12CuoPC0p0KTeyuQT7C0p0eVpZeKL18R2YzvrfQGBd7Gbp26amRzVxsgUXGDG-MOA8vy6RoFwnKhxlM3BNpnyztay2mflT8s1UNwMl20FJIYQx92cppOD9KA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/lNhj3781YJ6kqoAtqJIeBBUYxblMXc2Nj1zr-oLn-OnilHn1xJE-Uwtx_iIKEO0zuXmPXUTEFgbNj46JPmmYia5FlbQOdOuysSKwIOeumKrQf9pxbdm7T5UiVZATlVAgNOZo9mRN7w=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/PESYfsQwP7_iAG9lYWnjgdc_49F9iv_hIYdGT1vu0xwNXjWDm4hfCnFhw4GnmsI6ovWBlp_b_zqjdFmqlN0lD8Fabu82ACBkMst3vovn3Fyf94UtkVGKLNASmrmJUwbBibwjhkCVKQ=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/LblX4QbUsqkxqEIU14tGqevEEe-jOuyWCZY7xCrGGnrv6YbRhAiz0-C9m3kQ2eAbNEd-ZmmenQ-2rl7dDAthe3Tkon6hPVLqT60xSU1RGqZYN0vQMfVkv16tyRyM4jJkwOr6nGWzQA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/C1tWiHcEF54LszeyhlSmT4Ams2_uk1Xt9kMTTu3y_mbYScvH9Lz0wL01EPcBFa18GLrTX9YPSxIiNAJ4xIetrO7ZldvgDGpswSnpyEgCJdt2T4zlqmo-jty9vC2VypNo9VdhwBEfxA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/HQc1ZZdLo30-HKmbyTPDMygYQ-XLOb63AhL6xHvuJYUisJl849obp4oxnw31KeKvnMx3uECr5hFV2YGZ-ddNkwCt0gmKp6yBW6DVahZEcqVyki2mj2yCRSONxnf5JnNE3EQOm1nSOA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/QnDxj6c2BgAWcJsRV-b6QQ6KZQ5D8CLsjEucnpr-86bfn6dsYd6O-gqiYlwcsOnXQYvGX5fZOoGkxVhQ26kfyACRN2cejupb8PIlRQeJ9S8yMlXsWShSZRzU5Y71zFGbQzD_W0YkOQ=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/5vA5XlFfIlgk9Pn-LlHXhRXHX83zdV5PZeW7eDiHub1-sXgrkoT2h1w-dj__bXvmJ8iuJQUK4grbcseH74U9GUrWVHP7ggJIhN-gOzfrmM0kk9Au171-cxi_LfLr0ZTPPPQ2Fmd8pg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/3WdmjOI-_fVyNANF8jzeZ_CtHMawyhf2MXfdi1QkTKapJIYC95LMEnAIWItz4TI0GqFz4tbwhU_KH40Mj7Fa77ApvxUj4lTRsXcFuI0z-HxqvCMNguipaOcM_-7RNiFY0BskQcbXvg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/jSBYHpd8a1fPExXm_E_fx7O0jL3QSbeu6aN-FvQQNTMcuIsj4PltTsmN91bAXoeEYJhYlBvnHNmNRxTZpCTxWFq2a5ekNRN8lHC9uaMTN-pPUT37bRLuRe0F_td79L924tBLmcAadA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/jrlV42Ec-_JeSEQN8A5Hv5AMLgiBLQShzywjyQFV2bAfnEU7Wia8DLZQ_WW-cSwEW_NxGNlmkOU86jlue6SW9GnaOEtoP6rOdUy-d16_WbqBSaCoNg4kIEDYSfbOTj1UdnhgJ6sp7A=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/vqbfSl5emFMdCRKKKR1eZlFE26pX_NWbvf3sawJ-1kA_2qyqNMn9eUqNPR8rSa764RmLBEZOQoI2kFlbdy7aGDxci77nCZpjlL_XAQe3BYQR2G1s8ybXN9b3nFP3NfCcrq_0r-IiTg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/q3kQsXD4_vYJgwTgBNePZV0ZmNTNgonJkH9urjTlDQzwyw7wCeGLorPbMU5fFZrccKvwz5o53pkH0MmTBTq0G_70iyg3GQvNAoRg3TFbLJj5GA7PWv61zvf7J46yPptWXzJRZoyieg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/7V2m0mBRAKpv9lEvFaKUOP3cSSQAqWrBkvgb1a7rciZpaOyaiYMBCH8gz6vjVRRXcQEJ14yzvM44RQy7VOluBUUwDxYZtyRVZG1E3YWYL8HTV1z1h9s3lLQoTY7NOqSnMwX9Dau69g=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/EByEJ1-pzm0yVoUROV_X7-9vyfXAPy5R8mfGv2FEpaOiBz9pk1HBfBIlHDhPNrs_r5PaJenJC2izKkgG-WfV-uuvbpRdvXUXnDJPtiwB7OujqA7wzPzKn-gsAZ7auFYXQfVpLHLc_w=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/jKFeM5QbzBxFDoCQyus9lsRm4IOJE94yZvZw3fAcShzP8GfTzE401XrdBUHKZutpdIUuoHPeQpBIaHgKkin0PWOOwuugOrbh8BuK8sYSUCDVQTVMNYLtaTzYaVXS5qhorEedWgIdCg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/0IJbGJubEMX-JuSb1GhNaOFwwQ86A5b6OvArowLlXHsy7otqLHAX6HxkxPUMj4vySEUXzQKY4fGvIfeiqFTyEX-SjIHCutIRFs6qcdMxxnuSAXvWNZhlghYfxiIvP_ASkf-sot2IYw=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/vHjR8RHHAaC2ZHl_nDOAuJBTju-lgLJWxg8nCP9edyQ5l69XRw4JXYLYmoyDaoMNpBBQJ2llS6YlVS9BePnmZ9tHjQNVlmtEHKj6zCPISYERPIKAPsQsoF4UOhVhUSJaK7oPmmAq6A=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/r1WA6QVguuB1PdyMPutJ3f5ocz69pkG178qlWQzt-T0eLb0pKkJFPNs9-vuYZJqJYTTo1kbGV0-oISKdWTT1Wb3aNADhu53nKFWzkzbVYWealQRy4IDPT7RsMULvhtyJmdGsy8YBVQ=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/Wbza2F_g6cesJbUsK0G8MUKXT8cO8N_Y3Yn-BEhKbNmirC1EyFzXhKO7Q2dfSgKC4iXDGbst-Fpn_E0E2BcWP0l2xhrsgu61O-29cFiHaoPxIFP5inaBOdPqxnjMqLeUFhXyncg9Sg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/vLd4YIVZd-CzbxiUluPtRmfjjDHmFVEzlVsvyLdcSp_kzT3qrCNEhhJApXSdn9LYe_twhscN7NVn29iinpr4N8qFQ9hLZVlqkuzKLmUM-G0D4An6t6wdZAPZ2KxwboeCQKniSawX2g=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/-Tsl8ofoEx3X57RYZXUL8oLwLzTSghyRSRC9LvSQG2WvyYLfd5JpBWMRo90RFhRQuMmWaHp4s0CpwM9U-zE0l1ovcLVc8b8tx1AGC3xKz3vcXKfzCO18dYDg1WmgA6SdkRsUUYCpiA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/o3QMjMOr5tmjtmByjck-RffCPHifP5SXTdUP_fJU_ClXSAAsvcS3oI-wSmWHdjxKF1ZclrhfN5eQ33-c6oBXPJ0Dk_4XxxgAVm8I3yxVpqNu7NAcujKA4vHbnLBTCJ2-rrZCDyneJA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/JFvIqBP6nkvJ8GPix75AX-ni0ZfMZFiyxJKwy77eqX2WrMFO2AXcDOInDPZ51UYOGONDbMJi6ob69ocahCk9KQXmEaSf1cL1yJ2ZYEGN4tib-iqoz_FzQh7Kj-XAvOn0sYNPwvSxcg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/21Ce2lBTgB1LbeR2nMZo2pJIxtoNTWPizEPVRw1Chs119XhlsdZiaJ7NJNUrfK4l_JiZ_bxUOp6ut4UcO721YnsFliPK7c2FyDrZ-JN0hjDeCt04HkghoA1yPa45-sHZNMoCWuKTqQ=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/UtcFpPN11fk0yj7ulfqcr285-JQt784jtMLbGVOnCD9X7HctBrD6VUKpx49yJThQOzq0Of-O_YArUl6yssRFh_t1BOX8os6gkAd_jlquyUJMboYxPUh7H1wN5JczUCa5_aE9TLL9Zg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/wzU8ZyV7Iz7eJ3sXzYJdDynqENKXkharEtG8h8OZaMk_7K2AEx68Vx5acmXCOxmCHN5qIEjYzBViBaWQGF5V4Z1--UXWx_GMwTwkI-7853geTF9kvh_gxYmGVAlbIJzBMoFkm-CO6Q=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/71OeXHhXN2RwNdkc7pVWNIdKUpSy8FXCktyDRorPXoPeyADIgCEH_rSGcVsNfRyWBWCI1UNyoCD3hljRsOCnXwPa62_asCt0InlLoOF-Ji29JymSbbSyxWXMV6qTjSBtYT_ZgFrjaA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/wMrJpolRNAUfCXSOIsnyae8LtvILRQrqd_i7ShbZPvBn9k9rehBso6LxrejG4eEjfdsgnF55LFLAX-ITzw7pjDan9K_TKWVzIqcocwpC0-H8OXU4HBgyCJyQuonZs1vNuQU45OHP2Q=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/YTgjwMU81cxKFztw6zhGG5mBMDlOULMdOre1Xu2qvvAE7tfEngSEUW1BORD4d0Npi-3akSaTOku1iUPduXAy6QcN6TqQe3AmPC5U38-t92c892vup6fOyjEDqWqDOuxwqnXHo9CK2Q=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/jVFaVlOSFd5AYsyLQO8A-02nF6Yg9o03c9rvB9dn6WN89pBSIEg-R7qXIS31l3B0TDfnbPJPdl6EPdGgZKegsFi3WkaTYCfFlG1XeA6r_kGFRADxW-mBZjsVsjEPDOJP-avhGjrk3w=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/2PZPttDHyaaYpbRfy4x1quvSChQv_xoxB430CzvShznH_1HT3jw-fBTXcdIaLh9uGjYw5gi28cUffxaSJyoO_EMNYSXvLO1_Y6eH2yFb7bdBqMin_29LjYsTgGlDnMBaTO54DBmrQQ=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/e3NP6lz5YzwQTMNZfJdcQjJmy4r1Fh3gdpSDwVIIHRDDW318FHXcMm0q9BpiVqdL1GgMSc7UL7nHhp2Yp8JVla0-kwEy0tAJm_vcCNl16uXJOey88PVKBOrci-AUM54jHl9tmJykPA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/8Pb8O0_7z4L-Z2WQaDFChatepGbZu-efA8UjJd7iUlZHVGkae5EFNjO5PUU3_rv-BbHc5jkOyjQbve1MaLK7CWd-Mmn4RtUzCnVRo9VDYhzLVcTemO_pEyO3M8rKxbY3b9piTd1Ryw=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/a9fDpa_t0_CTbOlEPk4rZ7x-3iW8_0rMdT78XvvelQH-dUAQaknaQ0T9Ljz84afjbpzOXeVIa0CmC7f__-NJdw2HNXTRZIuDVx9sgZ4dhjLb_y6mv1hkn7-evbOcfOnfaCxDrpnqXQ=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/7T33JHtLKv5_VFFABWMFjpVkqibpFxcIgT8g5LCjF0GAlymmxR3f-U0CIfyS3Lxnhigs6E7m5TD5dyV94CYT0xp0EjZ5E8DXhrU9iTZwu40Dffs_uo6wjN5XFr7-5t16I736z_Qxvg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/89wUFQQARlLkSIHi_tS5RxKz5lGDbpfEdgX-6erd57_iXT0oK6OKyahV6bROKV4MmY3CFLg3Pigjf8iT-uPPSX739qe93bgu1tz7HErSrXs0DhPhAE5hP7_2TRvbw-EC0cz69RLrOQ=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/0RMW6LotJm6zs_TgTMhekipe_dQKs4n672KFupJFssqEhF9gs_4wzbNJmhjNt9eYKkLNnSHk0CBU4RsOBfVHX7i4M9OsISXiNvprMYjjCRSdt5GISYVEGjTTg98AEDspJrt6KxAIjg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/ehE_ErL7-PhkT0MNkj6fJV8E87mvxptX3sk64mFAzr7ujJmfeRolG9eNNvrna26uqQFjF5ufT5D_AzOp_M4R3ZnRgWRgDqLSJ10bXgzndealb4h17ZkwuTSvhy4uTgIVronZ6EXfSA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/S65BuGuAzfFCfVj6rmWmafJJ-ZLooqqqzhMPPwH-w_5FL-aYagz5X0T57nn4ngkjkBLA1QTIBQEPiyLBMcP65XcG4dOPfp17ifuZXqbFz6X1ayDVp7SAc-R6j59HPkkzlE0BtCsjnw=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/fPT8IFe5pL6_p1qgxPDe8A8JjJ6m9A7EDIKCQh74Z32TnJZ4QAJzXheOIr-LaGnvWV3E6OvN-b7bA4DAdoEX8qYIyFzESgtmOzqw6Y_-rF7h-Ha1bKhI5XMgUKO-L-ybshPdmmQMvg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/PhMejCU3Vu8MFM4qEoHDebElbYfbjQJmL330m4R4-4egX16L37pEzB0GQJ3O1WmJu7Li8f9UvJJOFzPhlZgfdCxaxlQkJAH_FPFzoZrbJ3MI_6KT6ohniUaabkk-Xlftg189ZuJpdg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/Pd4a4IKLNsx4RwbPNNaVIwF4N5LhuUmTwHk0wewW5Bg4xQT8x6bqQbTVV7NN6xvb2uHN3X-lPCHjhK9y60uRBQfl2LJ3TDtjqorfPX1UBpouCtUPcTE-BGVZP13l-x0xh_7RFRnlkg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/MW284Pj169mfYJ-zqJv2hFj0-OSSG01a1T1AhT4Ewb5YY5_uTfDjSuOHgOsJMfLh9_ZRMepbQOGMnf6kwY1QQsCG0z_wsUIVIV0NkIWqu-dsAF9Be_XZpAgmT6-bv3nLfBNmYSn7Hw=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/G_UVSjLE4F9MKe56Q4zco-QYZAcE0aaskGjk8O9bdKkC9nwZTK_CPPtPGMe03hrodgB_qrfhf4NxflURjY2f_C6TRMr0haw6NeXU82Rymbij5nl2xi0vAYuQwB5hEspHXP2wf553fg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/VvqeuiRs7ld-ZwUbil-mPn2dXQG3zbCU6FSOwxA03NjbnKUN_L_diSUwZNBr40xehvOePlJBkfjwReuN1rxgXwogdUaVwZsT6leKbwK_LymwSOFiIIJyNWxOHM7bAjahx-nT_vfayw=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/HDmrKxRdoJdb-whZpVVoKR99J4wDmsXFZ5wZeOyXyoZjyO50zbvSz_2Fe_BSlDvV2EM36WxPtC0xNmW31LvN590Lx8PwmofSMQN_P4rdEUJcopSoNaOfGLE6p-e_DpKJHgC4uO4wUg=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/5Ai4epv-QGBNpM7-et0N1XndV32E8aReUrJSUXHUFnNlOtewiFHgtBXxPYIN7VsBV2QxT3ReRIIIASi8kIvKLaJUBmyH92RI5rt-Cwiehk1YSpaJoXU_P0TPpA0DEdwrrVeY-uk_xQ=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/gXLVuWDUjuxgYXmnbMT_LjJeGh8sGhsDwSYgw8CEh1u6m-peMiGjyNG5uhylRIq3qvd-KGGYpXuAoSNzSeY0rnVBixQycAr4UP5yzJxWBa27syHLEsIXhOqOWaahFhKhssuVbN09ow=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/19w1oOqifLiAECQ3K-Zkthx_d3wxBDQeasKtG6CtCqY-x0wPlT1-_YJHUC1m8cvGvFBSptytntpJWbOnE8yM2LPXlnPO5JSjc9vifX_7qJtFgDTIa4oGhdkDmQ3RBvUAdRLoCDJE7g=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/roompOISsLjftfFkyky1KP7GTnESBTk_8pnyDgvubJ8O22JF7ckOubHT1C3UVzvcTtFX-ky9mWwBqUd9y7fbPB9SPOCwZsQNxy6aeFjiwYZTz0rpbsR0aCsprnSk9lCVvdGQ2egTOw=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/WCnb-ZlggOIh937ihY3LjfhoTdTvGulVsFYPiRqLCxM6FqsC1EnFvlnA_EDAEWmL0zURyJDbo26nTRSzRtIgISI7YVEwEBqMN6erhwHPUfODDs2CbLdAnqp8zqXyKaDDCyaKqtRkjA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/4pettn3eVaGJiBBpCzkQ7aiVMyJvgASjg9uTkQPu3UoSITZk1mFT7VwuoC5Kl4trPgZUbVdPeqWdj3AEj_sTtkuRNOW333TULuitEGRG4EzuZTFjiqoiueVIJNOD9r3y1xSdO_9cFw=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/wzGndozTifv7FBf1kZzAVRdN5ZJGEGL15IDBDZubOK38p2ZXulsLr9xW5sabsnzW4xz1R115LdO6nfuagPYNxrbPOGwIUlY39XIBiNRyFxfrj--kic4Mq0iLWNb54BFhL5e4vT5moA=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/LmaXKE6h1gX2iMe2uf5pDUfDnn1Pl2X0YvPofFq3vSdcSqaXrP8Cb7xH3ObZViFyoTL-FWfTvQji-rEdzZcZfEZLGokhgU9hECJ_sAdbKhq5y7J6xw4LuuKYTS9JnhcDJF5955wj6g=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/aas27DS_vUl-QUMxyh7pJ8uSJwc4nb-Q_DsC9v3UPHF0vYmZqIsxFy5d6zepLxSMTp0FowXGLeECxOHoXpR1smn4hmWDwJ9GBpGGu-Pu4rLnZtMGnXK-Zg2HKhffcrjrx6kWTZGPlw=w1920-h1080" src="" alt="" />
+							<img data-src="https://lh3.googleusercontent.com/L7G1B5TZr_rNvJiqyRUJlywZJtaZsYmiBhT8pehMVJ2j0IOqI7_l5ePCg1kxoNGc1F3ov0tktolu-6Z-5QGYxSzj7K2CpkRS5h4fzI1Yh_ZDpbKPaTguSn3lshHxzGxJ23ARqV9-iw=w1920-h1080" src="" alt="" />
+					    </div>
+					</div>    
+				</div>		
+   			</section>
+   			
+	    </div>
+	    <section>
+			   	<div class="c-content-box c-size-md c-bg-grey-1" style="padding: 0px 0px 30px 0px ; ">
+					<div class="container">
+						<div class="c-content-tab-4 c-opt-5" role="tabpanel">
+							<div class="c-content-title-3 c-title-md  c-font-uppercase  c-theme-border" style="margin-bottom: 40px;">
+								<h3 class="c-theme-font">Children Course Schedule Dhammapunna</h3>
+							</div>
+							<ul class="nav nav-justified" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#tab-1" role="tab" data-toggle="tab">Eligiblity</a>
+								</li>
+								<li role="presentation">
+									<a href="#tab-2" role="tab" data-toggle="tab">TimeTable</a>
+								</li>
+								<li role="presentation">
+									<a href="#tab-3" role="tab" data-toggle="tab">Pre-requisites for Institution </a>
+								</li>
+								<li role="presentation">
+									<a href="#tab-4" role="tab" data-toggle="tab">Guidlines For Courses in Institutions</a>
+								</li>
+								<li role="presentation">
+									<a href="#tab-5" role="tab" data-toggle="tab">Requisition Form</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="tab-1" >
+									<ul class="c-tab-items"style="padding: 30px 30px 20px 40px;">
+										<li class="row">
+											<div class="col-sm-12 col-xs-12">
+												<p> Students from the age of eight to sixteen eighteen years are eligible to attend the courses. Separate courses should be organized for the two different age groups, one for younger children: ages eight to twelve; and one for the elder ones: ages thirteen to eighteen.These are ideal groupings but slightly different groupings are also sometime considered. Student less than eight years of age and more than eighteen years may not be admitted to a Children’s Anapana course. </p>
+                                                <p>The recommended number of children per course should not be exceed fifty. For courses larger than fifty children, additional children's course Teachers may be required to conduct the course.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab-2">
+									<ul class="c-tab-items"style="padding: 30px 30px 20px 40px;">
+										<li class="row">
+											<div class="col-sm-12 col-xs-12">
+												<p>Various schedules have been developed and successfully implemented in schools over the years. One-day or two-day non residential courses can easily be conducted during the school hours. In residential schools, three-day residential courses may be held. The timetable is determined by the length of the course and whether it is residential or not. The timetable should be modified to avoid the times when other students who are not participating in the course could interact with the children taking the course. </p>
+                                                <p>Enough time should be scheduled for meditation periods, counselling (when the CCT meets with small groups/ for children to reinforce the practice), discourses and stories, lunch, rest, play, etc. the total duration of a one-day course is about six hours.
+                                                The timetable will be decided by the teacher conducting the course in consultation with the organisers and school administrator.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab-3">
+									<ul class="c-tab-items"style="padding: 30px 30px 20px 40px;">
+										<li class="row">
+											<div class="col-sm-12 col-xs-12">
+												<p>To begin the process of having a children's Anapana course held in a school, administrator or the head of the school should send a formal request to either the Regional Co-ordinator of children's courses, a Children's Course.</p>
+												<p>Teacher or a local Viapassana meditation centre. At least one person from the teaching staff or administration should have completed a ten days Vipassana course in this tradition. Apart from this, there should be a firm commitment by the school or institution to provide an opportunity for the children to continue their practice of meditation for a few minutes every day. The school management may decide the time to implement this programme within their daily routine, with the minimum of about ten minutes a day for practice. </p>
+												<p>The limit on the number of students participating in a course should be carefully determined. A very large group may be difficult to manage and a very small group may have difficulty in creating cohesive and inspirational atmosphere. Generally, courses with between twenty-five to fifty participants work well. However, depending on the infrastructure, facility and circumstances, the number may vary. Ideally, a course should be organised for all of the students from the participating classes.</p> 
+											    <p>All the teachers of the participating classes should also participate in the course. The teachers of the participating classes may sit as observers. Besides organising courses during the regular school week, courses may also be organised to take place at the school on a weekend or during vacation periods.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab-4">
+									<ul class="c-tab-items"style="padding: 30px 30px 20px 40px;">
+										<li class="row">
+											<div class="col-sm-12 col-xs-12">
+												<p>
+												1. For a residential Anapana course, separate and adequate sleeping accommodation, showers, and toilets should be available for boys and girls. A dining facility where boys and girls can sit separately is also required. </p>
+												<p>2. The course should be organised in a way that no other students or staff are present in the area where the course is being conducted or where the attending children will be residing.  
+												Organising on weekends or during holidays can be helpful in ensuring this separation.</p>
+												<p>3. A large enough room or hall should be available for seating all the meditators on the floor on cushions or comfortable mats.</p>
+												<p>4. A suitable sound system and projection facilities should be available for playing instructions tapes and discourses. </p>
+												<p>5. The place for meditation and the accommodation should be at a sufficient distance from main roads and traffic in order to have a quiet, peaceful atmosphere required for meditation.</p> 
+												<p>6. A few course servers, who are experienced Vipassana meditators, may be required to help in running and managing the course. </p>
+												<p>7. If there are children who are old students and have been doing courses regularly, they may serve on the course, having minor responsibilities. (They should never be put in a counsellor role.) </p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab-5">
+									<ul class="c-tab-items"style="padding: 30px 30px 20px 40px;">
+										<li class="row">
+											<div class="col-sm-12 col-xs-12">
+												<p>
+													( From school administrators and heads of institutions, for conducting Anapana courses in their institutions ) </p>
+												<p>	1. Name and address of the sponsoring authority </p>
+												<p>	2. Name and address of the school / institution participating</p>
+												<p>	3. Name/s of the person/s in the institution who has / have done a ten-day course previously and their position in the school (i.e. head/principle/trustee/teacher)</p>
+												<p>4. Dates of his/her first and last course</p>
+											</div>
+										</li>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+   			</section>
+	<?php $this->load->view('site/footer'); ?>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/dist/pa-embed-player.min.js" async type="3d8cbcb27e45e880d7f56e3f-text/javascript"></script>
+	<script src="assets/site/plugins/jquery.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/jquery-migrate.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/jquery.easing.min.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/reveal-animate/wow.js" type="text/javascript" ></script>
+	<script src="assets/site/demos/default/js/scripts/reveal-animate/reveal-animate.js" type="text/javascript" ></script>
+	<script src="assets/site/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/smooth-scroll/jquery.smooth-scroll.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript"></script>
+	<script src="assets/site/plugins/js-cookie/js.cookie.js" type="text/javascript"></script>
+	<script src="assets/site/base/js/components.js" type="text/javascript"></script>
+	<script src="assets/site/base/js/components-shop.js" type="text/javascript"></script>
+	<script src="assets/site/base/js/app.js" type="text/javascript"></script>
+	<script>
+	$(document).ready(function() {    
+		App.init();
+	});
+	</script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-64667612-1', 'themehats.com');
+        ga('send', 'pageview');
+    </script>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<?php $current_menu= $this->uri->segment(1); ?>
+<div class="page-sidebar-wrapper">
+	<div class="page-sidebar md-shadow-z-2-i  navbar-collapse collapse">
+		<ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+			<li class="start active ">
+				<a href="<?php echo base_url(); ?>dashboard">
+				<i class="icon-home"></i>
+				<span class="title">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+				<i class="fa fa-bars"></i>
+				<span class="title">Home</span>
+				<span class="arrow "></span>
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a href="<?php echo base_url();?>slider-list"><i class="fa fa-tasks"></i>Slider</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>about-list"><i class="fa fa-tags"></i>
+						About Vipassana</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>ourcenters-list"><i class="fa fa-users"></i>
+						Our Centers</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>how-to-learn-list"><i class="fa fa-users"></i>
+						How to Learn Vipassana?</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="<?php echo base_url();?>product-list">
+				<i class="icon-basket"></i>
+				<span class="title">Apply for Course</span>
+				<span class="arrow"></span>
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a href="<?php echo base_url();?>ten-day-course-list"><i class="fa fa-tasks"></i>Apply for 10 day course </a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>category-list"><i class="fa fa-tasks"></i>Code of Discipline Timetable</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>category-list"><i class="fa fa-tasks"></i>What Bring's To Center</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>faq-list"><i class="fa fa-tasks"></i>Frequently Asked Questions</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="<?php echo base_url(); ?>contact-list">
+				<i class="fa fa-phone"></i>
+				<span class="title">Donation</span>
+				</a>
+			</li>
+			<li>
+				<a href="<?php echo base_url();?>product-list">
+				<i class="icon-basket"></i>
+				<span class="title">Children & Teenager</span>
+				<span class="arrow"></span>
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a href="<?php echo base_url();?>category-list"><i class="fa fa-tasks"></i>Children Courses  </a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>teenager-course-list"><i class="fa fa-tasks"></i>Teenager Courses</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>category-list"><i class="fa fa-tasks"></i>Hearing Speech Impaired Children Courses</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="<?php echo base_url();?>product-list">
+				<i class="icon-basket"></i>
+				<span class="title">Mitra Upakram</span>
+				<span class="arrow"></span>
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a href="<?php echo base_url();?>mitra-activities-list"><i class="fa fa-tasks"></i>Mitra Pune Activities </a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="<?php echo base_url();?>product-list">
+				<i class="icon-basket"></i>
+				<span class="title">Gallery</span>
+				<span class="arrow"></span>
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a href="<?php echo base_url();?>category-list"><i class="fa fa-tasks"></i>Dhamma Punna&nbsp;Gallery</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>category-list"><i class="fa fa-tasks"></i>Dhamma Ananda&nbsp;Gallery</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="<?php echo base_url();?>product-list">
+				<i class="icon-basket"></i>
+				<span class="title">Old Students</span>
+				<span class="arrow"></span>
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a href="<?php echo base_url();?>group-sitting-list"><i class="fa fa-tasks"></i>Group Sitting</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url();?>one-day-course-list"><i class="fa fa-tasks"></i>One Day</a>
+					</li>
+				</ul>
+			</li>
+
+			
+		</ul>
+	</div>
+</div>

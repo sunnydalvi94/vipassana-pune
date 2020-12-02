@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "ba4e73cc-21be-41bf-9125-c8160ac98742",
+		"name": "mitra_school_seva_registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add mitra_school_seva_registration",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "5681648d-91d6-4371-a911-1497734d0016",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mitra_school_seva_registration_id",
+							"value": "Ly2ad",
+							"type": "text"
+						},
+						{
+							"key": "ten_day_course_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "mrudul",
+							"type": "text"
+						},
+						{
+							"key": "middel_name",
+							"value": "sudhir ",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "rajhans",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "9898989090",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mrudul@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "occupation",
+							"value": "IT developer",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Pune",
+							"type": "text"
+						},
+						{
+							"key": "area_of_city",
+							"value": "Wakad",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "39",
+							"type": "text"
+						},
+						{
+							"key": "answer",
+							"value": "sdfgf",
+							"type": "text"
+						},
+						{
+							"key": "comments",
+							"value": "ghgj",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/mitra-school-seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"mitra-school-seva-registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get mitra_school_seva_registration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/mitra-school-seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"mitra-school-seva-registration"
+					],
+					"query": [
+						{
+							"key": "mitra_school_seva_registration_id",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hide mitra_school_seva_registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mitra_school_seva_registration_id",
+							"value": "518Yn",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/hide-mitra-school-seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"hide-mitra-school-seva-registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete mitra_school_seva_registration",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/delete-mitra-school-seva-registration/518Yn",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-mitra-school-seva-registration",
+						"518Yn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore mitra_school_seva_registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mitra_school_seva_registration_id",
+							"value": "518Yn",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/restore-mitra-school-seva-registration",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"restore-mitra-school-seva-registration"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c563e7b7-d76c-4dff-9d0d-b4a94c4977c4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f4e94fc1-7699-4258-89de-904a13314dad",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

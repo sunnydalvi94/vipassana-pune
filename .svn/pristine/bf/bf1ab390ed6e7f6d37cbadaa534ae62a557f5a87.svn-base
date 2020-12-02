@@ -1,0 +1,8 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+
+// --------- API ROUTES -----------
+
+$route['(?i)children_course']="children_course/children_course_rest/children_course";
+$route['(?i)hide-children_course']="children_course/children_course_rest/hide_children_course";
+$route['(?i)restore-children_course']="children_course/children_course_rest/restore_children_course";
+$route['(?i)delete-children_course/(:any)']="children_course/children_course_rest/delete_children_course/$1";

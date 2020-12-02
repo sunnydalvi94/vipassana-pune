@@ -1,0 +1,64 @@
+ .header_page{
+     background:#1f85da99!important;
+    }   
+    .c-theme-nav li:focus > a:not(.btn), .c-theme-nav li:active > a:not(.btn), .c-theme-nav li:hover > a:not(.btn) {
+    color: #E7CEA5 !important;}
+    .font_size_menu{
+        font-size:1vw;
+        margin-top:100px;
+    }
+    .font_size_submenu{
+        font-size:13px!important;
+    }
+    nav{
+        max-height: 500px!important;
+    }
+    .wheel{
+        height:3vw;
+        margin-top:-3vw;
+        margin-bottom: -2vw;
+      }
+      @media (min-width: 992px){
+        .c-layout-header-fixed .c-layout-header {
+            height: 65px;
+        }
+        .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link {
+            padding: 21px 15px 39px 15px;
+        }
+        .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand .c-desktop-logo-inverse {
+        margin-top: -1vw;
+        }
+        .c-layout-revo-slider-4 {
+        margin-top: -33.5px;
+        }
+        .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link {
+            min-height: 0px;
+            padding: 21px 15px 26px 15px;
+        }
+      }
+    @media (max-width:750px) {
+        .wheel{
+        height:7vw;
+        margin-top: -14px;
+      }
+      .font_size_menu{
+    font-size:12px!important;
+      }
+      .font_size_submenu{
+        font-size:12px!important;
+      }
+    }
+    @media (max-width:400px) {
+    .font_size_menu{
+    font-size:12px!important;
+      }
+      .font_size_submenu{
+        font-size:12px!important;
+      }
+      .c-layout-header .c-navbar .c-mega-menu.c-fonts-bold > .nav.navbar-nav > li > .c-link{
+          height:31px!important;
+      }
+      .wheel{
+        height:10vw;
+      }
+    }

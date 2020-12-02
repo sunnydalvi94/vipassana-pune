@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "58946ae0-6c79-472e-bbb1-4c1609d9ebe6",
+		"name": "ourcenters",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add-ourcenters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "our_center_id",
+							"value": "01O0n",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "our_center_name",
+							"value": "nashik",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "abcderr.jpg",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}ourcenters",
+					"host": [
+						"{{host}}ourcenters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-ourcenters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}ourcenters?our_center_id=3d62d",
+					"host": [
+						"{{host}}ourcenters"
+					],
+					"query": [
+						{
+							"key": "our_center_id",
+							"value": "3d62d"
+						},
+						{
+							"key": "all",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hide-ourcenters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "our_center_id",
+							"value": "3d62d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}hide-ourcenters",
+					"host": [
+						"{{host}}hide-ourcenters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore-ourcenters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "our_center_id",
+							"value": "3d62d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}restore-ourcenters",
+					"host": [
+						"{{host}}restore-ourcenters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-ourcenters",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}delete-ourcenters/3d62d",
+					"host": [
+						"{{host}}delete-ourcenters"
+					],
+					"path": [
+						"3d62d"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "5681648d-91d6-4371-a911-1497734d0016",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ceff72e3-c08e-443a-9f2d-6cd54ccc5bd0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1b4f6670-1d36-4366-bc42-94bf719f3654",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

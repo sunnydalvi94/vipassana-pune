@@ -1,0 +1,13 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+
+//----------------------------Duration Set---------------------
+/*$route['(?i)duration-set']="syllabus_planner/syllabus_planner_rest/duration_set";*/
+$route['(?i)one-day-course']="one_day_course/one_day_course_rest/one_day_course_registration";
+$route['(?i)hide-one-day-course']="one_day_course/one_day_course_rest/hide_one_day_course";
+$route['(?i)restore-one-day-course']="one_day_course/one_day_course_rest/restore_one_day_course";
+$route['(?i)delete-one-day-course/(:any)']="one_day_course/one_day_course_rest/permanent_delete_one_day_course/$1";
+
+$route['(?i)add-one-day-course']='one_day_course/one_day_course_web/add_one_day_course';
+$route['(?i)add-one-day-course/(:any)']='one_day_course/one_day_course_web/add_one_day_course/$1';
+$route['(?i)one-day-course-list']='one_day_course/one_day_course_web/one_day_course_list';
+$route['(?i)upload_one_day_course_image'] ='one_day_course/one_day_course_web/upload_one_day_course_image';

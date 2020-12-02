@@ -1,0 +1,18 @@
+-- ----------- Snehal Kulkarni-------- 11/05/2020 6:30 pm-----------
+-- ------ Table structure for table table tbl_album
+
+CREATE TABLE IF NOT EXISTS `tbl_album` (
+  `album_id` bigint(21) NOT NULL AUTO_INCREMENT,
+  `album_name` varchar(100) DEFAULT NULL,
+  `sequence` int(10) DEFAULT NULL,
+  `album_cover_photo` varchar(50) DEFAULT NULL,
+  `inserted_by` int(11) NOT NULL,
+  `inserted_on` datetime NOT NULL,
+  `modified_by` int(11) NOT NULL,
+  `modified_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `display` enum('Y','N') NOT NULL DEFAULT 'Y',
+  `in_use` enum('Y','N') NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`album_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+ 

@@ -1,0 +1,16 @@
+-- ----------- yogeshwari yawalkar-------- 26/05/2020 1:30 pm-----------
+-- ------ Table structure for  table tbl_about
+
+ALTER TABLE `tbl_about` CHANGE `about_description` `about_description` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+-- shubhangi jagadale 26-05-2020 16:01
+ALTER TABLE `tbl_faq` ADD PRIMARY KEY (`faq_id`);
+ALTER TABLE `tbl_faq` MODIFY `faq_id` int(11) NOT NULL AUTO_INCREMENT;
+
+-- shubhangi jagadale 26-05-2020 16:27
+
+ALTER TABLE `tbl_one_day_course` CHANGE `venue` `venue` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+-- shubhangi jagadale 26-05-2020 17:00
+ALTER TABLE `tbl_faq` CHANGE `answer` `answer` VARCHAR(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `tbl_faq` CHANGE `sequence` `sequence` INT(11) NULL DEFAULT NULL;
